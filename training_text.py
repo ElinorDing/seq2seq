@@ -8,7 +8,7 @@ from datasets import load_from_disk
 max_source_length = 1024
 max_target_length = 128
 
-def preprocessing_function(examples):
+def preprocess_function(examples):
     inputs = ["words to sentence: " + doc for doc in examples["source_text"]]
     model_inputs = tokenizer(inputs, padding="longest",max_length=max_input_length,
                              truncation=True, return_tensors="pt")
