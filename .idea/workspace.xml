@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ac40040-4c9d-4b62-9331-8000316c8fad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/dataset_dict.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/test/dataset.arrow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/test/dataset_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/test/state.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/train/dataset.arrow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/train/dataset_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/train/state.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/val/dataset.arrow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/val/dataset_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clean_data/merged_data/val/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/dataset_dict.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/test/dataset.arrow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/test/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/test/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/train/dataset.arrow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/train/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/train/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/val/dataset.arrow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/val/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merged_data/val/state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bag_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/bag_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/dataset_dict.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/test/dataset.arrow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/test/dataset_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/test/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/train/dataset.arrow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/train/dataset_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/train/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/val/dataset.arrow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/val/dataset_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_data/merged_data/val/state.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_split.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_text.py" afterDir="false" />
     </list>

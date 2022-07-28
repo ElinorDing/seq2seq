@@ -34,6 +34,6 @@ def give_bags_words(sentences):
     return df
 
 
-path = '/Users/dyt/workspace/seqToseq/multinli_1.0/multinli_1.0_dev_matched.txt'
+path = '/Users/dyt/workspace/seq2seq/multinli_1.0/multinli_1.0_dev_matched.txt'
 sentence_list = extract_data(path)
 df = give_bags_words(sentence_list)

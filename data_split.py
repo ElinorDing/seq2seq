@@ -89,13 +89,13 @@ def merge_dataset(train, val, test):
 
 if __name__ == '__main__':
 
-    # src_data_folder = r"/Users/dyt/workspace/seqToseq/raw_data"
-    # tar_data_folder = r"/Users/dyt/workspace/seqToseq/clean_data"
+    # src_data_folder = r"/Users/dyt/workspace/seq2seq/raw_data"
+    # tar_data_folder = r"/Users/dyt/workspace/seq2seq/clean_data"
     # data_set_split(src_data_folder, tar_data_folder)
 
-    train = r"/Users/dyt/workspace/seqToseq/clean_data/train/training_clean.csv"
-    val = r"/Users/dyt/workspace/seqToseq/clean_data/val/val_clean.csv"
-    test = r"/Users/dyt/workspace/seqToseq/clean_data/test/test_clean.csv"
+    train = r"/Users/dyt/workspace/seq2seq/clean_data/train/training_clean.csv"
+    val = r"/Users/dyt/workspace/seq2seq/clean_data/val/val_clean.csv"
+    test = r"/Users/dyt/workspace/seq2seq/clean_data/test/test_clean.csv"
     merge_dataset(train,val,test)
 
 
