@@ -5,7 +5,7 @@ import torch
 from datasets import load_from_disk
 
 # test
-max_source_length = 1024
+max_source_length = 512
 max_target_length = 128
 
 def preprocess_function(examples):
