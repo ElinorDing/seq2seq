@@ -68,23 +68,23 @@ def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_s
     print("dev{}：{}".format(val_folder, val_num))
     print("test{}：{}".format(test_folder, test_num))
 
-# def merge_dataset(train, val, test):
-#     df_train = pd.read_csv(train)
-#     df_train = df_train.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-#     df_train = df_train[['source_text', 'target_text']]
-#     df_val = pd.read_csv(val)
-#     df_val = df_val.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-#     df_val = df_val[['source_text', 'target_text']]
-#     df_test = pd.read_csv(test)
-#     df_test = df_test.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-#     df_test = df_test[['source_text', 'target_text']]
-#
-#     train_dataset = datasets.Dataset.from_dict(df_train)
-#     val_dataset = datasets.Dataset.from_dict(df_val)
-#     test_dataset = datasets.Dataset.from_dict(df_test)
-#     my_dataset_dict = datasets.DatasetDict({"train":train_dataset,"val":val_dataset,"test":test_dataset})
-#     print(my_dataset_dict)
-#     return my_dataset_dict
+def merge_dataset(train, val, test):
+    df_train = pd.read_csv(train)
+    df_train = df_train.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
+    df_train = df_train[['source_text', 'target_text']]
+    df_val = pd.read_csv(val)
+    df_val = df_val.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
+    df_val = df_val[['source_text', 'target_text']]
+    df_test = pd.read_csv(test)
+    df_test = df_test.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
+    df_test = df_test[['source_text', 'target_text']]
+
+    train_dataset = datasets.Dataset.from_dict(df_train)
+    val_dataset = datasets.Dataset.from_dict(df_val)
+    test_dataset = datasets.Dataset.from_dict(df_test)
+    my_dataset_dict = datasets.DatasetDict({"train":train_dataset,"val":val_dataset,"test":test_dataset})
+    my_dataset_dict.save_to_disk("merged_data")
+    return my_dataset_dict
 
 
 if __name__ == '__main__':
@@ -93,9 +93,9 @@ if __name__ == '__main__':
     # tar_data_folder = r"/Users/dyt/workspace/seqToseq/clean_data"
     # data_set_split(src_data_folder, tar_data_folder)
 
-    # train = r"/Users/dyt/workspace/seqToseq/clean_data/train/training_clean.csv"
-    # val = r"/Users/dyt/workspace/seqToseq/clean_data/val/val_clean.csv"
-    # test = r"/Users/dyt/workspace/seqToseq/clean_data/test/test_clean.csv"
-    # merge_dataset(train,val,test)
+    train = r"/Users/dyt/workspace/seqToseq/clean_data/train/training_clean.csv"
+    val = r"/Users/dyt/workspace/seqToseq/clean_data/val/val_clean.csv"
+    test = r"/Users/dyt/workspace/seqToseq/clean_data/test/test_clean.csv"
+    merge_dataset(train,val,test)
 
 

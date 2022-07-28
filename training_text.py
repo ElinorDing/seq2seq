@@ -25,28 +25,7 @@ def preprocessing_function(examples):
 
 # gathering and clean dataset
 
-def merge_dataset(train, val, test):
-    df_train = pd.read_csv(train)
-    df_train = df_train.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-    df_train = df_train[['source_text', 'target_text']]
-    df_val = pd.read_csv(val)
-    df_val = df_val.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-    df_val = df_val[['source_text', 'target_text']]
-    df_test = pd.read_csv(test)
-    df_test = df_test.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-    df_test = df_test[['source_text', 'target_text']]
-
-    train_dataset = datasets.Dataset.from_dict(df_train)
-    val_dataset = datasets.Dataset.from_dict(df_val)
-    test_dataset = datasets.Dataset.from_dict(df_test)
-    my_dataset_dict = datasets.DatasetDict({"train":train_dataset,"val":val_dataset,"test":test_dataset})
-    print(my_dataset_dict)
-    return my_dataset_dict
-
-train = r"/Users/dyt/workspace/seqToseq/clean_data/train/training_clean.csv"
-val = r"/Users/dyt/workspace/seqToseq/clean_data/val/val_clean.csv"
-test = r"/Users/dyt/workspace/seqToseq/clean_data/test/test_clean.csv"
-ready_dataset = merge_dataset(train,val,test)
+ready_dataset = load_from_disk("merged_data")
 
 # path = "/Users/dyt/workspace/seqToseq/training_data.csv"
 # df = pd.read_csv(path)
