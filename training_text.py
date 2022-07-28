@@ -10,7 +10,7 @@ max_target_length = 128
 
 def preprocess_function(examples):
     inputs = ["words to sentence: " + doc for doc in examples["source_text"]]
-    model_inputs = tokenizer(inputs, padding="longest",max_length=max_input_length,
+    model_inputs = tokenizer(inputs, padding="longest",max_length=max_source_length,
                              truncation=True, return_tensors="pt")
 
     # Setup the tokenizer for targets
