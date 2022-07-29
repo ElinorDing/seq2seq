@@ -83,7 +83,9 @@ def merge_dataset(train, val, test):
     val_dataset = datasets.Dataset.from_dict(df_val)
     test_dataset = datasets.Dataset.from_dict(df_test)
     my_dataset_dict = datasets.DatasetDict({"train":train_dataset,"val":val_dataset,"test":test_dataset})
-    my_dataset_dict.save_to_disk("merged_data")
+    # my_dataset_dict.save_to_disk("merged_data")
+    print(my_dataset_dict)
+    print(type(my_dataset_dict['test']['target_text']))
     return my_dataset_dict
 
 
@@ -96,6 +98,6 @@ if __name__ == '__main__':
     train = r"/Users/dyt/workspace/seq2seq/clean_data/train/training_clean.csv"
     val = r"/Users/dyt/workspace/seq2seq/clean_data/val/val_clean.csv"
     test = r"/Users/dyt/workspace/seq2seq/clean_data/test/test_clean.csv"
-    merge_dataset(train,val,test)
-
-
+    # merge_dataset(train,val,test)
+    data = datasets.load_from_disk("merged_data")
+    print(type(data['test']['target_text']))
