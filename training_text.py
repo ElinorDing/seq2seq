@@ -50,7 +50,7 @@ labels[labels == tokenizer.pad_token_id] = -100
 
 model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)
 
-# batch_size = 64
+batch_size = 64
 output = model(
     input_ids = tokenized_datasets["input_ids"],
     attention_mask = tokenized_datasets["attention_mask"],
