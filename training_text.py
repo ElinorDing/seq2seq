@@ -15,7 +15,8 @@ def preprocess_function(examples):
 
     # Setup the tokenizer for targets
     with tokenizer.as_target_tokenizer():
-        labels = tokenizer(examples["target_text"], padding="longest",
+        target_inputs = [doc for doc in examples["target_text"]]
+        labels = tokenizer(target_inputs, padding="longest",
                            max_length=max_target_length, truncation=True,return_tensors='pt')
 
     model_inputs["labels"] = labels["input_ids"]
@@ -36,6 +37,7 @@ ready_dataset = ready_dataset[['source_text', 'target_text']]
 MODEL_NAME = "t5-small"
 tokenizer = T5Tokenizer.from_pretrained(MODEL_NAME)
 
+print("The type of dataset: ", ready_dataset)
 # tokenized_datasets = ready_dataset.map(preprocess_function, batched=True)
 tokenized_datasets = preprocess_function(ready_dataset)
 print("The content of map is: ",tokenized_datasets)
