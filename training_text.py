@@ -45,7 +45,7 @@ print("The content of map is: ",tokenized_datasets)
 # inputs = preprocessing_function(df)
 
 labels = tokenized_datasets["labels"]
-labels = torch.tensor(labels)
+# labels = torch.tensor(labels)
 labels[labels == tokenizer.pad_token_id] = -100
 
 
