@@ -26,7 +26,7 @@ def preprocess_function(examples):
 
 # gathering and clean dataset
 
-ready_dataset = load_from_disk("merged_data")
+ready_dataset = load_from_disk("train_dataset")
 
 # path = "/Users/dyt/workspace/seqToseq/training_data.csv"
 # df = pd.read_csv(path)

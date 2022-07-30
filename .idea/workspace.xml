@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ac40040-4c9d-4b62-9331-8000316c8fad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_dataset/dataset.arrow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_dataset/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_dataset/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_dataset/dataset.arrow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_dataset/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_dataset/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/val_dataset/dataset.arrow" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/val_dataset/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/val_dataset/state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_split.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_text.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

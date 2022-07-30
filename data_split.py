@@ -80,12 +80,16 @@ def merge_dataset(train, val, test):
     df_test = df_test[['source_text', 'target_text']]
 
     train_dataset = datasets.Dataset.from_dict(df_train)
+    train_dataset.save_to_disk("train_dataset")
+    print("The type of train_dataset: ",train_dataset)
     val_dataset = datasets.Dataset.from_dict(df_val)
+    train_dataset.save_to_disk("val_dataset")
     test_dataset = datasets.Dataset.from_dict(df_test)
+    train_dataset.save_to_disk("test_dataset")
     my_dataset_dict = datasets.DatasetDict({"train":train_dataset,"val":val_dataset,"test":test_dataset})
     # my_dataset_dict.save_to_disk("merged_data")
-    print(my_dataset_dict)
-    print(type(my_dataset_dict['test']['target_text']))
+    # print(my_dataset_dict)
+    # print(type(my_dataset_dict['test']['target_text']))
     return my_dataset_dict
 
 
@@ -98,6 +102,6 @@ if __name__ == '__main__':
     train = r"/Users/dyt/workspace/seq2seq/clean_data/train/training_clean.csv"
     val = r"/Users/dyt/workspace/seq2seq/clean_data/val/val_clean.csv"
     test = r"/Users/dyt/workspace/seq2seq/clean_data/test/test_clean.csv"
-    # merge_dataset(train,val,test)
-    data = datasets.load_from_disk("merged_data")
-    print(type(data['test']['target_text']))
+    merge_dataset(train,val,test)
+    # data = datasets.load_from_disk("merged_data")
+    # print(type(data['test']['target_text']))
