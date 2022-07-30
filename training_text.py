@@ -41,7 +41,7 @@ MODEL_NAME = "t5-small"
 tokenizer = T5Tokenizer.from_pretrained(MODEL_NAME)
 
 tokenized_datasets = ready_dataset.map(preprocess_function, batched=True)
-print("The type of map is: ",type(tokenized_datasets))
+print("The content of map is: ",tokenized_datasets)
 # inputs = preprocessing_function(df)
 
 labels = tokenized_datasets["labels"]
