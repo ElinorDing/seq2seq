@@ -10,12 +10,12 @@ max_target_length = 128
 
 def preprocess_function(examples):
     inputs = ["words to sentence: " + doc for doc in examples["source_text"]]
-    model_inputs = tokenizer(inputs,padding=True, max_length=max_source_length,truncation=True,return_tensors='pt')
+    model_inputs = tokenizer(inputs,padding="longest", max_length=max_source_length,truncation=True,return_tensors='pt')
 
     # Setup the tokenizer for targets
     with tokenizer.as_target_tokenizer():
         target_inputs = [doc for doc in examples["target_text"]]
-        labels = tokenizer(target_inputs,padding=True,max_length=max_target_length, truncation=True,return_tensors='pt')
+        labels = tokenizer(target_inputs,padding="longest", max_length=max_target_length, truncation=True,return_tensors='pt')
 
     model_inputs["labels"] = labels["input_ids"]
     return model_inputs
@@ -42,7 +42,7 @@ print("The content of map is: ",tokenized_datasets)
 # inputs = preprocessing_function(df)
 
 labels = tokenized_datasets["labels"]
-# labels = torch.tensor(labels)
+labels = torch.tensor(labels)
 labels[labels == tokenizer.pad_token_id] = -100
 
 
