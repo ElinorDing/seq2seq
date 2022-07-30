@@ -26,8 +26,8 @@ def preprocess_function(examples):
 
 # gathering and clean dataset
 
-ready_dataset = load_from_disk("train_dataset")
-
+# ready_dataset = load_from_disk("train_dataset")
+ready_dataset = pd.read_csv("~/workspace/seqToseq/sseq2seq/clean_data/train/training_clean.csv")
 # preprocessing
 
 MODEL_NAME = "t5-small"
