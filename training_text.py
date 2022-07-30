@@ -28,6 +28,8 @@ def preprocess_function(examples):
 
 # ready_dataset = load_from_disk("train_dataset")
 ready_dataset = pd.read_csv("~/workspace/seqToseq/seq2seq/clean_data/train/training_clean.csv")
+ready_dataset = ready_dataset.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
+ready_dataset = ready_dataset[['source_text', 'target_text']]
 # ready_dataset = pd.read_csv("~/workspace/seqToseq/seq2seq/train_dataset")
 # preprocessing
 
