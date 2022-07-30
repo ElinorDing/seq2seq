@@ -11,12 +11,12 @@ max_target_length = 128
 def preprocess_function(examples):
     inputs = ["words to sentence: " + doc for doc in examples["source_text"]]
     model_inputs = tokenizer(inputs, padding="longest",max_length=max_source_length,
-                             truncation=True)
+                             truncation=True,return_tensors='pt')
 
     # Setup the tokenizer for targets
     with tokenizer.as_target_tokenizer():
         labels = tokenizer(examples["target_text"], padding="longest",
-                           max_length=max_target_length, truncation=True)
+                           max_length=max_target_length, truncation=True,return_tensors='pt')
 
     model_inputs["labels"] = labels["input_ids"]
     return model_inputs
@@ -27,13 +27,6 @@ def preprocess_function(examples):
 # gathering and clean dataset
 
 ready_dataset = load_from_disk("train_dataset")
-
-# path = "/Users/dyt/workspace/seqToseq/training_data.csv"
-# df = pd.read_csv(path)
-# df = df.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-# df = df[['source_text', 'target_text']]
-# df['source_text'] = "words to sentence: " + df['source_text']
-# print(df.head(20))
 
 # preprocessing
 
