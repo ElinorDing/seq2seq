@@ -27,13 +27,15 @@ def preprocess_function(examples):
 # gathering and clean dataset
 
 # ready_dataset = load_from_disk("train_dataset")
-ready_dataset = pd.read_csv("~/workspace/seqToseq/seq2seq/clean_data/train/training_clean.csv")
+# ready_dataset = pd.read_csv("~/workspace/seqToseq/seq2seq/clean_data/train/training_clean.csv")
+ready_dataset = pd.read_csv("~/workspace/seqToseq/seq2seq/train_dataset")
 # preprocessing
 
 MODEL_NAME = "t5-small"
 tokenizer = T5Tokenizer.from_pretrained(MODEL_NAME)
 
 tokenized_datasets = ready_dataset.map(preprocess_function, batched=True)
+
 print("The content of map is: ",tokenized_datasets)
 # inputs = preprocessing_function(df)
 
