@@ -50,6 +50,9 @@ labels[labels == tokenizer.pad_token_id] = -100
 
 model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)
 print("这里")
+print(torch.cuda.get_device_properties(0).total_memory)
+print("zheli")
+print(torch.cuda.memory_reserved(0))
 print(torch.cuda.memory_allocated(0))
 print("还是这里")
 print(torch.cuda.get_device_name(0))
