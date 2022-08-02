@@ -50,7 +50,7 @@ labels[labels == tokenizer.pad_token_id] = -100
 
 model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)
 print("这里")
-print(torch.cuda.memory_allocated())
+print(torch.cuda.memory_allocated(0))
 print("还是这里")
 torch.cuda.max_memory_allocated()
 batch_size = 1
