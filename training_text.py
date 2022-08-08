@@ -47,6 +47,9 @@ labels[labels == tokenizer.pad_token_id] = -100
 
 
 # fine-tuning the model
+use_cuda = torch.cuda.is_available() ## if have gpu or cpu
+device = torch.device("cuda" if use_cuda else "cpu")
+torch.cuda.set_device(device=0)
 
 model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)
 print("这里")
@@ -58,10 +61,6 @@ print("还是这里")
 print(torch.cuda.get_device_name(0))
 # print(torch.cuda.max_memory_allocated())
 batch_size = 1
-
-use_cuda = torch.cuda.is_available() ## if have gpu or cpu
-device = torch.device("cuda" if use_cuda else "cpu")
-torch.cuda.set_device(device=0)
 
 output = model(
     input_ids = tokenized_datasets["input_ids"],
