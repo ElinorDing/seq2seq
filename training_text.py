@@ -47,7 +47,13 @@ labels[labels == tokenizer.pad_token_id] = -100
 
 
 # fine-tuning the model
-
+use_cuda = torch.cuda.is_available() ## if have gpu or cpu
+device = torch.device("cuda" if use_cuda else "cpu")
+torch.cuda.set_device(device=0) ## choose gpu number 0
+print("device: ", device)
+if use_cuda:
+    torch.cuda.manual_seed(72)
+    
 model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)
 print("这里")
 print(torch.cuda.get_device_properties(0).total_memory)
