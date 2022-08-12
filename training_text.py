@@ -53,7 +53,7 @@ torch.cuda.set_device(device=0) ## choose gpu number 0
 print("device: ", device)
 if use_cuda:
     torch.cuda.manual_seed(72)
-    
+
 model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME)
 print("这里")
 print(torch.cuda.get_device_properties(0).total_memory)
@@ -64,6 +64,7 @@ print("还是这里")
 print(torch.cuda.get_device_name(0))
 # print(torch.cuda.max_memory_allocated())
 batch_size = 1
+
 output = model(
     input_ids = tokenized_datasets["input_ids"],
     attention_mask = tokenized_datasets["attention_mask"],
