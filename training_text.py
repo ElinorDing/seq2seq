@@ -448,8 +448,8 @@ def main():
         return model_inputs
 
 
-    raw_train_dataset =  raw_datasets["train"][1:]#.select(range(200))
-    raw_eval_dataset = raw_datasets["validation"][1:]#.select(range(100))
+    raw_train_dataset =  raw_datasets["train"]#.select(range(200))
+    raw_eval_dataset = raw_datasets["validation"]#.select(range(100))
 
     with accelerator.main_process_first():
         processed_train_dataset = raw_train_dataset.map(
@@ -469,7 +469,7 @@ def main():
             desc="Running tokenizer on eval dataset",
         )
 
-
+    print(type(processed_train_dataset))
     train_dataset = processed_train_dataset
     eval_dataset = processed_eval_dataset
 
