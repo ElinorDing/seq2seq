@@ -399,7 +399,7 @@ def main():
 
     # Preprocessing the datasets.
     # First we tokenize all the texts.
-    column_names = raw_datasets["train"].column_names
+    column_names = raw_datasets["train"].column_names[1:]
     print("Column Name: ",column_names)
 
     # Get the column names for input/target.
