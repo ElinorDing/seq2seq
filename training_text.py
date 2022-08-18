@@ -449,7 +449,7 @@ def main():
 
 
     raw_train_dataset =  raw_datasets["train"]#.select(range(200))
-    print("Get data type: ",type(raw_datasets["train"]))
+    print("Get data type: ",type(raw_datasets["train"][1:]))
     raw_eval_dataset = raw_datasets["validation"]#.select(range(100))
 
     with accelerator.main_process_first():
