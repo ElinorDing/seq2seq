@@ -351,10 +351,10 @@ def main():
     else:
         data_files = {}
         if args.train_file is not None:
-            data_files["train"] = args.train_file[1:]
+            data_files["train"] = args.train_file
         if args.validation_file is not None:
-            data_files["validation"] = args.validation_file[1:]
-        extension = args.train_file[1:].split(".")[-1]
+            data_files["validation"] = args.validation_file
+        extension = args.train_file.split(".")[-1]
         raw_datasets = load_dataset(extension, data_files=data_files)
     # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
     # https://huggingface.co/docs/datasets/loading_datasets.html.
@@ -399,7 +399,7 @@ def main():
 
     # Preprocessing the datasets.
     # First we tokenize all the texts.
-    column_names = raw_datasets["train"].column_names
+    column_names = raw_datasets["train"].column_names[1:]
     print("Column Name: ",column_names)
 
     # Get the column names for input/target.
@@ -448,8 +448,8 @@ def main():
         return model_inputs
 
 
-    raw_train_dataset =  raw_datasets["train"]#.select(range(200))
-    raw_eval_dataset = raw_datasets["validation"]#.select(range(100))
+    raw_train_dataset =  raw_datasets["train"][1:]#.select(range(200))
+    raw_eval_dataset = raw_datasets["validation"][1:]#.select(range(100))
 
     with accelerator.main_process_first():
         processed_train_dataset = raw_train_dataset.map(
