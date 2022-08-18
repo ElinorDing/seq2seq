@@ -470,7 +470,7 @@ def main():
         )
 
 
-    train_dataset = processed_train_dataset
+    train_dataset = processed_train_dataset[1:]
     eval_dataset = processed_eval_dataset
 
     # Log a few random samples from the training set:
