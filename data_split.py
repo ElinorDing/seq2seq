@@ -106,7 +106,9 @@ if __name__ == '__main__':
     # data = datasets.load_from_disk("merged_data")
     # print(type(data['test']['target_text']))
 
-    ready_dataset = pd.read_csv("~/workspace/seq2seq/clean_data/train/training_clean.csv")
+    ready_dataset = pd.read_csv(test)
     ready_dataset = ready_dataset.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
+    # ready_dataset = ready_dataset.drop('Unnamed: 0', inplace=True, axis=1)
     ready_dataset = ready_dataset[['source_text', 'target_text']]
+    ready_dataset.to_csv('final_test.csv')
     print("The type of dataset: ", type(ready_dataset['target_text']))
