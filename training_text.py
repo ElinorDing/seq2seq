@@ -576,56 +576,56 @@ def main():
 
         model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
         store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
-        # '''evaluting after each epoch'''
-        # model.eval()
-        # if args.val_max_target_length is None:
-        #     args.val_max_target_length = args.max_target_length
-        #
-        # gen_kwargs = {
-        #     "max_length": args.val_max_target_length if args is not None else config.max_length,
-        #     "num_beams": args.num_beams,
-        # }
-        # # for step, batch in enumerate(eval_dataloader):
-        # for step, batch in enumerate(tqdm(eval_dataloader, desc="Evaluating")):
-        #     with torch.no_grad():
-        #         generated_tokens = accelerator.unwrap_model(model).generate(
-        #             batch["input_ids"],
-        #             attention_mask=batch["attention_mask"],
-        #             **gen_kwargs,
-        #         )
-        #
-        #         generated_tokens = accelerator.pad_across_processes(
-        #             generated_tokens, dim=1, pad_index=tokenizer.pad_token_id
-        #         )
-        #         labels = batch["labels"]
-        #         if not args.pad_to_max_length:
-        #             # If we did not pad to max length, we need to pad the labels too
-        #             labels = accelerator.pad_across_processes(batch["labels"], dim=1, pad_index=tokenizer.pad_token_id)
-        #
-        #         generated_tokens = accelerator.gather(generated_tokens).cpu().numpy()
-        #         labels = accelerator.gather(labels).cpu().numpy()
-        #
-        #         if args.ignore_pad_token_for_loss:
-        #             # Replace -100 in the labels as we can't decode them.
-        #             labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-        #         if isinstance(generated_tokens, tuple):
-        #             generated_tokens = generated_tokens[0]
-        #         decoded_preds = tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
-        #         decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
-        #
-        #         decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
-        #
-        #         metric.add_batch(predictions=decoded_preds, references=decoded_labels)
-        # result = metric.compute(use_stemmer=True)
-        # # Extract a few results from ROUGE
-        # result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
-        #
-        # result = {k: round(v, 4) for k, v in result.items()}
-        #
-        # # logger.info(result)
-        # rouge_L = result["rougeL"]
-        #
-        # print('rouge_L:', rouge_L)
+        '''evaluting after each epoch'''
+        model.eval()
+        if args.val_max_target_length is None:
+            args.val_max_target_length = args.max_target_length
+
+        gen_kwargs = {
+            "max_length": args.val_max_target_length if args is not None else config.max_length,
+            "num_beams": args.num_beams,
+        }
+        # for step, batch in enumerate(eval_dataloader):
+        for step, batch in enumerate(tqdm(eval_dataloader, desc="Evaluating")):
+            with torch.no_grad():
+                generated_tokens = accelerator.unwrap_model(model).generate(
+                    batch["input_ids"],
+                    attention_mask=batch["attention_mask"],
+                    **gen_kwargs,
+                )
+
+                generated_tokens = accelerator.pad_across_processes(
+                    generated_tokens, dim=1, pad_index=tokenizer.pad_token_id
+                )
+                labels = batch["labels"]
+                if not args.pad_to_max_length:
+                    # If we did not pad to max length, we need to pad the labels too
+                    labels = accelerator.pad_across_processes(batch["labels"], dim=1, pad_index=tokenizer.pad_token_id)
+
+                generated_tokens = accelerator.gather(generated_tokens).cpu().numpy()
+                labels = accelerator.gather(labels).cpu().numpy()
+
+                if args.ignore_pad_token_for_loss:
+                    # Replace -100 in the labels as we can't decode them.
+                    labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+                if isinstance(generated_tokens, tuple):
+                    generated_tokens = generated_tokens[0]
+                decoded_preds = tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
+                decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+
+                decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
+
+                metric.add_batch(predictions=decoded_preds, references=decoded_labels)
+        result = metric.compute(use_stemmer=True)
+        # Extract a few results from ROUGE
+        result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
+
+        result = {k: round(v, 4) for k, v in result.items()}
+
+        # logger.info(result)
+        rouge_L = result["rougeL"]
+
+        print('rouge_L:', rouge_L)
 
 
 def store_model(accele, model, output_dir, tokenizer):
