@@ -559,7 +559,7 @@ def main():
             outputs = model(**batch)
             loss = outputs.loss
             loss = loss / args.gradient_accumulation_steps
-            # print('training loss:', loss)
+            print('training loss:', loss)
             accelerator.backward(loss)
             if step % args.gradient_accumulation_steps == 0 or step == len(train_dataloader) - 1:
                 optimizer.step()
@@ -572,12 +572,12 @@ def main():
                 break
 
         model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
-        print("跑到这里了")
+        # print("跑到这里了")
         store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
-        print("还是这里")
+        # print("还是这里")
         '''evaluting after each epoch'''
         model.eval()
-        print("或者是这")
+        # print("或者是这")
         if args.val_max_target_length is None:
             args.val_max_target_length = args.max_target_length
 
@@ -617,7 +617,7 @@ def main():
 
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
         result = metric.compute(use_stemmer=True)
-        print("到这里了吗")
+        # print("到这里了吗")
         # Extract a few results from ROUGE
         result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
 
