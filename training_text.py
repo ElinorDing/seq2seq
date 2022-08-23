@@ -355,7 +355,6 @@ def main():
         if args.validation_file is not None:
             data_files["validation"] = args.validation_file
         extension = args.train_file.split(".")[-1]
-        print("Type of extension:",type(extension))
         raw_datasets = load_dataset(extension, data_files=data_files)
     # See more about loading any type of standard or custom dataset (from files, python dict, pandas DataFrame, etc) at
     # https://huggingface.co/docs/datasets/loading_datasets.html.
@@ -401,7 +400,6 @@ def main():
     # Preprocessing the datasets.
     # First we tokenize all the texts.
     column_names = raw_datasets["train"].column_names
-    print("Column Name: ",column_names)
 
     # Get the column names for input/target.
     dataset_columns = summarization_name_mapping.get(args.dataset_name, None)
@@ -470,7 +468,6 @@ def main():
             desc="Running tokenizer on eval dataset",
         )
 
-    print(type(processed_train_dataset))
     train_dataset = processed_train_dataset
     eval_dataset = processed_eval_dataset
 
@@ -575,9 +572,12 @@ def main():
                 break
 
         model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
+        print("跑到这里了")
         store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
+        print("还是这里")
         '''evaluting after each epoch'''
         model.eval()
+        print("或者是这")
         if args.val_max_target_length is None:
             args.val_max_target_length = args.max_target_length
 
@@ -617,6 +617,7 @@ def main():
 
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
         result = metric.compute(use_stemmer=True)
+        print("到这里了吗")
         # Extract a few results from ROUGE
         result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
 
