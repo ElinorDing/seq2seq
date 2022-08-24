@@ -559,7 +559,7 @@ def main():
             outputs = model(**batch)
             loss = outputs.loss
             loss = loss / args.gradient_accumulation_steps
-            print('training loss:', loss)
+            # print('training loss:', loss)
             accelerator.backward(loss)
             if step % args.gradient_accumulation_steps == 0 or step == len(train_dataloader) - 1:
                 optimizer.step()
@@ -572,12 +572,9 @@ def main():
                 break
 
         model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
-        print("跑到这里了")
         store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
-        print("还是这里")
         '''evaluting after each epoch'''
         model.eval()
-        print("或者是这")
         if args.val_max_target_length is None:
             args.val_max_target_length = args.max_target_length
 
@@ -616,8 +613,8 @@ def main():
                 decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
+                print(all_match(decoded_labels,decoded_preds))
         result = metric.compute(use_stemmer=True)
-        print("到这里了吗")
         # Extract a few results from ROUGE
         result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
 
@@ -637,6 +634,9 @@ def store_model(accele, model, output_dir, tokenizer):
     if accele.is_main_process:
         tokenizer.save_pretrained(output_dir)
     print('Model saved.')
+
+def all_match(targets, predictions):
+    return {"exact_match": 100 * float(np.array_equal(targets, predictions))}
 
 
     # if args.output_dir is not None:
