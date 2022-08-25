@@ -613,9 +613,9 @@ def main():
                 decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
-                print("predictions: ", decoded_preds)
-                print("labels: ", decoded_labels)
-                # print(all_match(decoded_labels,decoded_preds))
+                # print("predictions: ", decoded_preds)
+                # print("labels: ", decoded_labels)
+                print(all_match(decoded_labels,decoded_preds))
         result = metric.compute(use_stemmer=True)
         # Extract a few results from ROUGE
         result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
@@ -638,7 +638,8 @@ def store_model(accele, model, output_dir, tokenizer):
     print('Model saved.')
 
 def all_match(targets, predictions):
-    return {"exact_match": 100 * float(np.array_equal(targets, predictions))}
+    return int(targets == predictions)
+    # return {"exact_match": 100 * float(np.array_equal(targets, predictions))}
 
 
     # if args.output_dir is not None:
