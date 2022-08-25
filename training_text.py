@@ -51,7 +51,7 @@ from transformers import (
 )
 from transformers.file_utils import get_full_repo_name, is_offline_mode
 from transformers.utils.versions import require_version
-from evaluate import load
+import evaluate
 
 
 
@@ -538,7 +538,7 @@ def main():
 
     # Metric
     metric = load_metric("rouge")
-    exact_match_metric = load("exact_match")
+    exact_match_metric = evaluate.load("exact_match")
 
     # Train!
     total_batch_size = args.per_device_train_batch_size * accelerator.num_processes * args.gradient_accumulation_steps
