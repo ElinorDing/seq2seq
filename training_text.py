@@ -51,7 +51,7 @@ from transformers import (
 )
 from transformers.file_utils import get_full_repo_name, is_offline_mode
 from transformers.utils.versions import require_version
-import evaluate
+# import evaluate
 
 
 
@@ -538,7 +538,7 @@ def main():
 
     # Metric
     metric = load_metric("rouge")
-    exact_match_metric = evaluate.load("exact_match")
+    # exact_match_metric = evaluate.load("exact_match")
 
     # Train!
     total_batch_size = args.per_device_train_batch_size * accelerator.num_processes * args.gradient_accumulation_steps
@@ -616,11 +616,10 @@ def main():
                 decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
-                results_em = exact_match_metric.compute(predictions=decoded_preds, references=decoded_labels)
-                print(round(results_em["exact_match"],2))
-                # print("predictions: ", decoded_preds)
-                # print("labels: ", decoded_labels)
-                # print(all_match(decoded_labels,decoded_preds))
+                print(all_match(decoded_labels,decoded_preds))
+                # results_em = exact_match_metric.compute(predictions=decoded_preds, references=decoded_labels)
+                # print(round(results_em["exact_match"],2))
+
         result = metric.compute(use_stemmer=True)
         # Extract a few results from ROUGE
         result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
@@ -644,7 +643,7 @@ def store_model(accele, model, output_dir, tokenizer):
     print('Model saved.')
 
 def all_match(targets, predictions):
-    return int(targets == predictions)
+    return {"exact_match" : [int(a == b) for a, b in zip(targets,predictions)]}
     # return {"exact_match": 100 * float(np.array_equal(targets, predictions))}
 
 
