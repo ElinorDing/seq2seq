@@ -613,8 +613,9 @@ def main():
                 decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
-                print(all_match(decoded_labels,decoded_preds))
+                # print(all_match(decoded_labels,decoded_preds))
         result = metric.compute(use_stemmer=True)
+        print("Result: ", result.items)
         # Extract a few results from ROUGE
         result = {key: value.mid.fmeasure * 100 for key, value in result.items()}
 
