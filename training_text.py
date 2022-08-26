@@ -586,6 +586,8 @@ def main():
             "num_beams": args.num_beams,
         }
         # for step, batch in enumerate(eval_dataloader):
+        count_match = 0
+        count_all = 0
         for step, batch in enumerate(tqdm(eval_dataloader, desc="Evaluating")):
             with torch.no_grad():
                 generated_tokens = accelerator.unwrap_model(model).generate(
@@ -616,7 +618,8 @@ def main():
                 decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
 
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
-                print(all_match(decoded_labels,decoded_preds))
+                count_match += all_match(decoded_labels,decoded_preds)[0]
+                count_all += all_match(decoded_labels,decoded_preds)[1]
                 # results_em = exact_match_metric.compute(predictions=decoded_preds, references=decoded_labels)
                 # print(round(results_em["exact_match"],2))
 
@@ -631,6 +634,8 @@ def main():
 
         print('rouge_L:', rouge_L)
 
+        print('exact_match: ', float(count_match/count_all))
+
 
 
 def store_model(accele, model, output_dir, tokenizer):
@@ -643,7 +648,8 @@ def store_model(accele, model, output_dir, tokenizer):
     print('Model saved.')
 
 def all_match(targets, predictions):
-    return {"exact_match" : [int(a == b) for a, b in zip(targets,predictions)]}
+    em_batch = [int(a == b) for a, b in zip(targets,predictions)]
+    return em_batch.count(1),len(em_batch)
     # return {"exact_match": 100 * float(np.array_equal(targets, predictions))}
 
 
