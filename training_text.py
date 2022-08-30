@@ -616,7 +616,8 @@ def main():
                 decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
 
                 decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
-
+                print("Predictions: ", decoded_preds)
+                print("Labels: ", decoded_labels)
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
                 count_match += all_match(decoded_labels,decoded_preds)[0]
                 count_all += all_match(decoded_labels,decoded_preds)[1]
@@ -634,7 +635,7 @@ def main():
 
         print('rouge_L:', rouge_L)
 
-        print('exact_match: ', float(count_match/count_all))
+        print('exact_match: ', 100*float(count_match/count_all))
 
 
 
