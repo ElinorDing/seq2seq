@@ -638,7 +638,6 @@ def main():
         print('exact_match: ', 100*float(count_match/count_all))
 
 
-
 def store_model(accele, model, output_dir, tokenizer):
     os.makedirs(output_dir, exist_ok=True)
     accele.wait_for_everyone()
