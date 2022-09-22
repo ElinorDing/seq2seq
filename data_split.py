@@ -99,16 +99,21 @@ if __name__ == '__main__':
     # tar_data_folder = r"/Users/dyt/workspace/seq2seq/clean_data"
     # data_set_split(src_data_folder, tar_data_folder)
 
-    train = r"/Users/dyt/workspace/seq2seq/clean_data/train/training_clean.csv"
-    val = r"/Users/dyt/workspace/seq2seq/clean_data/val/val_clean.csv"
-    test = r"/Users/dyt/workspace/seq2seq/clean_data/test/test_clean.csv"
+    # train = r"/Users/dyt/workspace/seq2seq/clean_data/train/training_clean.csv"
+    # val = r"/Users/dyt/workspace/seq2seq/clean_data/val/val_clean.csv"
+    # test = r"/Users/dyt/workspace/seq2seq/clean_data/test/test_clean.csv"
     # merge_dataset(train,val,test)
     # data = datasets.load_from_disk("merged_data")
     # print(type(data['test']['target_text']))
 
-    ready_dataset = pd.read_csv(val)
+    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_training_data.csv"
+    val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_valid_data.csv"
+    test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_test_data.csv"
+
+    ready_dataset = pd.read_csv(test)
+    # print(list(ready_dataset.columns))
     ready_dataset = ready_dataset.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
-    # ready_dataset = ready_dataset.drop('Unnamed: 0', inplace=True, axis=1)
+    # ready_dataset = ready_dataset.drop('Unnamed: 0', inplace=True, axis=0)
     ready_dataset = ready_dataset[['source_text', 'target_text']]
-    ready_dataset.to_csv('final_val.csv',index = False)
+    ready_dataset.to_csv('final_ptb_test.csv',index = False)
     print("The type of dataset: ", type(ready_dataset['target_text']))
