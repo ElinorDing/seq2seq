@@ -429,8 +429,6 @@ def main():
     def preprocess_function(examples):
         inputs = examples[text_column]
         targets = examples[summary_column]
-        for inp in inputs:
-            print(inp)
         inputs = [prefix + inp for inp in inputs]
         targets = [ prefix + inp if inp is not None else "none" for inp in targets]
         #model_inputs: dict_keys(['input_ids', 'attention_mask'])
