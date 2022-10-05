@@ -7,7 +7,8 @@ from shutil import copy2
 
 def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_scale=0.1, test_scale=0.2):
     print("START THE SPLIT")
-    class_name = os.listdir(src_data_folder1)[0]
+    print(os.listdir(src_data_folder1)[1])
+    class_name = os.listdir(src_data_folder1)[1]
     split_names = ['train', 'val', 'test']
     for split_name in split_names:
         split_path = os.path.join(target_data_folder1, split_name)
@@ -53,12 +54,12 @@ def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_s
             test_num = test_num + 1
         current_idx = current_idx + 1
 
-    df_train.to_csv('training_clean.csv')
-    copy2('training_clean.csv', train_folder)
-    df_val.to_csv('val_clean.csv')
-    copy2('val_clean.csv', val_folder)
-    df_test.to_csv('test_clean.csv')
-    copy2('test_clean.csv',test_folder)
+    df_train.to_csv('count_training_clean.csv')
+    copy2('count_training_clean.csv', train_folder)
+    df_val.to_csv('count_val_clean.csv')
+    copy2('count_val_clean.csv', val_folder)
+    df_test.to_csv('count_test_clean.csv')
+    copy2('count_test_clean.csv',test_folder)
 
     print("*********************************{}*************************************".format(class_name))
     print(
@@ -93,27 +94,36 @@ def merge_dataset(train, val, test):
     return my_dataset_dict
 
 
+
 if __name__ == '__main__':
 
     # src_data_folder = r"/Users/dyt/workspace/seq2seq/raw_data"
     # tar_data_folder = r"/Users/dyt/workspace/seq2seq/clean_data"
     # data_set_split(src_data_folder, tar_data_folder)
 
-    # train = r"/Users/dyt/workspace/seq2seq/clean_data/train/training_clean.csv"
-    # val = r"/Users/dyt/workspace/seq2seq/clean_data/val/val_clean.csv"
-    # test = r"/Users/dyt/workspace/seq2seq/clean_data/test/test_clean.csv"
+    # Dataset with occurrence
+
+    # src_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/raw_data"
+    # tar_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount"
+    # data_set_split(src_data_folder, tar_data_folder)
+
+    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/train/count_training_clean.csv"
+    val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/val/count_val_clean.csv"
+    test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/test/count_test_clean.csv"
     # merge_dataset(train,val,test)
     # data = datasets.load_from_disk("merged_data")
     # print(type(data['test']['target_text']))
 
-    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_training_data.csv"
-    val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_valid_data.csv"
-    test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_test_data.csv"
+    # train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_training_data.csv"
+    # val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_valid_data.csv"
+    # test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_test_data.csv"
 
     ready_dataset = pd.read_csv(test)
-    # print(list(ready_dataset.columns))
+    # # print(list(ready_dataset.columns))
     ready_dataset = ready_dataset.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
     # ready_dataset = ready_dataset.drop('Unnamed: 0', inplace=True, axis=0)
     ready_dataset = ready_dataset[['source_text', 'target_text']]
-    ready_dataset.to_csv('final_ptb_test.csv',index = False)
-    print("The type of dataset: ", type(ready_dataset['target_text']))
+    # item_count = list(ready_dataset["source_text"])
+    # print(item_count[0])
+    ready_dataset.to_csv('final_count_test.csv',index = False)
+    # print("The type of dataset: ", type(ready_dataset['target_text']))

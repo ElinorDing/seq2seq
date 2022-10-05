@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ac40040-4c9d-4b62-9331-8000316c8fad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/clean_data/test/final_count_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean_data/train/final_count_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean_data/val/final_count_val.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw_data/count_training_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordsCount/test/count_test_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordsCount/train/count_training_clean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wordsCount/val/count_val_clean.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/training_text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bag_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/bag_words.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_split.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_split.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
