@@ -553,7 +553,7 @@ def main():
     # Only show the progress bar once on each machine.
     progress_bar = tqdm(range(args.max_train_steps), disable=not accelerator.is_local_main_process)
     completed_steps = 0
-
+    model.load_state_dict(torch.load('/Data/Liangyu/seq2seq/output_dir/_lr_2e-05epoch_9/pytorch_model.bin'))
     # for epoch in range(args.num_train_epochs):
     for epoch in trange(args.num_train_epochs, desc="train_epochs"):
         # model.train()
@@ -576,7 +576,7 @@ def main():
         #
         # model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
         # store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
-        model.load_state_dict(torch.load('/Data/Liangyu/seq2seq/output_dir/_lr_2e-05epoch_9/pytorch_model.bin'))
+        # model.load_state_dict(torch.load('/Data/Liangyu/seq2seq/output_dir/_lr_2e-05epoch_9/pytorch_model.bin'))
         '''evaluting after each epoch'''
         model.eval()
         if args.val_max_target_length is None:
