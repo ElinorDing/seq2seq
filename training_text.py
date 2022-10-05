@@ -553,29 +553,29 @@ def main():
     # Only show the progress bar once on each machine.
     progress_bar = tqdm(range(args.max_train_steps), disable=not accelerator.is_local_main_process)
     completed_steps = 0
-    model.load_state_dict(torch.load('/Data/Liangyu/seq2seq/output_dir/_lr_2e-05epoch_9/pytorch_model.bin'))
+
     # for epoch in range(args.num_train_epochs):
     for epoch in trange(args.num_train_epochs, desc="train_epochs"):
-        # model.train()
-        # # for step, batch in enumerate(train_dataloader):
-        # for step, batch in enumerate(tqdm(train_dataloader, desc="Training")):
-        #     outputs = model(**batch)
-        #     loss = outputs.loss
-        #     loss = loss / args.gradient_accumulation_steps
-        #     # print('training loss:', loss)
-        #     accelerator.backward(loss)
-        #     if step % args.gradient_accumulation_steps == 0 or step == len(train_dataloader) - 1:
-        #         optimizer.step()
-        #         lr_scheduler.step()
-        #         optimizer.zero_grad()
-        #         progress_bar.update(1)
-        #         completed_steps += 1
-        #
-        #     if completed_steps >= args.max_train_steps:
-        #         break
-        #
-        # model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
-        # store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
+        model.train()
+        # for step, batch in enumerate(train_dataloader):
+        for step, batch in enumerate(tqdm(train_dataloader, desc="Training")):
+            outputs = model(**batch)
+            loss = outputs.loss
+            loss = loss / args.gradient_accumulation_steps
+            # print('training loss:', loss)
+            accelerator.backward(loss)
+            if step % args.gradient_accumulation_steps == 0 or step == len(train_dataloader) - 1:
+                optimizer.step()
+                lr_scheduler.step()
+                optimizer.zero_grad()
+                progress_bar.update(1)
+                completed_steps += 1
+
+            if completed_steps >= args.max_train_steps:
+                break
+
+        model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
+        store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
         # model.load_state_dict(torch.load('/Data/Liangyu/seq2seq/output_dir/_lr_2e-05epoch_9/pytorch_model.bin'))
         '''evaluting after each epoch'''
         model.eval()
