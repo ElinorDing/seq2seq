@@ -51,7 +51,7 @@ from transformers import (
 )
 from transformers.file_utils import get_full_repo_name, is_offline_mode
 from transformers.utils.versions import require_version
-# import evaluate
+import evaluate
 
 
 
@@ -538,6 +538,7 @@ def main():
 
     # Metric
     metric = load_metric("rouge")
+    bleu = evaluate.load("bleu")
     # exact_match_metric = evaluate.load("exact_match")
 
     # Train!
@@ -623,6 +624,7 @@ def main():
                 count_match += all_match(decoded_labels,decoded_preds)[0]
                 count_all += all_match(decoded_labels,decoded_preds)[1]
                 # results_em = exact_match_metric.compute(predictions=decoded_preds, references=decoded_labels)
+                bleu.add_batch(predictions=decoded_preds, references=decoded_labels)
                 # print(round(results_em["exact_match"],2))
 
         result = metric.compute(use_stemmer=True)
@@ -631,9 +633,13 @@ def main():
 
         result = {k: round(v, 4) for k, v in result.items()}
 
+        result_bleu = bleu.compute(use_stemmer=True)
+
         # logger.info(result)
         rouge_L = result["rougeL"]
+        BLEU = result_bleu["BLEU"]
 
+        print('BLEU:', BLEU)
         print('rouge_L:', rouge_L)
 
         print('exact_match: ', 100*float(count_match/count_all))
