@@ -52,6 +52,7 @@ from transformers import (
 from transformers.file_utils import get_full_repo_name, is_offline_mode
 from transformers.utils.versions import require_version
 from bleu import multi_list_bleu
+import evaluate
 
 
 
@@ -539,6 +540,7 @@ def main():
     # Metric
     metric = load_metric("rouge")
     # exact_match_metric = evaluate.load("exact_match")
+    bleu_metric = evaluate.load("bleu")
 
     # Train!
     total_batch_size = args.per_device_train_batch_size * accelerator.num_processes * args.gradient_accumulation_steps
@@ -623,7 +625,8 @@ def main():
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
                 count_match += all_match(decoded_labels,decoded_preds)[0]
                 count_all += all_match(decoded_labels,decoded_preds)[1]
-                count_bleu = count_bleu.extend(bleu_list(decoded_labels,decoded_preds))
+                # count_bleu = count_bleu.extend(bleu_list(decoded_labels,decoded_preds))
+                bleu_metric.add_batch(predictions=decoded_preds, references=decoded_labels)
                 # results_em = exact_match_metric.compute(predictions=decoded_preds, references=decoded_labels)
 
                 # print(round(results_em["exact_match"],2))
@@ -634,7 +637,7 @@ def main():
 
         result = {k: round(v, 4) for k, v in result.items()}
 
-
+        result_bleu = bleu_metric.compute()
 
         # logger.info(result)
         rouge_L = result["rougeL"]
@@ -643,8 +646,8 @@ def main():
 
         print('exact_match: ', 100*float(count_match/count_all))
 
-
-        print('BLEU: ', 100*float(sum(count_bleu)/count_all))
+        print('BLEU: ', result_bleu)
+        # print('BLEU: ', 100*float(sum(count_bleu)/count_all))
 
 
 def store_model(accele, model, output_dir, tokenizer):
@@ -656,9 +659,9 @@ def store_model(accele, model, output_dir, tokenizer):
         tokenizer.save_pretrained(output_dir)
     print('Model saved.')
 
-def bleu_list(targets, predictions):
-    bleu_batch = multi_list_bleu(targets,predictions)
-    return bleu_batch
+# def bleu_list(targets, predictions):
+#     bleu_batch = multi_list_bleu(targets,predictions)
+#     return bleu_batch
 
 def all_match(targets, predictions):
     em_batch = [int(a == b) for a, b in zip(targets,predictions)]
