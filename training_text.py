@@ -51,7 +51,7 @@ from transformers import (
 )
 from transformers.file_utils import get_full_repo_name, is_offline_mode
 from transformers.utils.versions import require_version
-import evaluate
+from bleu import multi_list_bleu
 
 
 
@@ -538,7 +538,6 @@ def main():
 
     # Metric
     metric = load_metric("rouge")
-    bleu = evaluate.load("bleu")
     # exact_match_metric = evaluate.load("exact_match")
 
     # Train!
@@ -590,6 +589,7 @@ def main():
         # for step, batch in enumerate(eval_dataloader):
         count_match = 0
         count_all = 0
+        count_bleu = []
         for step, batch in enumerate(tqdm(eval_dataloader, desc="Evaluating")):
             with torch.no_grad():
                 generated_tokens = accelerator.unwrap_model(model).generate(
@@ -623,8 +623,9 @@ def main():
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
                 count_match += all_match(decoded_labels,decoded_preds)[0]
                 count_all += all_match(decoded_labels,decoded_preds)[1]
+                count_bleu = count_bleu.extend(bleu_list(decoded_labels,decoded_preds))
                 # results_em = exact_match_metric.compute(predictions=decoded_preds, references=decoded_labels)
-                bleu.add_batch(predictions=decoded_preds, references=decoded_labels)
+
                 # print(round(results_em["exact_match"],2))
 
         result = metric.compute(use_stemmer=True)
@@ -633,16 +634,17 @@ def main():
 
         result = {k: round(v, 4) for k, v in result.items()}
 
-        result_bleu = bleu.compute(use_stemmer=True)
+
 
         # logger.info(result)
         rouge_L = result["rougeL"]
-        BLEU = result_bleu["BLEU"]
 
-        print('BLEU:', BLEU)
         print('rouge_L:', rouge_L)
 
         print('exact_match: ', 100*float(count_match/count_all))
+
+
+        print('BLEU: ', 100*float(sum(count_bleu)/count_all))
 
 
 def store_model(accele, model, output_dir, tokenizer):
@@ -653,6 +655,10 @@ def store_model(accele, model, output_dir, tokenizer):
     if accele.is_main_process:
         tokenizer.save_pretrained(output_dir)
     print('Model saved.')
+
+def bleu_list(targets, predictions):
+    bleu_batch = multi_list_bleu(targets,predictions)
+    return bleu_batch
 
 def all_match(targets, predictions):
     em_batch = [int(a == b) for a, b in zip(targets,predictions)]
