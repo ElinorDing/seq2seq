@@ -51,7 +51,7 @@ from transformers import (
 )
 from transformers.file_utils import get_full_repo_name, is_offline_mode
 from transformers.utils.versions import require_version
-from bleu import multi_list_bleu
+# from bleu import multi_list_bleu
 import evaluate
 
 
