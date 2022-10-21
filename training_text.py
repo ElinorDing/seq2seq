@@ -556,7 +556,7 @@ def main():
     progress_bar = tqdm(range(args.max_train_steps), disable=not accelerator.is_local_main_process)
     completed_steps = 0
 
-    f = open("/content/seq2seq/output_ptb/data_store.txt", "w")
+    f = open("/content/seq2seq/output_ptb/data_store.txt", "a")
     # for epoch in range(args.num_train_epochs):
     for epoch in trange(args.num_train_epochs, desc="train_epochs"):
         model.train()
