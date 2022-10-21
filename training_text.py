@@ -642,15 +642,17 @@ def main():
 
         # logger.info(result)
         rouge_L = result["rougeL"]
-        f.write('rouge_L: '.join(rouge_L))
+
         print('rouge_L:', rouge_L)
+
         final_em = 100*float(count_match/count_all)
         print('exact_match: ', final_em)
-        f.write('EM: '.join(final_em))
+
         print('BLEU: ', result_bleu)
-        f.write('BLEU: '.join(result_bleu))
+
+        f.write('rouge_L: ' + repr(rouge_L) + '\n' + 'final_em :' + repr(final_em) +'\n' + 'BLEU: ' + repr(result_bleu))
         # print('BLEU: ', 100*float(sum(count_bleu)/count_all))
-        
+
     f.close()
 
 def store_model(accele, model, output_dir, tokenizer):
