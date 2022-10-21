@@ -556,6 +556,7 @@ def main():
     progress_bar = tqdm(range(args.max_train_steps), disable=not accelerator.is_local_main_process)
     completed_steps = 0
 
+    f = open("data_store.txt", "w")
     # for epoch in range(args.num_train_epochs):
     for epoch in trange(args.num_train_epochs, desc="train_epochs"):
         model.train()
@@ -641,14 +642,16 @@ def main():
 
         # logger.info(result)
         rouge_L = result["rougeL"]
-
+        f.write('rouge_L: '.join(rouge_L))
         print('rouge_L:', rouge_L)
-
-        print('exact_match: ', 100*float(count_match/count_all))
-
+        final_em = 100*float(count_match/count_all)
+        print('exact_match: ', final_em)
+        f.write('EM: '.join(final_em))
         print('BLEU: ', result_bleu)
+        f.write('BLEU: '.join(result_bleu))
         # print('BLEU: ', 100*float(sum(count_bleu)/count_all))
-
+        
+    f.close()
 
 def store_model(accele, model, output_dir, tokenizer):
     os.makedirs(output_dir, exist_ok=True)
