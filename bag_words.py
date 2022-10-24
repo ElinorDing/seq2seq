@@ -6,16 +6,20 @@ from collections import defaultdict
 
 def extract_data(path):
     sentence_list = []
-    # lines = []
+    lines = []
     with open(path) as file_in:
         for line in file_in:
-            # print(line)
-            preprocessed = re.split(r'\s{3,}',line.replace('\t', '   ').replace('\n', ''))
-            # lines.append(preprocessed)
-            sentence_list.append(preprocessed[5])
-            sentence_list.append(preprocessed[6])
+            print(line)
+            preprocessed = line.replace('<unk>','')
+            print(preprocessed)
+            # preprocessed = re.split(r'\s{3,}',line.replace('\t', '   ').replace('\n', ''))
+            lines.append(preprocessed)
+            # sentence_list.append(preprocessed[5])
+            # sentence_list.append(preprocessed[6])
     # print(len(sentence_list))
-    return sentence_list
+    # return sentence_list
+    print(type(lines))
+    return lines
 
 # def give_bags_words(sentences):
 #     # sen_with_words = defaultdict(list)
@@ -40,6 +44,7 @@ def give_count_words(sentences):
     count = 1
     corresponding_words = []
     for one in sentences:
+        print(one)
         doc = nlp(one)
         item_list = [token.text for token in doc]
         counts = Counter(item_list)
@@ -52,10 +57,11 @@ def give_count_words(sentences):
     # print("words length is",len(corresponding_words))
     data={'Sentences':sentences,'Corresponding_words':corresponding_words}
     df = pd.DataFrame(data)
-    df.to_csv('count_training_data.csv')
+    df.to_csv('count_test_ptb.csv')
     return df
 
-path = '/Users/dyt/Documents/WORK/Yin/multinli_1.0/multinli_1.0_dev_matched.txt'
+# path = '/Users/dyt/Documents/WORK/Yin/multinli_1.0/multinli_1.0_dev_matched.txt'
+path = '/Users/dyt/Documents/ptbdataset/ptb.test.txt'
 sentence_list = extract_data(path)
 # df = give_bags_words(sentence_list)
 df = give_count_words(sentence_list)

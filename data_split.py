@@ -107,16 +107,16 @@ if __name__ == '__main__':
     # tar_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount"
     # data_set_split(src_data_folder, tar_data_folder)
 
-    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/train/count_training_clean.csv"
-    val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/val/count_val_clean.csv"
-    test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/test/count_test_clean.csv"
+    # train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/train/count_training_clean.csv"
+    # val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/val/count_val_clean.csv"
+    # test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/wordsCount/test/count_test_clean.csv"
     # merge_dataset(train,val,test)
     # data = datasets.load_from_disk("merged_data")
     # print(type(data['test']['target_text']))
 
-    # train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_training_data.csv"
-    # val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_valid_data.csv"
-    # test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_test_data.csv"
+    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_training_ptb.csv"
+    val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_val_ptb.csv"
+    test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_test_ptb.csv"
 
     ready_dataset = pd.read_csv(test)
     # # print(list(ready_dataset.columns))
@@ -125,5 +125,5 @@ if __name__ == '__main__':
     ready_dataset = ready_dataset[['source_text', 'target_text']]
     # item_count = list(ready_dataset["source_text"])
     # print(item_count[0])
-    ready_dataset.to_csv('final_count_test.csv',index = False)
+    ready_dataset.to_csv('final_count_ptb_test.csv',index = False)
     # print("The type of dataset: ", type(ready_dataset['target_text']))
