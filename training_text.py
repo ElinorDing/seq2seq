@@ -539,7 +539,7 @@ def main():
 
     # Metric
     metric = load_metric("rouge")
-    # exact_match_metric = evaluate.load("exact_match")
+    exact_match_metric = evaluate.load("exact_match")
     bleu_metric = evaluate.load("bleu")
 
     # Train!
@@ -556,7 +556,7 @@ def main():
     progress_bar = tqdm(range(args.max_train_steps), disable=not accelerator.is_local_main_process)
     completed_steps = 0
 
-    f = open("/content/seq2seq/output_ptb/data_store.txt", "a")
+
     # for epoch in range(args.num_train_epochs):
     for epoch in trange(args.num_train_epochs, desc="train_epochs"):
         model.train()
@@ -628,7 +628,7 @@ def main():
                 count_all += all_match(decoded_labels,decoded_preds)[1]
                 # count_bleu = count_bleu.extend(bleu_list(decoded_labels,decoded_preds))
                 bleu_metric.add_batch(predictions=decoded_preds, references=decoded_labels)
-                # results_em = exact_match_metric.compute(predictions=decoded_preds, references=decoded_labels)
+                exact_match_metric.add_batch(predictions=decoded_preds, references=decoded_labels)
 
                 # print(round(results_em["exact_match"],2))
 
@@ -640,6 +640,8 @@ def main():
 
         result_bleu = bleu_metric.compute()
 
+        result_em = exact_match_metric.compute()
+
         # logger.info(result)
         rouge_L = result["rougeL"]
 
@@ -647,13 +649,11 @@ def main():
 
         final_em = 100*float(count_match/count_all)
         print('exact_match: ', final_em)
+        print('exact_match_metric: ', result_em)
 
         print('BLEU: ', result_bleu)
 
-        f.write('rouge_L: ' + repr(rouge_L) + '\n' + 'final_em :' + repr(final_em) +'\n' + 'BLEU: ' + repr(result_bleu))
         # print('BLEU: ', 100*float(sum(count_bleu)/count_all))
-
-    f.close()
 
 def store_model(accele, model, output_dir, tokenizer):
     os.makedirs(output_dir, exist_ok=True)
