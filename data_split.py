@@ -114,16 +114,17 @@ if __name__ == '__main__':
     # data = datasets.load_from_disk("merged_data")
     # print(type(data['test']['target_text']))
 
-    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_training_ptb.csv"
-    val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_val_ptb.csv"
-    test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_test_ptb.csv"
 
-    ready_dataset = pd.read_csv(test)
+    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_500.csv"
+    # val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_val_ptb.csv"
+    # test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_test_ptb.csv"
+
+    ready_dataset = pd.read_csv(train)
     # # print(list(ready_dataset.columns))
     ready_dataset = ready_dataset.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
     # ready_dataset = ready_dataset.drop('Unnamed: 0', inplace=True, axis=0)
     ready_dataset = ready_dataset[['source_text', 'target_text']]
     # item_count = list(ready_dataset["source_text"])
     # print(item_count[0])
-    ready_dataset.to_csv('final_count_ptb_test.csv',index = False)
+    ready_dataset.to_csv('final_ptb_500.csv',index = False)
     # print("The type of dataset: ", type(ready_dataset['target_text']))
