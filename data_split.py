@@ -5,8 +5,9 @@ import random
 from shutil import copy2
 
 
-def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_scale=0.1, test_scale=0.2):
+def data_set_split(src_data_folder1, target_data_folder1, train_scale=1.0, val_scale=0.0, test_scale=0.0):
     print("START THE SPLIT")
+    print(os.listdir(src_data_folder1))
     print(os.listdir(src_data_folder1)[1])
     class_name = os.listdir(src_data_folder1)[1]
     split_names = ['train', 'val', 'test']
@@ -38,7 +39,7 @@ def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_s
     df_test = pd.DataFrame(columns=['Sentences','Corresponding_words'])
     for i in current_data_index_list:
         print(i)
-        print("type: ",type(current_all_data.iloc[i]))
+        # print("type: ",type(current_all_data.iloc[i]))
         src_img_path = current_all_data.iloc[i]
         if current_idx <= train_stop_flag:
             df_train = df_train.append(src_img_path)
@@ -54,20 +55,20 @@ def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_s
             test_num = test_num + 1
         current_idx = current_idx + 1
 
-    df_train.to_csv('count_training_clean.csv')
-    copy2('count_training_clean.csv', train_folder)
-    df_val.to_csv('count_val_clean.csv')
-    copy2('count_val_clean.csv', val_folder)
-    df_test.to_csv('count_test_clean.csv')
-    copy2('count_test_clean.csv',test_folder)
+    df_train.to_csv('training_100.csv')
+    # copy2('count_training_clean.csv', train_folder)
+    # df_val.to_csv('count_val_clean.csv')
+    # copy2('count_val_clean.csv', val_folder)
+    # df_test.to_csv('count_test_clean.csv')
+    # copy2('count_test_clean.csv',test_folder)
 
     print("*********************************{}*************************************".format(class_name))
     print(
         "finished split {} according to {}：{}：{}，{} data in total".format(
             class_name, train_scale, val_scale, test_scale, current_data_length))
     print("train{}：{}".format(train_folder, train_num))
-    print("dev{}：{}".format(val_folder, val_num))
-    print("test{}：{}".format(test_folder, test_num))
+    # print("dev{}：{}".format(val_folder, val_num))
+    # print("test{}：{}".format(test_folder, test_num))
 
 def merge_dataset(train, val, test):
     df_train = pd.read_csv(train)
@@ -97,8 +98,8 @@ def merge_dataset(train, val, test):
 
 if __name__ == '__main__':
 
-    # src_data_folder = r"/Users/dyt/workspace/seq2seq/raw_data"
-    # tar_data_folder = r"/Users/dyt/workspace/seq2seq/clean_data"
+    # src_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/raw_data"
+    # tar_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/clean_data"
     # data_set_split(src_data_folder, tar_data_folder)
 
     # Dataset with occurrence
@@ -115,16 +116,16 @@ if __name__ == '__main__':
     # print(type(data['test']['target_text']))
 
 
-    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_500.csv"
+    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/raw_data/training_data.csv"
     # val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_val_ptb.csv"
     # test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_test_ptb.csv"
 
     ready_dataset = pd.read_csv(train)
-    # # print(list(ready_dataset.columns))
+    # print(list(ready_dataset.columns))
     ready_dataset = ready_dataset.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
     # ready_dataset = ready_dataset.drop('Unnamed: 0', inplace=True, axis=0)
     ready_dataset = ready_dataset[['source_text', 'target_text']]
     # item_count = list(ready_dataset["source_text"])
     # print(item_count[0])
-    ready_dataset.to_csv('final_ptb_500.csv',index = False)
+    ready_dataset.to_csv('final_train_100.csv',index = False)
     # print("The type of dataset: ", type(ready_dataset['target_text']))
