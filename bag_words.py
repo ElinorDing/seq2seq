@@ -69,7 +69,7 @@ def len_interval(list, min, max):
 
 
 # path = '/Users/dyt/Documents/WORK/Yin/multinli_1.0/multinli_1.0_dev_matched.txt'
-path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.test.txt'
+path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.train.txt'
 sentence_list = extract_data(path)
 sorted_list = sorted(sentence_list, key = len)
 print(len(sorted_list))

@@ -5,10 +5,10 @@ import random
 from shutil import copy2
 
 
-def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.1, val_scale=0.7, test_scale=0.2):
+def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_scale=0.3, test_scale=0.0):
     print("START THE SPLIT")
-    print(os.listdir(src_data_folder1)[1])
-    class_name = os.listdir(src_data_folder1)[1]
+    print(os.listdir(src_data_folder1)[4])
+    class_name = os.listdir(src_data_folder1)[4]
     split_names = ['train', 'val', 'test']
     for split_name in split_names:
         split_path = os.path.join(target_data_folder1, split_name)
@@ -54,7 +54,7 @@ def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.1, val_s
             test_num = test_num + 1
         current_idx = current_idx + 1
 
-    df_train.to_csv('training_10.csv')
+    df_train.to_csv('training_ptb_70.csv')
     # copy2('count_training_clean.csv', train_folder)
     # df_val.to_csv('count_val_clean.csv')
     # copy2('count_val_clean.csv', val_folder)
@@ -97,7 +97,7 @@ def merge_dataset(train, val, test):
 
 if __name__ == '__main__':
 
-    # src_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/raw_data"
+    # src_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset"
     # tar_data_folder = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/clean_data"
     # data_set_split(src_data_folder, tar_data_folder)
 
@@ -115,7 +115,7 @@ if __name__ == '__main__':
     # print(type(data['test']['target_text']))
 
 
-    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/training_10.csv"
+    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/training_ptb_10.csv"
     # val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_val_ptb.csv"
     # test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_test_ptb.csv"
 
@@ -126,5 +126,5 @@ if __name__ == '__main__':
     ready_dataset = ready_dataset[['source_text', 'target_text']]
     # item_count = list(ready_dataset["source_text"])
     # print(item_count[0])
-    ready_dataset.to_csv('final_train_10.csv',index = False)
+    ready_dataset.to_csv('final_ptb_10.csv',index = False)
     # print("The type of dataset: ", type(ready_dataset['target_text']))
