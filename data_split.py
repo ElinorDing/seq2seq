@@ -5,7 +5,7 @@ import random
 from shutil import copy2
 
 
-def data_set_split(src_data_folder1, target_data_folder1, train_scale=0.7, val_scale=0.3, test_scale=0.0):
+def data_set_split(src_data_folder1, target_data_folder1, train_scale=1.0, val_scale=0.3, test_scale=0.0):
     print("START THE SPLIT")
     print(os.listdir(src_data_folder1)[4])
     class_name = os.listdir(src_data_folder1)[4]
