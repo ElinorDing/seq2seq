@@ -621,8 +621,6 @@ def main():
                 decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
 
                 decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
-                print("Predictions: ", decoded_preds)
-                print("Labels: ", decoded_labels)
                 metric.add_batch(predictions=decoded_preds, references=decoded_labels)
                 count_match += all_match(decoded_labels,decoded_preds)[0]
                 count_all += all_match(decoded_labels,decoded_preds)[1]
@@ -670,10 +668,11 @@ def store_model(accele, model, output_dir, tokenizer):
 
 def all_match(targets, predictions):
     em_batch = [int(a == b) for a, b in zip(targets,predictions)]
-    # print(em_batch)
-    # for a,b in zip(targets,predictions):
-    #     print("Target: ",a)
-    #     print("Predictions: ", b)
+    print('Batch Size: ', em_batch)
+    for a,b in zip(targets,predictions):
+        if a != b:
+            print("Target: ",a)
+            print("Predictions: ", b)
     return em_batch.count(1),len(em_batch)
     # return {"exact_match": 100 * float(np.array_equal(targets, predictions))}
 
