@@ -668,7 +668,7 @@ def store_model(accele, model, output_dir, tokenizer):
 
 def all_match(targets, predictions):
     em_batch = [int(a == b) for a, b in zip(targets,predictions)]
-    print('Batch Size: ', em_batch)
+    print('Batch Size: ', len(em_batch))
     for a,b in zip(targets,predictions):
         if a != b:
             print("Target: ",a)
