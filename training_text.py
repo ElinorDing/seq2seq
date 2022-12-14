@@ -579,7 +579,7 @@ def main():
         #
         # model_flag = '_lr_'+str(args.learning_rate)+'epoch_'+str(epoch)
         # store_model(accelerator, model, args.output_dir+model_flag, tokenizer)
-        model.load_state_dict(torch.load('~/seq2seq/output_ptb/_lr_2e-05epoch_9/pytorch_model.bin'))
+        model.load_state_dict(torch.load('/root/seq2seq/output_ptb/_lr_2e-05epoch_9/pytorch_model.bin'))
         '''evaluting after each epoch'''
         model.eval()
         if args.val_max_target_length is None:
