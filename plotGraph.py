@@ -7,24 +7,29 @@ def multi_plot(rl, em, bleu,interval):
     plt.plot(interval, em,'+-', label = 'Exact Match')
     plt.plot(interval, bleu,'+-', label = 'BLEU')
 
+    # plt.bar(interval, rl,10,color='#FBDD7E')
+    # plt.bar(interval, em, 10, bottom=rl,color='#04D8B2')
+    # plt.bar(interval, bleu, 10, bottom=rl+em,color='#7BC8F6')
+
     # plt.suptitle('Evaluation with different intervals', fontsize = 15)
-    plt.xticks(np.arange(min(interval), max(interval)+1, 10.0))
+    plt.xticks(np.arange(min(interval), max(interval)+1, 50.0))
+    # plt.legend(['ROUGLE-L','Exact Match','BLEU'])
     plt.legend()
-    plt.xlabel('Data Size for Training')
+    plt.xlabel('Various Length interval')
     plt.ylabel('Examination Results (%)')
-    # plt.show()
-    plt.savefig('vary_training_size.png')
+    plt.show()
+    # plt.savefig('evaluate_in.png')
 
 
 # training ptb on T5-small with different interval
-# rl = [88.7157, 96.0398, 97.4281, 98.0455, 98.3347, 98.643, 99.046, 98.9691, 99.3007]
-# em = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-# bleu = [80.4111, 91.7192, 94.5737, 95.9414, 96.5473, 97.2210, 98.0641, 97.8935, 98.6925]
+# rl = np.array([88.7469, 96.0533, 97.4129, 98.0295, 98.408, 98.4819, 99.0462, 98.9691, 99.3007])
+# em = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+# bleu = np.array([80.6871, 91.7214, 94.4930, 95.8746, 96.7026, 96.8999, 98.0641, 97.8935, 98.6925])
 
 # training MNLI with different interval
-# rl = [84.577,93.0629,94.4945,94.8156,95.0015,94.7083,90.3548,96.9072,90.1408]
-# em = [0.0, 0.1686, 0.2551, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-# bleu = [72.5129,83.3208,86.2580,86.8868,87.6011,86.6067,83.7559,87.1061,79.2631]
+# rl = np.array([84.577,93.0629,94.4945,94.8156,95.0015,94.7083,90.3548,96.9072,90.1408])
+# em = np.array([0.0, 0.1686, 0.2551, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+# bleu = np.array([72.5129,83.3208,86.2580,86.8868,87.6011,86.6067,83.7559,87.1061,79.2631])
 # interval = [50,100,150,200,250,300,350,400,500]
 
 # varing training size to evaluate MNLI
@@ -40,4 +45,4 @@ training_size = [100,90,80,70,60,50,40,30,20,10]
 # training_size = [10,20,30,40,50,60,70,80,90,100]
 
 multi_plot(rl,em,bleu,training_size)
-
+# multi_plot(rl,em,bleu,interval)

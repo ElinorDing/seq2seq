@@ -11,6 +11,7 @@ def extract_data(path):
         for line in file_in:
             # print(line)
             preprocessed = line.replace('<unk>','')
+            # print(preprocessed)
             # preprocessed = re.split(r'\s{3,}',line.replace('\t', '   ').replace('\n', ''))
             lines.append(preprocessed)
             # sentence_list.append(preprocessed[5])
@@ -67,12 +68,20 @@ def len_interval(list, min, max):
     a_list = [a for a in list if len(a) <= max and len(a) > min]
     return a_list
 
-
+def count_avg_len(list):
+    all_sen = [len(a) for a in list]
+    # print(all_sen)
+    avg = sum(all_sen)/len(all_sen)
+    return avg
 # path = '/Users/dyt/Documents/WORK/Yin/multinli_1.0/multinli_1.0_dev_matched.txt'
-path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.train.txt'
+# path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.train.txt'
+path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.test.txt'
+
 sentence_list = extract_data(path)
 sorted_list = sorted(sentence_list, key = len)
 print(len(sorted_list))
+print(count_avg_len(sorted_list))
+
 # list_50 = len_interval(sorted_list,0, 50)
 # list_100 = len_interval(sorted_list,50, 100)
 # list_150 = len_interval(sorted_list,100, 150) #1175
