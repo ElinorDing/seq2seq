@@ -11,7 +11,7 @@ def extract_data(path):
         for line in file_in:
             # print(line)
             preprocessed = line.replace('<unk>','')
-            print(preprocessed)
+            # print(preprocessed)
             # preprocessed = re.split(r'\s{3,}',line.replace('\t', '   ').replace('\n', ''))
             lines.append(preprocessed)
             # sentence_list.append(preprocessed[5])
@@ -31,7 +31,7 @@ def give_bags_words(sentences):
         doc = nlp(one)
         corresponding_words.append([token.text for token in doc])
         count += 1
-        print(count)
+        # print(count)
     # print("sentences length is ",len(sentences))
     # print("words length is",len(corresponding_words))
     data={'Sentences':sentences,'Corresponding_words':corresponding_words}
@@ -65,7 +65,14 @@ def give_bags_words(sentences):
 
 
 def len_interval(list, min, max):
-    a_list = [a for a in list if len(a) <= max and len(a) > min]
+    # a_list = [a for a in list if len(a) <= max and len(a) > min]
+    a_list  = []
+    for a in list:
+        # print('1')
+        if len(a) <= max and len(a) > min:
+            a_list.append(a)
+            print('aaa: ', a)
+            print('bbb: ', len(a))
     print(len(a_list))
     return a_list
 
@@ -79,7 +86,7 @@ def count_avg_len(list):
 path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.test.txt'
 
 sentence_list = extract_data(path)
-df = give_bags_words(sentence_list)
+# df = give_bags_words(sentence_list)
 # sorted_list = sorted(sentence_list, key = len)
 # print(len(sorted_list))
 # print(count_avg_len(sorted_list))
