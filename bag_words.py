@@ -11,7 +11,7 @@ def extract_data(path):
         for line in file_in:
             # print(line)
             preprocessed = line.replace('<unk>','')
-            # print(preprocessed)
+            print(preprocessed)
             # preprocessed = re.split(r'\s{3,}',line.replace('\t', '   ').replace('\n', ''))
             lines.append(preprocessed)
             # sentence_list.append(preprocessed[5])
@@ -36,7 +36,7 @@ def give_bags_words(sentences):
     # print("words length is",len(corresponding_words))
     data={'Sentences':sentences,'Corresponding_words':corresponding_words}
     df = pd.DataFrame(data)
-    df.to_csv('ptb_500.csv')
+    # df.to_csv('ptb_500.csv')
     return df
 
 # Count words occurrences
@@ -66,6 +66,7 @@ def give_bags_words(sentences):
 
 def len_interval(list, min, max):
     a_list = [a for a in list if len(a) <= max and len(a) > min]
+    print(len(a_list))
     return a_list
 
 def count_avg_len(list):
@@ -78,13 +79,14 @@ def count_avg_len(list):
 path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.test.txt'
 
 sentence_list = extract_data(path)
-sorted_list = sorted(sentence_list, key = len)
-print(len(sorted_list))
-print(count_avg_len(sorted_list))
+df = give_bags_words(sentence_list)
+# sorted_list = sorted(sentence_list, key = len)
+# print(len(sorted_list))
+# print(count_avg_len(sorted_list))
 
-# list_50 = len_interval(sorted_list,0, 50)
+# list_50 = len_interval(sentence_list,0, 50)
 # list_100 = len_interval(sorted_list,50, 100)
-# list_150 = len_interval(sorted_list,100, 150) #1175
+list_150 = len_interval(sentence_list,100, 150) #1175
 # list_200 = len_interval(sorted_list,150, 200)
 # list_250 = len_interval(sorted_list,200, 250)
 # list_300 = len_interval(sorted_list,250, 300) #30
