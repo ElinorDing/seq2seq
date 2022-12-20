@@ -36,7 +36,7 @@ def give_bags_words(sentences):
     # print("words length is",len(corresponding_words))
     data={'source_text':corresponding_words,'target_text':sentences}
     df = pd.DataFrame(data)
-    df.to_csv('ptb_50.csv')
+    df.to_csv('ptb_500.csv',index = False)
     return df
 
 # Count words occurrences
@@ -91,7 +91,7 @@ sorted_list = extract_data(path)
 # print(len(sorted_list))
 # print(count_avg_len(sorted_list))
 
-list_50 = len_interval(sorted_list,0, 50) #506
+# list_50 = len_interval(sorted_list,0, 50) #506
 # list_100 = len_interval(sorted_list,50, 100) #1194
 # list_150 = len_interval(sorted_list,100, 150) #1164
 # list_200 = len_interval(sorted_list,150, 200) #632
@@ -100,8 +100,8 @@ list_50 = len_interval(sorted_list,0, 50) #506
 # list_350 = len_interval(sorted_list,300, 350) #9
 # list_400 = len_interval(sorted_list,350, 400)#1
 # list_450 = len_interval(sorted_list,400, 450)#0
-# list_500 = len_interval(sorted_list,450, 500) #1
-give_bags_words(list_50)
+list_500 = len_interval(sorted_list,450, 500) #1
+give_bags_words(list_500)
 
 # df = give_bags_words(sentence_list)
 # df = give_count_words(sentence_list)
