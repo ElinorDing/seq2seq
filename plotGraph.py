@@ -13,12 +13,13 @@ def multi_plot(rl, em, bleu,interval):
 
     # plt.suptitle('Evaluation with different intervals', fontsize = 15)
     plt.xticks(np.arange(min(interval), max(interval)+1, 50.0))
+    plt.margins(x=0)
     # plt.legend(['ROUGLE-L','Exact Match','BLEU'])
     plt.legend()
     plt.xlabel('Various Length interval')
     plt.ylabel('Examination Results (%)')
-    plt.show()
-    # plt.savefig('evaluate_in.png')
+    # plt.show()
+    plt.savefig('evaluate_in.png')
 
 
 # training ptb on T5-small with different interval

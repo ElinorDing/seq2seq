@@ -100,7 +100,10 @@ sorted_list = extract_data(path)
 # list_350 = len_interval(sorted_list,300, 350) #9
 # list_400 = len_interval(sorted_list,350, 400)#1
 # list_450 = len_interval(sorted_list,400, 450)#0
-list_500 = len_interval(sorted_list,450, 500) #1
+# list_500 = len_interval(sorted_list,450, 500) #1
+# list_100 = len_interval(sorted_list,0, 100) #1700
+# list_200 = len_interval(sorted_list,100, 200) # 1796
+list_500 = len_interval(sorted_list,200, 500) # 265
 give_bags_words(list_500)
 
 # df = give_bags_words(sentence_list)
