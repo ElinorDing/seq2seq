@@ -1,0 +1,507 @@
+,source_text,target_text
+0,"[' ', 'no', 'it', 'was', ""n't"", 'black', 'monday']", no it was n't black monday 
+1,"[' ', 'the', ' ', 'has', 'already', 'begun']", the  has already begun 
+2,"[' ', 'the', 'equity', 'market', 'was', ' ']", the equity market was  
+3,"[' ', 'the', 'dow', 'jones', 'industrials', 'closed', 'at', 'N']", the dow jones industrials closed at N 
+4,"[' ', 'the', 'dow', 'fell', 'N', 'N', 'on', 'black', 'monday']", the dow fell N N on black monday 
+5,"[' ', 'at', 'this', 'point', 'the', 'dow', 'was', 'down', 'about', 'N', 'points']", at this point the dow was down about N points 
+6,"[' ', 'the', 'market', ' ']", the market  
+7,"[' ', 'these', 'stocks', 'eventually', 'reopened']", these stocks eventually reopened 
+8,"[' ', 'it', ' ', 'things', 'up', 'said', 'one', 'major', 'specialist']", it  things up said one major specialist 
+9,"[' ', 'but', 'stocks', 'kept', 'falling']", but stocks kept falling 
+10,"[' ', 'buyers', 'stepped', 'in', 'to', 'the', 'futures', 'pit']", buyers stepped in to the futures pit 
+11,"[' ', 'but', 'there', 'were', 'no', 'buyers']", but there were no buyers 
+12,"[' ', 'just', 'thought', 'you', ""'d"", 'like', 'to', 'know']", just thought you 'd like to know 
+13,"[' ', 'george', ' ']", george  
+14,"[' ', 'hooker', ""'s"", 'philosophy', 'was', 'to', 'build', 'and', 'sell']", hooker 's philosophy was to build and sell 
+15,"[' ', 'we', 'want', 'to', 'build', 'and', 'hold']", we want to build and hold 
+16,"[' ', 'this', 'feels', 'more', 'like', 'a', ' ', 'deal']", this feels more like a  deal 
+17,"[' ', 'people', 'are', ""n't"", ' ']", people are n't  
+18,"[' ', 'the', 'test', 'may', 'come', 'today']", the test may come today 
+19,"[' ', 'but', 'fund', 'managers', 'say', 'they', ""'re"", 'ready']", but fund managers say they 're ready 
+20,"[' ', 'not', 'all', 'funds', 'have', 'raised', 'cash', 'levels', 'of', 'course']", not all funds have raised cash levels of course 
+21,"[' ', 'still', 'fund', 'groups', 'are', ""n't"", 'taking', 'any', 'chances']", still fund groups are n't taking any chances 
+22,"[' ', 'the', ' ', 'group', 'had', 'a', 'similar', 'recording', 'for', 'investors']", the  group had a similar recording for investors 
+23,"[' ', 'this', 'is', 'not', 'a', 'major', 'crash', 'she', 'said']", this is not a major crash she said 
+24,"[' ', 'those', 'too', 'are', 'almost', 'certain', 'to', 'arrive', 'late']", those too are almost certain to arrive late 
+25,"[' ', 'the', 'accord', 'expired', 'yesterday']", the accord expired yesterday 
+26,"['  ', '&', ' ', 'is', 'a', 'unit', 'of', 'united', 'technologies', 'inc']",  &  is a unit of united technologies inc 
+27,"['   ', 'is', 'based', 'in', 'amsterdam']",   is based in amsterdam 
+28,"['   ', 'contributed', 'to', 'this', 'article']",   contributed to this article 
+29,"[' ', 'the', 'projects', 'are', 'big']", the projects are big 
+30,"[' ', 'they', 'can', 'be', 'c$', 'N', 'billion', 'plus', 'mr', '.', ' ', 'said']", they can be c$ N billion plus mr.  said 
+31,"['   ', 'flights', 'are', '$', 'N', 'to', 'paris', 'and', '$', 'N', 'to', 'london']",   flights are $ N to paris and $ N to london 
+32,"[' ', 'we', 'usually', 'operate', 'in', 'that', 'conservative', 'manner']", we usually operate in that conservative manner 
+33,"[' ', 'but', 'now', 'prices', 'have', ' ', 'and', 'quantum', ""'s"", 'profit', 'is', ' ']", but now prices have  and quantum 's profit is  
+34,"[' ', 'now', 'we', ""'re"", 'at', 'the', 'bottom', 'of', 'the', ' ']", now we 're at the bottom of the  
+35,"[' ', 'people', 'were', 'even', ' ', 'bags', 'he', 'says']", people were even  bags he says 
+36,"[' ', 'now', 'producers', 'hope', 'prices', 'have', 'hit', 'bottom']", now producers hope prices have hit bottom 
+37,"[' ', 'some', 'say', 'november']", some say november 
+38,"[' ', 'i', 'say', 'N']", i say N 
+39,"[' ', 'then', 'a', 'second', 'explosion', 'occurred']", then a second explosion occurred 
+40,"[' ', 'two', 'workers', 'died', 'and', 'six', 'remain', 'in', 'the', 'hospital']", two workers died and six remain in the hospital 
+41,"[' ', 'and', 'then', 'you', 'still', 'have', 'to', 'negotiate']", and then you still have to negotiate 
+42,"[' ', 'not', 'everything', 'looks', 'grim', 'for', 'quantum']", not everything looks grim for quantum 
+43,"[' ', 'still', 'quantum', 'has', 'a', 'crisis', 'to', 'get', 'past', 'right', 'now']", still quantum has a crisis to get past right now 
+44,"[' ', 'but', 'its', 'quota', 'has', 'been', 'as', 'high', 'as', 'N', 'N', 'in', 'N']", but its quota has been as high as N N in N 
+45,"[' ', 'revenue', 'totaled', '$', 'N', 'million']", revenue totaled $ N million 
+46,"[' ', 'measuring', ' ', 'may', 'soon', 'be', 'replaced', 'by', ' ', 'in', 'the', ' ', 'room']", measuring  may soon be replaced by  in the  room 
+47,"['  ', 'are', ""n't"", 'entirely', 'new', 'for', 'p&g']",  are n't entirely new for p&g 
+48,"[' ', 'it', 'also', 'has', 'a', ' ', 'facility', 'in', 'california']", it also has a  facility in california 
+49,"[' ', 'many', 'called', 'it', 'simply', 'a', 'contrast', 'in', 'styles']", many called it simply a contrast in styles 
+50,"[' ', 'but', 'some', 'saw', 'it', 'as', 'a', 'classic', 'negotiating', ' ']", but some saw it as a classic negotiating  
+51,"[' ', 'i', 'do', ""n't"", 'feel', 'very', ' ']", i do n't feel very  
+52,"[' ', 'i', 'do', ""n't"", 'feel', 'either', 'hard', 'or', 'soft']", i do n't feel either hard or soft 
+53,"[' ', 'but', 'she', 'stressed', 'i', 'am', 'against', 'managed', 'trade']", but she stressed i am against managed trade 
+54,"[' ', 'closely', 'held', 'morris', 'communications', 'is', 'based', 'in', '  ']", closely held morris communications is based in   
+55,"[' ', 'terms', 'were', ""n't"", 'disclosed']", terms were n't disclosed 
+56,"['  ', 'operates', 'N', ' ', 'apparel', 'stores', 'in', 'the', 'u.s', '.']",  operates N  apparel stores in the u.s. 
+57,"[' ', 'he', 'did', ""n't"", 'forecast', 'phillips', ""'s"", 'results']", he did n't forecast phillips 's results 
+58,"[' ', 'a', 'big', 'reason', 'for', 'the', 'chemical', 'price', 'retreat', 'is', ' ']", a big reason for the chemical price retreat is  
+59,"[' ', 'companies', 'added', 'capacity', ' ']", companies added capacity  
+60,"[' ', 'third', '-', 'quarter', 'profits', 'from', 'gasoline', 'were', 'weaker']", third-quarter profits from gasoline were weaker 
+61,"[' ', 'the', 'main', 'reason', 'remains', 'weather']", the main reason remains weather 
+62,"['  ', 'officials', 'could', ""n't"", 'be', 'located']",  officials could n't be located 
+63,"[' ', 'however', 'the', 'agreement', 'was', 'canceled', 'in', 'june', 'N']", however the agreement was canceled in june N 
+64,"[' ', 'stocks', 'were', 'N', 'million', ' ', 'on', 'may', 'N', 'of', 'this', 'year']", stocks were N million  on may N of this year 
+65,"[' ', 'it', 'settled', 'with', 'a', 'loss', 'of', 'N', 'cents', 'at', '$', 'N', 'a', 'pound']", it settled with a loss of N cents at $ N a pound 
+66,"[' ', 'energy']", energy 
+67,"[' ', 'he', 'was', 'brought', 'in', 'to', 'turn', 'around', 'the', 'company']", he was brought in to turn around the company 
+68,"[' ', 'ad', 'notes']", ad notes 
+69,"[' ', 'new', 'account']", new account 
+70,"[' ', 'account', 'review']", account review 
+71,"['  ', 'plea']",  plea 
+72,"[' ', 'korean', 'agency']", korean agency 
+73,"[' ', 'revenue', 'soared', 'to', '$', 'N', 'million', 'from', '$', 'N', 'million']", revenue soared to $ N million from $ N million 
+74,"[' ', 'revenue', 'rose', 'to', '$', 'N', 'million', 'from', '$', 'N', 'million']", revenue rose to $ N million from $ N million 
+75,"[' ', 'retailers', 'are', 'just', 'in', 'disarray']", retailers are just in disarray 
+76,"[' ', 'ad', ' ', 'at', 'the', 'journal', 'fell', 'N', 'N', 'in', 'the', 'third', 'quarter']", ad  at the journal fell N N in the third quarter 
+77,"[' ', 'the', 'government', ""'s"", 'action', 'was', 'unusual']", the government 's action was unusual 
+78,"[' ', 'the', 'exchange', 'ratio', 'was', 'never', 'established']", the exchange ratio was never established 
+79,"[' ', 'in', 'indianapolis', 'lilly', 'declined', 'comment']", in indianapolis lilly declined comment 
+80,"[' ', 'bristol', '-', 'myers', 'declined', 'to', 'comment']", bristol-myers declined to comment 
+81,"[' ', 'in', 'new', 'york', 'the', 'company', 'declined', 'comment']", in new york the company declined comment 
+82,"[' ', 'upjohn', ""'s"", ' ', 'drugs', 'are', ' ', 'a', ' ', 'and', ' ', 'a', ' ']", upjohn 's  drugs are  a  and  a  
+83,"[' ', 'in', ' ', 'mich', '.', 'upjohn', 'declined', 'comment']", in  mich. upjohn declined comment 
+84,"['  ', 'technology', 'went', 'public', 'in', 'may', 'N', 'at', '$', 'N', 'a', 'share']",  technology went public in may N at $ N a share 
+85,"[' ', 'its', 'high', 'for', 'the', 'past', 'year', 'was', '$', 'N', 'a', 'share']", its high for the past year was $ N a share 
+86,"[' ', 'she', ' ', 'families', 'by', 'their', 'sleeping', 'arrangements']", she  families by their sleeping arrangements 
+87,"[' ', 'they', 'came', 'by', 'their', '  ']", they came by their   
+88,"[' ', 'an', 'l.a', '.', 'solution', 'explains', 'mr', '.', ' ']", an l.a. solution explains mr.  
+89,"[' ', 'he', ""'s"", 'a', ' ']", he 's a  
+90,"[' ', 'the', ' ', 'area', 'is', ' ', 'with', 'lead', ' ', 'and', 'other', 'metals']", the  area is  with lead  and other metals 
+91,"[' ', 'where', ""'s"", 'the', 'leadership']", where 's the leadership 
+92,"[' ', 'where', ""'s"", 'the', 'guy', 'who', 'can', 'say', 'enough', 'is', 'enough']", where 's the guy who can say enough is enough 
+93,"[' ', 'this', 'further', ' ', 'retailers', 'she', 'says']", this further  retailers she says 
+94,"[' ', 'is', 'this', 'the', 'wrong', 'time', 'to', 'open', 'a', 'store']", is this the wrong time to open a store 
+95,"[' ', 'who', 'is', 'going', 'to', 'be', 'in', 'the', 'space', 'next', 'door']", who is going to be in the space next door 
+96,"[' ', 'and', 'in', 'some', 'neighborhoods', ' ', 'have', 'merely', 'hit', 'a', ' ']", and in some neighborhoods  have merely hit a  
+97,"[' ', 'it', 'had', 'traded', 'over', '-', 'the', '-', 'counter']", it had traded over-the-counter 
+98,"['  ', 'just', 'give', 'people', 'the', 'wrong', 'image', 'said', 'mr', '.', ' ']",  just give people the wrong image said mr.  
+99,"[' ', 'that', 'perception', 'takes', 'the', 'focus', 'off', 'the', 'magazine']", that perception takes the focus off the magazine 
+100,"[' ', 'we', 'are', 'trying', 'to', 'create', 'quality', 'and', 'involvement']", we are trying to create quality and involvement 
+101,"[' ', 'a', 'few', 'drops', 'in', 'circulation', 'are', 'of', 'no', 'consequence']", a few drops in circulation are of no consequence 
+102,"[' ', 'they', 'said', 'follow', ' ', 'he', 'told', 'reporters']", they said follow  he told reporters 
+103,"[' ', 'but', 'for', 'all', 'its', 'success', ' ', 'has', 'hit', 'a', ' ']", but for all its success  has hit a  
+104,"[' ', 'you', 'ca', ""n't"", 'live', 'on', 'that']", you ca n't live on that 
+105,"[' ', 'but', 'that', 'wo', ""n't"", 'be', 'easy']", but that wo n't be easy 
+106,"['  ', 'wants', 'to', 'change', 'its', 'viewers', ""'"", 'habits']",  wants to change its viewers ' habits 
+107,"['  ', ""'s"", ' ', 'habits', 'have', 'been', ' ', 'by', 'its', 'format']",  's  habits have been  by its format 
+108,"[' ', 'now', 'the', 'push', 'is', 'on', 'for', ' ', 'shows']", now the push is on for  shows 
+109,"[' ', 'some', 'in', 'the', 'industry', 'are', 'skeptical']", some in the industry are skeptical 
+110,"['  ', 'the', 'principle', 'in', 'the', 'cases', 'is', 'the', 'same']",  the principle in the cases is the same 
+111,"[' ', 'charles', 'f.', ' ']", charles f.  
+112,"[' ', 'call', 'it', 'the', 'we', ""'re"", 'too', 'broke', 'to', 'fight', 'defense']", call it the we 're too broke to fight defense 
+113,"['  ', 'foreclosed', 'on', 'the', 'ranch']",  foreclosed on the ranch 
+114,"[' ', 'a', 'new', 'president', 'was', ""n't"", 'named']", a new president was n't named 
+115,"[' ', 'the', 'device', 'was', 'replaced']", the device was replaced 
+116,"[' ', 'he', 'made', 'his', 'remarks', 'to', 'a', 'plo', 'gathering', 'in', ' ']", he made his remarks to a plo gathering in  
+117,"['  ', 'is', 'a', 'holding', 'company', 'controlled', 'by', 'mr', '.', 'posner']",  is a holding company controlled by mr. posner 
+118,"[' ', 'the', 'core', 'rate', 'is', 'not', 'really', 'out', 'of', 'line']", the core rate is not really out of line 
+119,"[' ', 'the', 'woman', 'won', 'the', 'bet']", the woman won the bet 
+120,"[' ', 'a', '  ', 'under', 'the', 'title', 'almost', 'anything', 'goes', ' ', 'fast']", a   under the title almost anything goes  fast 
+121,"[' ', 'given', 'a', 'choice', 'everybody', 'will', 'watch', 'a', ' ', 'show']", given a choice everybody will watch a  show 
+122,"[' ', 'but', 'frequently', 'there', 'is', ""n't"", 'much', 'choice']", but frequently there is n't much choice 
+123,"[' ', 'the', 'venture', ""'s"", 'importance', 'for', 'thomson', 'is', 'great']", the venture 's importance for thomson is great 
+124,"[' ', 'it', ""'s"", 'very', 'much', 'a', 'growing', 'concern']", it 's very much a growing concern 
+125,"[' ', 'but', 'that', 'was', 'all', 'of', 'three', 'months', 'ago']", but that was all of three months ago 
+126,"[' ', 'the', 'industry', '  ']", the industry   
+127,"[' ', 'companies', 'will', 'continue', 'to', 'war', 'over', 'standards']", companies will continue to war over standards 
+128,"['  ', 'officials', 'could', ""n't"", 'be', 'reached', 'for', 'comment']",  officials could n't be reached for comment 
+129,"[' ', 'a', 'bus', 'is', 'the', 'data', 'highway', 'within', 'a', 'computer']", a bus is the data highway within a computer 
+130,"[' ', 'the', 'gap', 'between', 'winners', 'and', ' ', 'will', 'grow']", the gap between winners and  will grow 
+131,"[' ', 'but', 'they', 'will', 'have', 'to', 'act', 'quickly']", but they will have to act quickly 
+132,"[' ', 'population', 'drain', 'ends', 'for', 'midwestern', 'states']", population drain ends for midwestern states 
+133,"[' ', 'iowa', 'is', 'making', 'a', 'comeback']", iowa is making a comeback 
+134,"[' ', 'so', 'are', 'indiana', 'ohio', 'and', 'michigan']", so are indiana ohio and michigan 
+135,"[' ', 'the', 'gains', 'to', 'be', 'sure', 'are', 'rather', 'small']", the gains to be sure are rather small 
+136,"[' ', 'more', 'elderly', 'maintain', 'their', 'independence']", more elderly maintain their independence 
+137,"[' ', 'that', 'share', 'has', 'remained', 'at', 'about', 'N', 'N', 'since', 'N']", that share has remained at about N N since N 
+138,"[' ', 'as', 'people', 'get', 'even', 'older', 'many', 'become', ' ']", as people get even older many become  
+139,"[' ', 'careers', 'count', 'most', 'for', 'the', ' ']", careers count most for the  
+140,"[' ', 'odds', 'and', 'ends']", odds and ends 
+141,"[' ', 'about', 'N', 'N', 'are', 'women', 'and', 'N', 'N', 'are', ' ', 'students']", about N N are women and N N are  students 
+142,"[' ', 'this', 'small', 'dallas', 'suburb', ""'s"", 'got', 'trouble']", this small dallas suburb 's got trouble 
+143,"[' ', 'introducing', 'pool', 'argued', '   ', 'would', 'be', 'dangerous']", introducing pool argued    would be dangerous 
+144,"[' ', 'it', 'would', 'open', 'a', 'can', 'of', ' ']", it would open a can of  
+145,"['  ', 'is', 'no', ' ', 'to', 'cans', 'of', ' ', 'either']",  is no  to cans of  either 
+146,"[' ', 'now', 'comes', 'the', 'pool', ' ']", now comes the pool  
+147,"[' ', 'for', 'instance', ' ', 'white', 'is', 'not', 'the', 'ultimate', '   ', 'is']", for instance  white is not the ultimate    is 
+148,"[' ', 'and', 'the', 'local', 'expression', 'for', 'brother', 'is', ' ', 'not', ' ']", and the local expression for brother is  not  
+149,"['  ', 'davis']",  davis 
+150,"[' ', 'of', 'course', 'mr', '.', 'mason', 'did', 'not', 'use', 'neutral', 'language']", of course mr. mason did not use neutral language 
+151,"[' ', 'but', ' ', 'by', 'a', 'pro', 'like', ' ', 'mason', 'it', 'is', 'a', ' ', 'form', 'of', ' ']", but  by a pro like  mason it is a  form of  
+152,"[' ', 'why', ' ']", why  
+153,"[' ', 'but', 'these', 'are', 'not', 'the', 'differences', 'that', 'make', ' ']", but these are not the differences that make  
+154,"[' ', 'it', ""'s"", 'worth', 'noting', 'that', 'both', '  ', 'are', ' ']", it 's worth noting that both   are  
+155,"[' ', 'so', 'far', 'the', ' ', 'have', 'been', 'few', 'and', 'far', 'between']", so far the  have been few and far between 
+156,"[' ', 'sound', 'familiar']", sound familiar 
+157,"[' ', 'heard', 'that', 'before']", heard that before 
+158,"[' ', 'opponents', 'of', 'the', 'cut', 'are', 'playing', ' ']", opponents of the cut are playing  
+159,"[' ', 'the', 'house', 'appears', 'reluctant', 'to', 'join', 'the', 'senators']", the house appears reluctant to join the senators 
+160,"[' ', 'things', 'had', 'just', 'gone', 'too', 'far']", things had just gone too far 
+161,"[' ', 'among', 'its', 'provisions']", among its provisions 
+162,"[' ', 'a', 'similar', 'provision', 'is', 'in', 'the', 'house', 'version']", a similar provision is in the house version 
+163,"[' ', 'john', 'e.', ' ', 'contributed', 'to', 'this', 'article']", john e.  contributed to this article 
+164,"[' ', 'are', 'you', ' ']", are you  
+165,"[' ', 'your', 'paper', 'needs', 'a', 'serious', 'reality', 'check']", your paper needs a serious reality check 
+166,['   '],   
+167,"[' ', 'cambridge', 'mass']", cambridge mass 
+168,"[' ', 'franklin', 'savings', 'association', ' ', 'kan', '.']", franklin savings association  kan. 
+169,"[' ', 'i', 'think', 'it', 'was', 'a', 'little', ' ', 'on', 'their', 'part']", i think it was a little  on their part 
+170,"[' ', 'does', 'this', 'signal', 'another', 'black', 'monday', 'is', 'coming']", does this signal another black monday is coming 
+171,"[' ', 'joseph', ' ']", joseph  
+172,"[' ', 'if', 'you', ""'re"", 'a', ' ', 'you', ' ', 'the', 'signals']", if you 're a  you  the signals 
+173,"[' ', 'i', 'see', 'no', 'major', 'support', 'until', 'N']", i see no major support until N 
+174,"[' ', 'i', 'see', 'a', 'possibility', 'of', 'going', 'to', 'N', 'this', 'month']", i see a possibility of going to N this month 
+175,['   '],   
+176,"[' ', 'friday', ""'s"", 'big', 'drop', 'she', 'says', 'was', 'not', 'a', 'crash']", friday 's big drop she says was not a crash 
+177,"[' ', 'my', 'advice', 'is', 'to', 'buy']", my advice is to buy 
+178,"['  ', 'davis']",  davis 
+179,"[' ', 'there', 'was', 'a', 'unique', 'combination', 'in', 'N', 'he', 'says']", there was a unique combination in N he says 
+180,"[' ', 'margin', 'debt', 'was', 'at', 'a', 'record', 'high']", margin debt was at a record high 
+181,"[' ', 'in', 'N', 'such', 'selling', 'contributed', 'to', 'a', ' ', 'effect']", in N such selling contributed to a  effect 
+182,"[' ', 'sort', 'of', 'a', ' ', 'bear', 'market']", sort of a  bear market 
+183,"[' ', 'that', 'would', 'be', 'a', 'normal', 'bear', 'market', 'he', 'says']", that would be a normal bear market he says 
+184,"[' ', 'i', 'guess', 'that', ""'s"", 'my', 'forecast']", i guess that 's my forecast 
+185,"[' ', 'leon', 'g.', ' ']", leon g.  
+186,"[' ', 'unlike', 'N', 'the', 'dollar', 'has', 'been', 'strong']", unlike N the dollar has been strong 
+187,"[' ', 'so', 'it', ""'s"", 'a', 'very', 'mixed', 'bag']", so it 's a very mixed bag 
+188,"[' ', 'john', 'kenneth', ' ']", john kenneth  
+189,"[' ', 'mario', ' ']", mario  
+190,"[' ', 'jim', 'rogers']", jim rogers 
+191,"[' ', 'friday', 'you', 'could', ""n't"", 'sell', 'dollars', 'he', 'says']", friday you could n't sell dollars he says 
+192,"[' ', 'frank', ' ']", frank  
+193,"[' ', 'if', 'not', 'we', 'could', 'go', 'to', 'N', 'very', 'soon']", if not we could go to N very soon 
+194,"[' ', 'frank', 'w.', ' ']", frank w.  
+195,"['  ', 'probably', 'are', 'the', 'right', 'place', 'to', 'be', 'he', 'says']",  probably are the right place to be he says 
+196,"[' ', 'yes', 'he', 'did']", yes he did 
+197,['   '],   
+198,"[' ', 'apparently', 'their', 'verdict', 'is', 'in']", apparently their verdict is in 
+199,"[' ', 'right', 'now', 'they', ""'re"", 'pursuing', 'evidence']", right now they 're pursuing evidence 
+200,"['  ', 'yes', 'something', 'called', 'a', 'star', 'chamber']",  yes something called a star chamber 
+201,"[' ', 'no', 'doubt', 'that', ""'s"", 'partially', 'true']", no doubt that 's partially true 
+202,"[' ', 'no', 'mr', '.', ' ', ""'s"", 'complaints', 'simply', 'wo', ""n't"", 'wash']", no mr.  's complaints simply wo n't wash 
+203,"[' ', 'individuals', 'can', 'always', 'have', 'their', 'hands', ' ']", individuals can always have their hands  
+204,"[' ', 'i', 'do', 'not', 'by', 'any', 'means', 'defend', 'hud', 'management']", i do not by any means defend hud management 
+205,"[' ', 'raymond', ' ']", raymond  
+206,"['  ', 'n.j']",  n.j 
+207,"['  ', 'v.', ' ', 'N', 'u.s', '.', 'N', 'N']",  v.  N u.s. N N 
+208,"[' ', 'clark', 's.', ' ', 'jr']", clark s.  jr 
+209,"['  ', 'park', ' ']",  park  
+210,"[' ', 'just', 'a', ' ']", just a  
+211,"[' ', 'or', 'is', ' ', 'fear', 'of', 'the', 'number', 'N', 'justified']", or is  fear of the number N justified 
+212,"[' ', 'it', 'was', ""n't"", ' ', 'we', 'were', 'all', 'busy']", it was n't  we were all busy 
+213,"[' ', 'when', 'selling', 'is', 'so', ' ', 'prices', 'fall', ' ', 'and', 'fast']", when selling is so  prices fall  and fast 
+214,"[' ', 'the', 'pace', 'of', 'trading', 'was', 'orderly', 'he', 'said']", the pace of trading was orderly he said 
+215,"[' ', 'but', 'they', 'are', 'worried']", but they are worried 
+216,"[' ', 'nasdaq', ""'s"", 'biggest', 'stocks', 'were', ' ']", nasdaq 's biggest stocks were  
+217,"[' ', 'the', 'otc', 'market', 'has', 'only', 'a', 'handful', 'of', ' ', 'stocks']", the otc market has only a handful of  stocks 
+218,"[' ', 'but', 'they', 'fell', 'sharply']", but they fell sharply 
+219,"[' ', 'mccaw', 'lost', 'N', 'N', 'or', 'N', 'N', 'to', 'N']", mccaw lost N N or N N to N 
+220,"[' ', 'lin', 'broadcasting', 'dropped', 'N', 'N', 'or', 'N', 'N', 'to', 'N', 'N']", lin broadcasting dropped N N or N N to N N 
+221,"[' ', 'the', 'turnover', 'in', 'both', 'issues', 'was', 'roughly', 'normal']", the turnover in both issues was roughly normal 
+222,"[' ', 'commercial', ' ', 'plummeted', 'N', 'to', 'N']", commercial  plummeted N to N 
+223,"[' ', 'friday', 'october', 'N', 'N']", friday october N N 
+224,"[' ', 'prime', 'rate']", prime rate 
+225,"[' ', 'N', 'N', 'N']", N N N 
+226,"[' ', 'federal', 'funds']", federal funds 
+227,"[' ', 'source', 'fulton', 'prebon', 'u.s.a', 'inc']", source fulton prebon u.s.a inc 
+228,"[' ', 'discount', 'rate']", discount rate 
+229,"[' ', 'N', 'N']", N N 
+230,"[' ', 'call', 'money']", call money 
+231,"[' ', 'N', 'N', 'N', 'to', 'N', 'N']", N N N to N N 
+232,"[' ', 'commercial', 'paper']", commercial paper 
+233,"[' ', 'N', 'N', 'N', 'days', 'N', 'N', 'N', 'days', 'N', 'N', 'N', 'days']", N N N days N N N days N N N days 
+234,"[' ', 'certificates', 'of', 'deposit']", certificates of deposit 
+235,"[' ', 'the', 'minimum', 'unit', 'is', '$', 'N']", the minimum unit is $ N 
+236,"[' ', 'typical', 'rates', 'in', 'the', 'secondary', 'market']", typical rates in the secondary market 
+237,"[' ', 'N', 'N', 'one', 'month', 'N', 'N', 'three', 'months', 'N', 'N', 'six', 'months']", N N one month N N three months N N six months 
+238,"[' ', 'bankers', 'acceptances']", bankers acceptances 
+239,"[' ', 'london', 'late', 'eurodollars']", london late eurodollars 
+240,"[' ', 'london', 'interbank', 'offered', 'rates', 'libor']", london interbank offered rates libor 
+241,"[' ', 'foreign', 'prime', 'rates']", foreign prime rates 
+242,"[' ', 'treasury', 'bills']", treasury bills 
+243,"[' ', 'N', 'N', 'N', 'weeks', 'N', 'N', 'N', 'weeks']", N N N weeks N N N weeks 
+244,"[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', 'freddie', 'mac']", federal home loan mortgage corp freddie mac 
+245,"[' ', 'source', 'telerate', 'systems', 'inc']", source telerate systems inc 
+246,"[' ', 'federal', 'national', 'mortgage', 'association', 'fannie', 'mae']", federal national mortgage association fannie mae 
+247,"[' ', 'source', 'telerate', 'systems', 'inc']", source telerate systems inc 
+248,"[' ', 'merrill', 'lynch', 'ready', 'assets', 'trust']", merrill lynch ready assets trust 
+249,"[' ', 'N', 'N']", N N 
+250,"[' ', 'and', 'they', 'plan', 'to', 'buy', 'more', 'today']", and they plan to buy more today 
+251,"[' ', 'then', 'he', 'jumped', 'into', 'the', 'market']", then he jumped into the market 
+252,"[' ', 'i', 'spent', '$', 'N', 'million', 'in', 'the', 'last', 'half', '-', 'hour']", i spent $ N million in the last half-hour 
+253,"[' ', 'other', 'money', 'managers', 'also', 'opened', 'their', ' ']", other money managers also opened their  
+254,"[' ', 'it', 'can', 'happen', 'before', 'you', 'can', 'turn', 'around']", it can happen before you can turn around 
+255,"[' ', 'i', 'think', 'it', 'will', 'be', 'a', '  ', 'rally', 'he', 'said']", i think it will be a   rally he said 
+256,"[' ', 'all', 'that', 'now', 'has', 'changed']", all that now has changed 
+257,"[' ', 'i', ""'d"", 'like', 'to', 'see', 'that', 'initiative', 'and', 'i', 'have', ""n't""]", i 'd like to see that initiative and i have n't 
+258,"[' ', 'there', 'is', ""n't"", 'a', 'big', 'shot', 'an', 'agenda']", there is n't a big shot an agenda 
+259,"[' ', 'consider', 'this']", consider this 
+260,"[' ', 'that', 'did', 'not', 'happen']", that did not happen 
+261,"[' ', 'but', 'some', 'players', 'were', 'quick', 'to', 'seize', 'the', 'moment']", but some players were quick to seize the moment 
+262,"[' ', '$', 'N', 'billion', 'of', 'three', '-', 'month', 'and', 'six', '-', 'month', 'bills']", $ N billion of three-month and six-month bills 
+263,"[' ', '$', 'N', 'billion', 'of', '52', '-', 'week', 'bills']", $ N billion of 52-week bills 
+264,"[' ', 'connecticut', 'light', '&', 'power', 'co.']", connecticut light & power co. 
+265,"['  ', 'crude', 'carriers', 'ltd', '.']",  crude carriers ltd. 
+266,"[' ', 'baldwin', 'technology', 'co.']", baldwin technology co. 
+267,"[' ', 'blockbuster', 'entertainment', 'corp', '.']", blockbuster entertainment corp. 
+268,"[' ', 'chase', 'manhattan', 'corp', '.']", chase manhattan corp. 
+269,"[' ', 'N', 'million', 'common', 'shares', 'via', 'goldman', 'sachs', '&', 'co']", N million common shares via goldman sachs & co 
+270,"['  ', 'corp', '.']",  corp. 
+271,"['  ', 'industries']",  industries 
+272,"[' ', 'N', 'million', 'common', 'shares', 'via', 'merrill', 'lynch']", N million common shares via merrill lynch 
+273,"[' ', 'eastern', 'utilities', 'associates']", eastern utilities associates 
+274,"[' ', 'N', 'million', 'common', 'shares', 'via', 'painewebber', 'inc']", N million common shares via painewebber inc 
+275,"[' ', 'employee', 'benefit', 'plans', 'inc', '.']", employee benefit plans inc. 
+276,"['  ', 'corp', '.']",  corp. 
+277,"[' ', 'N', 'common', 'shares', 'via', 'goldman', 'sachs']", N common shares via goldman sachs 
+278,"['  ', 'inc', '.']",  inc. 
+279,"[' ', 'oregon']", oregon 
+280,"[' ', 'washington', 'd.c', '.']", washington d.c. 
+281,"[' ', 'virginia', 'public', 'school', 'authority']", virginia public school authority 
+282,"[' ', 'austin', 'texas']", austin texas 
+283,"[' ', 'california', 'health', 'facilities', 'financing', 'authority']", california health facilities financing authority 
+284,"[' ', 'connecticut']", connecticut 
+285,"[' ', 'tennessee', 'valley', 'authority']", tennessee valley authority 
+286,"[' ', 'university', 'of', 'medicine', 'and', ' ', 'of', 'new', 'jersey']", university of medicine and  of new jersey 
+287,"[' ', 'san', 'antonio', 'texas']", san antonio texas 
+288,"[' ', 'south', ' ', 'health', '&', 'education', 'facility', 'authority']", south  health & education facility authority 
+289,"[' ', 'but', 'he', ""'s"", 'not', 'so', 'sure', 'about', 'everyone', 'else']", but he 's not so sure about everyone else 
+290,"[' ', 'i', ""'"", 'm', 'going', 'to', 'hold', 'on']", i 'm going to hold on 
+291,"[' ', 'if', 'i', 'sell', 'now', 'i', ""'ll"", 'take', 'a', 'big', 'loss']", if i sell now i 'll take a big loss 
+292,"[' ', 'now', 'it', ""'s"", 'happening', 'again']", now it 's happening again 
+293,"[' ', 'and', 'finally', 'there', 'were', 'the', ' ']", and finally there were the  
+294,"[' ', 'i', 'got', 'out', 'in', 'N']", i got out in N 
+295,"[' ', 'would', 'mr', '.', ' ', 'ever', 'get', 'back', 'in']", would mr.  ever get back in 
+296,"[' ', 'are', 'you', ' ']", are you  
+297,"[' ', 'when', 'it', 'comes', 'to', 'money', 'once', ' ', 'N', 'times', 'shy']", when it comes to money once  N times shy 
+298,"['  ', 'are', ""n't"", 'far', 'behind']",  are n't far behind 
+299,"[' ', 'it', ""'s"", 'huge']", it 's huge 
+300,"[' ', 'making', 'computers', 'smaller', 'often', 'means', ' ', 'memory']", making computers smaller often means  memory 
+301,"[' ', 'the', 'competitive', ' ', 'can', 'get', 'pretty', ' ', 'at', 'times']", the competitive  can get pretty  at times 
+302,"[' ', 'analysts', 'do', ""n't"", 'see', 'it', 'that', 'way']", analysts do n't see it that way 
+303,"[' ', 'what', 'about', 'big', 'blue']", what about big blue 
+304,"[' ', 'plunge']", plunge 
+305,"[' ', 'what', 'plunge']", what plunge 
+306,"[' ', 'of', 'course', 'many', 'more', 'issues', 'N', 'hit', 'new', 'lows']", of course many more issues N hit new lows 
+307,"[' ', 'ibm', 'closed', 'at', '$', 'N', 'down', '$', 'N']", ibm closed at $ N down $ N 
+308,"[' ', 'this', 'will', 'raise', 'the', 'energy', 'level', 'of', 'the', 'show']", this will raise the energy level of the show 
+309,"[' ', 'tandem', ""'s"", 'new', 'high', '-', 'end', 'computer', 'is', 'called', ' ']", tandem 's new high-end computer is called  
+310,"[' ', 'that', 'will', 'spur', 'tandem', ""'s"", 'growth']", that will spur tandem 's growth 
+311,"[' ', 'we', ""'re"", 'after', 'a', 'little', 'bigger', 'niche', 'he', 'said']", we 're after a little bigger niche he said 
+312,"[' ', 'do', ""n't"", 'jump', 'yet']", do n't jump yet 
+313,"[' ', 'this', 'may', 'sound', ' ', 'optimistic']", this may sound  optimistic 
+314,"[' ', 'growth', 'is', 'slower']", growth is slower 
+315,"[' ', 'profits', 'are', 'softer']", profits are softer 
+316,"[' ', 'debt', 'burdens', 'are', 'heavier']", debt burdens are heavier 
+317,"[' ', 'a', 'lot', 'of', ' ', 'demand', 'is', 'gone']", a lot of  demand is gone 
+318,"[' ', 'that', 'was', 'offset', 'by', 'strength', 'elsewhere']", that was offset by strength elsewhere 
+319,"[' ', 'but', 'in', 'the', 'process', 'the', 'fed', 'risks', ' ', 'inflation']", but in the process the fed risks  inflation 
+320,"[' ', 'the', ' ', 'had', 'a', ' ', 'audience']", the  had a  audience 
+321,"[' ', 'they', 'are', 'more', 'sophisticated', 'this', 'time']", they are more sophisticated this time 
+322,"[' ', 'most', 'of', 'the', 'N', 'have', 'big', ' ', 'operations']", most of the N have big  operations 
+323,"[' ', 'du', 'pont', 'declined', 'to', 'comment']", du pont declined to comment 
+324,"[' ', 'monsanto', 'declined', 'to', 'comment']", monsanto declined to comment 
+325,"[' ', 'dow', 'chemical', 'co.']", dow chemical co. 
+326,"['  ', 'capital', 'corp', '.']",  capital corp. 
+327,"[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', '.']", federal home loan mortgage corp. 
+328,"[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', '.']", federal home loan mortgage corp. 
+329,"[' ', 'pricing', 'details', 'were', ""n't"", 'immediately', 'available']", pricing details were n't immediately available 
+330,"[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', '.']", federal home loan mortgage corp. 
+331,"[' ', 'the', ' ', 'securities', 'were', 'priced', 'at', 'N', 'N', 'to', 'yield', 'N', 'N']", the  securities were priced at N N to yield N N 
+332,"['  ', 'street']",  street 
+333,"['  ', 's.', ' ']",  s.  
+334,"['  ', 'comment']",  comment 
+335,['   '],   
+336,"[' ', 'let', ""'s"", 'make', 'that', 'N', 'just', 'to', 'be', 'sure']", let 's make that N just to be sure 
+337,"[' ', 'trouble', 'is', 'she', 'has', 'lost', 'it', 'just', 'as', 'quickly']", trouble is she has lost it just as quickly 
+338,"[' ', 'little', 'chance', 'that', '  ', 'is', 'going', 'to', 'recoup', 'today']", little chance that   is going to recoup today 
+339,"['   ', 'columbia']",   columbia 
+340,"[' ', 'but', 'the', 'investigation', 'continues']", but the investigation continues 
+341,"[' ', 'in', 'fact', 'few', 'consume', 'much', 'of', 'anything']", in fact few consume much of anything 
+342,"[' ', 'two', 'share', 'a', 'house', 'almost', ' ', 'of', 'furniture']", two share a house almost  of furniture 
+343,"[' ', 'the', 'seeds', 'already', 'are', 'in', 'the', 'script']", the seeds already are in the script 
+344,"[' ', 'it', 'should', 'run', 'forever']", it should run forever 
+345,"[' ', 'mr', '.', ' ', 'is', 'senior', ' ', 'in', 'the', 'journal', ""'s"", 'london', 'bureau']", mr.  is senior  in the journal 's london bureau 
+346,"[' ', 'we', 'wo', ""n't"", 'put', 'any', 'burden', 'on', 'farmers', 'he', 'said']", we wo n't put any burden on farmers he said 
+347,"[' ', 'c', 'domestic', 'car']", c domestic car 
+348,"[' ', 'd', 'percentage', 'change', 'is', 'greater', 'than', 'N', 'N']", d percentage change is greater than N N 
+349,"['  ', 'makes', 'and', 'repairs', 'jet', 'engines']",  makes and repairs jet engines 
+350,"['  ', 'are', 'packed', 'with', 'a', ' ', 'array', 'of', 'magazines']",  are packed with a  array of magazines 
+351,"[' ', 'radio', 'and', 'television', 'are', 'getting', ' ', 'and', ' ']", radio and television are getting  and  
+352,"[' ', 'but', 'radio', 'free', 'europe', 'does', ""n't"", 'plan', 'to', ' ', 'away']", but radio free europe does n't plan to  away 
+353,"[' ', 'that', 'is', 'a', ' ']", that is a  
+354,"[' ', 'there', 'were', 'some', 'very', '  ']", there were some very   
+355,"[' ', 'the', ' ', 'too', 'had', 'to', 'be', ' ']", the  too had to be  
+356,"[' ', 'she', 'wants', 'to', 'turn', 'down', 'the', 'volume', 'and', 'close', 'the', ' ']", she wants to turn down the volume and close the  
+357,"[' ', 'there', ""'s"", 'a', 'program', 'for', 'women', 'and', 'a', 'science', 'show']", there 's a program for women and a science show 
+358,"[' ', 'the', 'pet', 'shop', 'boys', 'are', 'big', 'this', 'year', 'in', ' ']", the pet shop boys are big this year in  
+359,"[' ', 'we', 'are', ' ', 'for', 'all', 'the', 'news', 'says', 'mr', '.', ' ', 'the', 'student']", we are  for all the news says mr.  the student 
+360,"[' ', 'why', 'does', 'the', ' ', 'virus', 'keep', 'coming', 'back']", why does the  virus keep coming back 
+361,"[' ', 'military', 'service', 'moreover', 'could', 'be', 'a', ' ', 'option']", military service moreover could be a  option 
+362,"[' ', 'the', ' ', 'of', ' ', 'is', 'in', 'the', 'air']", the  of  is in the air 
+363,"[' ', 'on', 'the', 'contrary', 'it', 'is', 'as', 'robust', 'as', 'ever']", on the contrary it is as robust as ever 
+364,"[' ', 'not', 'necessarily']", not necessarily 
+365,"[' ', 'there', ""'s"", 'no', 'need', 'for', 'such', 'concessions']", there 's no need for such concessions 
+366,"[' ', 'mr', '.', ' ', 'is', 'a', 'fellow', 'at', 'the', ' ', 'hudson', 'institute']", mr.  is a fellow at the  hudson institute 
+367,"[' ', 'that', 'would', 'be', 'down', 'from', 'the', 'N', 'N', 'rise', 'posted', 'in', 'N']", that would be down from the N N rise posted in N 
+368,"[' ', 'the', 'bonds', 'go', 'on', 'sale', 'oct', '.', 'N']", the bonds go on sale oct. N 
+369,"[' ', 'the', 'debate', 'over', 'national', 'service', 'has', 'begun', 'again']", the debate over national service has begun again 
+370,"[' ', 'it', 'might', 'well', 'win', 'senate', 'passage']", it might well win senate passage 
+371,"[' ', 'what', 'is', 'one', 'to', 'think', 'of', 'all', 'this']", what is one to think of all this 
+372,"[' ', 'then', 'there', 'are', ' ', 'opponents']", then there are  opponents 
+373,"[' ', 'how', 'should', 'we', 'think', 'about', 'national', 'service']", how should we think about national service 
+374,"[' ', 'would', 'service', 'be', 'voluntary', 'or', ' ']", would service be voluntary or  
+375,"[' ', 'short', 'or', 'long']", short or long 
+376,"['  ', 'or', 'full', '-', 'time']",  or full-time 
+377,"[' ', 'paid', 'or', 'unpaid']", paid or unpaid 
+378,"[' ', 'what', 'kinds', 'of', 'work', 'would', 'they', 'do']", what kinds of work would they do 
+379,"[' ', 'what', 'does', 'national', 'mean']", what does national mean 
+380,"[' ', 'and', 'who', 'would', 'serve']", and who would serve 
+381,"[' ', 'only', 'males', 'as', 'with', 'the', 'draft', 'or', 'both', ' ']", only males as with the draft or both  
+382,"[' ', 'youth', 'only', 'or', 'all', 'ages']", youth only or all ages 
+383,"[' ', 'middle', '-', 'class', 'people', 'or', 'poor', 'people', 'or', 'a', 'genuine', ' ']", middle-class people or poor people or a genuine  
+384,"[' ', 'many', 'or', 'few']", many or few 
+385,"[' ', 'then', 'how', 'should', 'we', 'think', 'about', 'national', 'service']", then how should we think about national service 
+386,"[' ', 'they', 'will', 'differ', 'in', 'crucial', 'ways']", they will differ in crucial ways 
+387,"[' ', 'N', 'service', 'should', 'be', 'service']", N service should be service 
+388,"[' ', 'as', 'commonly', 'understood', 'service', 'implies', 'sacrifice']", as commonly understood service implies sacrifice 
+389,"[' ', 'why', 'call', 'that', 'service']", why call that service 
+390,"[' ', 'N', 'encouragement', 'is', 'fine', ' ', 'is', 'not']", N encouragement is fine  is not 
+391,"['  ', 'service', 'is', 'unconstitutional']",  service is unconstitutional 
+392,"[' ', 'it', 'is', 'also', ' ', 'and', ' ']", it is also  and  
+393,"[' ', 'N', 'good', 'programs', 'are', 'not', 'cheap']", N good programs are not cheap 
+394,"[' ', 'they', 'involve', ' ', 'to', 'participants']", they involve  to participants 
+395,"[' ', 'are', 'they', 'worth', 'that']", are they worth that 
+396,"[' ', 'but', 'the', 'calculations', 'are', ' ']", but the calculations are  
+397,"[' ', 'N', ' ', 'youth', 'are', 'a', 'special', 'concern']", N  youth are a special concern 
+398,"[' ', 'are', 'such', 'expenditures', ' ', 'then']", are such expenditures  then 
+399,"[' ', 'yes', 'if', 'targeted']", yes if targeted 
+400,"['  ', 'youth', 'do', ""n't"", 'have', 'those', 'opportunities']",  youth do n't have those opportunities 
+401,"[' ', 'they', 'are', 'not', ' ', 'in', 'high', 'school', 'or', 'college']", they are not  in high school or college 
+402,"[' ', 'they', 'are', 'unlikely', 'to', 'be', 'employed']", they are unlikely to be employed 
+403,"[' ', 'that', 'is', 'a', 'service', 'to', 'the', 'nation']", that is a service to the nation 
+404,"[' ', 'lexington', 'books', 'N']", lexington books N 
+405,"[' ', 'i', 'think', 'that', ""'s"", 'less', 'likely']", i think that 's less likely 
+406,"[' ', 'b', 'as', 'of', 'thursday', ""'s"", 'close']", b as of thursday 's close 
+407,"[' ', 'c', 'translated', 'at', 'commercial', 'rand', 'exchange', 'rate']", c translated at commercial rand exchange rate 
+408,"[' ', 'e', 'in', 'canadian', 'dollars']", e in canadian dollars 
+409,"[' ', 'f', 'as', 'of', 'wednesday', ""'s"", 'close']", f as of wednesday 's close 
+410,"['  ', 'N', ' ']",  N  
+411,"[' ', 'z', 'not', 'available']", z not available 
+412,"[' ', 'put', 'down', 'that', 'phone']", put down that phone 
+413,"[' ', 'walk', 'around', 'the', 'room', 'take', 'two', 'deep', ' ']", walk around the room take two deep  
+414,"[' ', 'no', 'one', 'can', 'say', 'for', 'sure', 'what', 'will', 'happen', 'today']", no one can say for sure what will happen today 
+415,"[' ', 'we', 'understand', ' ', 'and', 'euphoria']", we understand  and euphoria 
+416,"[' ', 'other', 'investment', 'pros', 'are', 'more', 'pessimistic']", other investment pros are more pessimistic 
+417,"[' ', 'the', 'prices', 'of', 'puts', 'generally', 'did', ""n't"", 'soar', 'friday']", the prices of puts generally did n't soar friday 
+418,"[' ', 'but', ' ', 'prices', 'may', ' ', 'when', 'trading', ' ', 'today']", but  prices may  when trading  today 
+419,"[' ', 'it', ""'s"", 'hard', 'to', ' ', 'about', 'a', 'reasonable', 'price', 'for', 'puts']", it 's hard to  about a reasonable price for puts 
+420,"[' ', 'it', ""'s"", 'totally', 'different']", it 's totally different 
+421,"[' ', 'but', 'the', 'major', 'circuit', 'breakers', 'have', 'yet', 'to', 'be', ' ']", but the major circuit breakers have yet to be  
+422,"[' ', 'there', 'was', 'no', 'panic']", there was no panic 
+423,"[' ', 'the', 'system', 'worked', 'the', 'way', 'we', 'devised', 'it', 'to', 'work']", the system worked the way we devised it to work 
+424,"[' ', 'privately', 'some', 'free', ' ', 'dismissed', 'such', ' ', 'as', ' ', 'to', ' ']", privately some free  dismissed such  as  to  
+425,"[' ', 'circuit', 'breakers', 'set', 'to', 'soften', 'big', 'drops']", circuit breakers set to soften big drops 
+426,"[' ', 's&p', 'and', 'mmi', 'contracts', 'also', 'halt']", s&p and mmi contracts also halt 
+427,"[' ', 'trading', 'in', 'mmi', 'and', 's&p', 'futures', 'also', 'halted']", trading in mmi and s&p futures also halted 
+428,"[' ', 'brady', 'task', 'force', 'recommendations', 'jan', '.', 'N']", brady task force recommendations jan. N 
+429,"[' ', 'establish', 'an', ' ', 'regulator', 'for', 'financial', 'markets']", establish an  regulator for financial markets 
+430,"['   ', 'systems']",   systems 
+431,"[' ', 'sec', 'proposals', 'may', 'N']", sec proposals may N 
+432,"[' ', 'opposed', 'by', 'new', 'sec', 'chairman']", opposed by new sec chairman 
+433,"[' ', 'congressional', 'proposal']", congressional proposal 
+434,"[' ', 'replied', 'a', 'justin', 'salesman', 'exactly']", replied a justin salesman exactly 
+435,"[' ', 'the', '  ', 'enthusiastic', 'and', 'promised', 'to', 'return']", the   enthusiastic and promised to return 
+436,"[' ', 'his', 'recording', 'later', 'turned', 'up', 'as', 'a', 'court', 'exhibit']", his recording later turned up as a court exhibit 
+437,"[' ', 'sony', 'itself', 'declines', 'to', 'comment']", sony itself declines to comment 
+438,"[' ', 'but', 'the', 'battle', 'is', 'more', 'than', 'justin', ' ', 'for']", but the battle is more than justin  for 
+439,"[' ', 'it', ""'s"", 'also', 'costly']", it 's also costly 
+440,"[' ', 'for', 'now', 'though', 'he', ' ', 'to', 'hang', 'in']", for now though he  to hang in 
+441,"[' ', 'both', 'companies', 'rejected', 'the', 'offers']", both companies rejected the offers 
+442,"[' ', 'mr', '.', '  ', 'has', 'said', 'he', 'wants', 'to', 'purchase', 'more', 'shares']", mr.   has said he wants to purchase more shares 
+443,"[' ', 'the', 'previous', 'agreement', 'expired', 'thursday']", the previous agreement expired thursday 
+444,"[' ', 'giant', 'agreed', 'last', 'month', 'to', 'purchase', 'the', 'carrier']", giant agreed last month to purchase the carrier 
+445,"[' ', 'this', ' ', 'is', 'far', 'from', 'over', 'he', 'says']", this  is far from over he says 
+446,"[' ', 'goldman', 'officials', 'declined', 'to', 'comment']", goldman officials declined to comment 
+447,"[' ', 'you', ""'"", 've', 'either', 'got', 'a', 'chair', 'or', 'you', 'do', ""n't""]", you 've either got a chair or you do n't 
+448,"[' ', 'it', 'was', '  ']", it was   
+449,"[' ', 'and', 'our', 'credit', 'standards', 'have', ""n't"", 'changed', 'one', ' ']", and our credit standards have n't changed one  
+450,"[' ', 'friday', ""'s"", 'market', 'activity']", friday 's market activity 
+451,"[' ', 'bond', 'prices', 'barely', ' ', 'until', 'midday']", bond prices barely  until midday 
+452,"[' ', 'municipal', 'bonds', 'rose', 'as', 'much', 'as', 'N', 'point']", municipal bonds rose as much as N point 
+453,"[' ', 'roger', ' ', 'contributed', 'to', 'this', 'article']", roger  contributed to this article 
+454,"['  ', 'mr', '.', 'secretary', 'and', 'mr', '.', 'congressman']",  mr. secretary and mr. congressman 
+455,"[' ', 'they', 'are', 'better', 'capitalized']", they are better capitalized 
+456,"[' ', 'the', 'fed', 'promises', 'any', 'needed', 'liquidity']", the fed promises any needed liquidity 
+457,"[' ', 'interest', 'income', 'and', 'most', 'fee', 'income', 'was', 'strong']", interest income and most fee income was strong 
+458,"[' ', 'in', 'point', 'of', 'fact', 'this', ' ', 'was', 'overdue', 'by', 'decades']", in point of fact this  was overdue by decades 
+459,"[' ', 'mr', '.', ' ', ""'s"", 'credibility', 'is', 'at', 'best', ' ']", mr.  's credibility is at best  
+460,"[' ', 'as', 'for', 'mr', '.', ' ']", as for mr.  
+461,"[' ', 'he', ""'s"", 'not', 'exactly', 'sitting', 'pretty', 'at', 'this', 'stage']", he 's not exactly sitting pretty at this stage 
+462,"[' ', 'the', 'dow', 'jones', 'industrials', 'skidded', 'N', 'to', 'N']", the dow jones industrials skidded N to N 
+463,"[' ', 'the', 'dollar', 'was', 'trading', 'sharply', 'lower', 'in', 'tokyo']", the dollar was trading sharply lower in tokyo 
+464,"[' ', 'also', 'retail', 'sales', 'grew', 'N', 'N', 'last', 'month']", also retail sales grew N N last month 
+465,"[' ', 'the', 'offer', 'does', ""n't"", 'include', ' ', 'teller', 'or', 'b.', 'altman']", the offer does n't include  teller or b. altman 
+466,"[' ', 'the', 'boeing', 'strike', 'is', 'starting', 'to', 'affect', 'airlines']", the boeing strike is starting to affect airlines 
+467,"[' ', 'japan', ""'s"", 'steel', 'quota', 'will', 'be', 'cut', 'significantly']", japan 's steel quota will be cut significantly 
+468,"[' ', 'markets']", markets 
+469,"[' ', 'stocks', 'volume', 'N', 'shares']", stocks volume N shares 
+470,"[' ', 'bonds', 'shearson', 'lehman', 'hutton', 'treasury', 'index', 'N', 'up']", bonds shearson lehman hutton treasury index N up 
+471,"[' ', 'dollar', 'N', 'yen', 'off', 'N', 'N', 'marks', 'off', 'N']", dollar N yen off N N marks off N 
+472,"[' ', 'nfl', 'ordered', 'to', 'pay', '$', 'N', 'million', 'in', 'legal', 'fees', 'to', ' ']", nfl ordered to pay $ N million in legal fees to  
+473,"[' ', 'the', ' ', 'was', 'not', 'the', 'prevailing', 'party', 'mr', '.', ' ', 'insists']", the  was not the prevailing party mr.  insists 
+474,"['  ', 'alliance']",  alliance 
+475,"[' ', 'fcc', 'counsel', 'joins', 'firm']", fcc counsel joins firm 
+476,"[' ', 'he', 'left', 'the', 'company', 'in', 'N']", he left the company in N 
+477,"[' ', 'it', 'will', 'have', 'its', 'headquarters', 'in', ' ']", it will have its headquarters in  
+478,"[' ', 'siemens', 'will', 'retain', 'majority', 'voting', 'rights']", siemens will retain majority voting rights 
+479,"[' ', 'frankly', 'i', 'missed', 'my', 'family', 'said', 'mr', '.', ' ']", frankly i missed my family said mr.  
+480,"[' ', 'mr', '.', ' ', 'and', 'ms', '.', ' ', 'are', 'married', 'to', 'each', 'other']", mr.  and ms.  are married to each other 
+481,"[' ', 'he', 'said', 'he', 'will', 'now', 'consider', 'those', 'offers']", he said he will now consider those offers 
+482,"[' ', 'prior', 'to', 'a', 'year', 'ago', ' ', 'was', 'an', ' ']", prior to a year ago  was an  
+483,"[' ', 'the', 'company', 'did', ""n't"", 'elaborate']", the company did n't elaborate 
+484,"[' ', 'before', 'the', 'halt', 'amr', 'last', 'traded', 'at', 'N', 'N']", before the halt amr last traded at N N 
+485,"[' ', 'on', 'friday', ' ', 'shares', 'fell', 'N', 'N', 'to', 'close', 'at', 'N', 'N']", on friday  shares fell N N to close at N N 
+486,"[' ', 'the', 'market', 'is', 'just', ' ', 'up', 'to', 'that', 'point']", the market is just  up to that point 
+487,"['   ', 'in', 'los', 'angeles', 'contributed', 'to', 'this', 'column']",   in los angeles contributed to this column 
+488,"[' ', 'but', 'now', 'appears', 'to', 'be', 'the', 'time', 'to', 'act']", but now appears to be the time to act 
+489,"[' ', 'office', 'construction', 'dropped', 'N', 'N']", office construction dropped N N 
+490,"[' ', 'as', 'usual', 'the', 'real', '-', 'estate', 'market', 'had', ' ']", as usual the real-estate market had  
+491,"[' ', 'employment', 'is', 'now', 'N', 'N', 'higher', 'than', 'in', 'N']", employment is now N N higher than in N 
+492,"[' ', 'why', 'did', ""n't"", 'the', 'bank', 'board', 'act', 'sooner', 'he', 'said']", why did n't the bank board act sooner he said 
+493,"[' ', 'manufacturers', 'are', 'upgrading', ' ', 'power', 'plants']", manufacturers are upgrading  power plants 
+494,"[' ', 'the', 'case', ' ', 'vs.', 'minnesota', 'will', 'be', 'argued', 'nov', '.', 'N']", the case  vs. minnesota will be argued nov. N 
+495,"[' ', 'revenue', 'rose', 'N', 'N', 'to', '$', 'N', 'billion', 'from', '$', 'N', 'billion']", revenue rose N N to $ N billion from $ N billion 
+496,"[' ', 'our', 'doors', 'are', 'open', 'an', 'nbc', 'spokesman', 'says']", our doors are open an nbc spokesman says 
+497,"[' ', 'few', 'people', ' ', 'to', 'the', 'talks', 'expect', 'the', 'studios', 'to', ' ']", few people  to the talks expect the studios to  
+498,"[' ', 'that', ""'s"", 'the', 'problem', 'is', ""n't"", 'it']", that 's the problem is n't it 
+499,"[' ', 'indeed', 'it', 'is']", indeed it is 
+500,"[' ', 'six', 'years', 'ago', 'they', 'were', ' ', 'close']", six years ago they were  close 
+501,"[' ', 'the', 'fcc', 'effort', 'collapsed']", the fcc effort collapsed 
+502,"[' ', 'the', 'networks', 'and', 'studios', 'have', ' ', 'ever', 'since']", the networks and studios have  ever since 
+503,"[' ', 'the', 'company', 'and', 'its', 'executives', 'deny', 'the', 'charges']", the company and its executives deny the charges 
+504,"[' ', 'i', ""'"", 'm', 'inspired', 'by', 'the', 'mood', 'of', 'the', 'people']", i 'm inspired by the mood of the people 
+505,"[' ', 'there', ""'s"", 'no', 'turning', 'back']", there 's no turning back 

@@ -10,7 +10,7 @@ def extract_data(path):
     with open(path) as file_in:
         for line in file_in:
             # print(line)
-            preprocessed = line.replace('<unk>','')
+            preprocessed = line.replace('<unk>','').replace('\n','')
             # print(preprocessed)
             # preprocessed = re.split(r'\s{3,}',line.replace('\t', '   ').replace('\n', ''))
             lines.append(preprocessed)
@@ -34,9 +34,9 @@ def give_bags_words(sentences):
         # print(count)
     # print("sentences length is ",len(sentences))
     # print("words length is",len(corresponding_words))
-    data={'Sentences':sentences,'Corresponding_words':corresponding_words}
+    data={'source_text':corresponding_words,'target_text':sentences}
     df = pd.DataFrame(data)
-    # df.to_csv('ptb_500.csv')
+    df.to_csv('ptb_50.csv')
     return df
 
 # Count words occurrences
@@ -85,23 +85,23 @@ def count_avg_len(list):
 # path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.train.txt'
 path = '/Users/dyt/Documents/WORK/Yin/ptbdataset/ptb.test.txt'
 
-sentence_list = extract_data(path)
+sorted_list = extract_data(path)
 # df = give_bags_words(sentence_list)
 # sorted_list = sorted(sentence_list, key = len)
 # print(len(sorted_list))
 # print(count_avg_len(sorted_list))
 
-# list_50 = len_interval(sentence_list,0, 50)
-# list_100 = len_interval(sorted_list,50, 100)
-list_150 = len_interval(sentence_list,100, 150) #1175
-# list_200 = len_interval(sorted_list,150, 200)
-# list_250 = len_interval(sorted_list,200, 250)
-# list_300 = len_interval(sorted_list,250, 300) #30
-# list_350 = len_interval(sorted_list,300, 350) #12
-# list_400 = len_interval(sorted_list,350, 400)#2
+list_50 = len_interval(sorted_list,0, 50) #506
+# list_100 = len_interval(sorted_list,50, 100) #1194
+# list_150 = len_interval(sorted_list,100, 150) #1164
+# list_200 = len_interval(sorted_list,150, 200) #632
+# list_250 = len_interval(sorted_list,200, 250) #218
+# list_300 = len_interval(sorted_list,250, 300) #36
+# list_350 = len_interval(sorted_list,300, 350) #9
+# list_400 = len_interval(sorted_list,350, 400)#1
 # list_450 = len_interval(sorted_list,400, 450)#0
-# list_500 = len_interval(sorted_list,450, 500) #2
-# give_bags_words(list_500)
+# list_500 = len_interval(sorted_list,450, 500) #1
+give_bags_words(list_50)
 
 # df = give_bags_words(sentence_list)
 # df = give_count_words(sentence_list)

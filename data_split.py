@@ -115,16 +115,20 @@ if __name__ == '__main__':
     # print(type(data['test']['target_text']))
 
 
-    train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/training_ptb_10.csv"
+    # train = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/training_ptb_10.csv"
     # val = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_val_ptb.csv"
     # test = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/count_test_ptb.csv"
 
-    ready_dataset = pd.read_csv(train)
+    path = r"/Users/dyt/Documents/WORK/GitHub/seq2seq/ptb_dataset/ptb_interval/final_ptb_50.csv"
+
+    # ready_dataset = pd.read_csv(train)
+    ready_dataset = pd.read_csv(path)
+
     # print(list(ready_dataset.columns))
     ready_dataset = ready_dataset.rename(columns = {"Sentences":"target_text","Corresponding_words":"source_text"})
     # ready_dataset = ready_dataset.drop('Unnamed: 0', inplace=True, axis=0)
     ready_dataset = ready_dataset[['source_text', 'target_text']]
     # item_count = list(ready_dataset["source_text"])
     # print(item_count[0])
-    ready_dataset.to_csv('final_ptb_10.csv',index = False)
+    ready_dataset.to_csv('final_ptb_50.csv',index = False)
     # print("The type of dataset: ", type(ready_dataset['target_text']))
