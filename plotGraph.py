@@ -12,7 +12,8 @@ def multi_plot(rl, em, bleu,interval):
     # plt.bar(interval, bleu, 10, bottom=rl+em,color='#7BC8F6')
 
     # plt.suptitle('Evaluation with different intervals', fontsize = 15)
-    plt.xticks(np.arange(min(interval), max(interval)+1, 50.0))
+    my_xticks = ['<=100','100 ~ 200','>200']
+    plt.xticks(interval,my_xticks)
     plt.margins(x=0)
     # plt.legend(['ROUGLE-L','Exact Match','BLEU'])
     plt.legend()
@@ -23,15 +24,15 @@ def multi_plot(rl, em, bleu,interval):
 
 
 # training ptb on T5-small with different interval
-rl = np.array([98.6131, 99.7473, 99.7446, 99.7112, 99.6848, 99.7187, 100.0, 100.0, 100.0])
-em = np.array([97.4308, 96.3149, 93.2130, 91.9303, 88.5321, 88.8888, 100.0, 100.0, 100.0])
-bleu = np.array([98.9695, 99.3175, 99.2045, 99.2848, 99.2049, 99.3774, 100.0, 100.0, 100.0])
+rl = np.array([99.4167,99.736,99.6986])
+em = np.array([96.6470,92.7616,89.0566])
+bleu = np.array([99.2728,99.2393,99.2781])
 
 # training MNLI with different interval
 # rl = np.array([84.577,93.0629,94.4945,94.8156,95.0015,94.7083,90.3548,96.9072,90.1408])
 # em = np.array([0.0, 0.1686, 0.2551, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
 # bleu = np.array([72.5129,83.3208,86.2580,86.8868,87.6011,86.6067,83.7559,87.1061,79.2631])
-interval = [50,100,150,200,250,300,350,400,500]
+interval = [100,200,500]
 
 # varing training size to evaluate MNLI
 # rl = [96.66,96.4118,96.2217,95.7589,95.2565,94.717,94.1502,93.6448,92.53,91.1125]
