@@ -71,8 +71,8 @@ def len_interval(list, min, max):
         # print('1')
         if len(a) <= max and len(a) > min:
             a_list.append(a)
-            print('aaa: ', a)
-            print('bbb: ', len(a))
+            # print('aaa: ', a)
+            # print('bbb: ', len(a))
     print(len(a_list))
     return a_list
 
@@ -101,9 +101,16 @@ sorted_list = extract_data(path)
 # list_400 = len_interval(sorted_list,350, 400)#1
 # list_450 = len_interval(sorted_list,400, 450)#0
 # list_500 = len_interval(sorted_list,450, 500) #1
+
 # list_100 = len_interval(sorted_list,0, 100) #1700
 # list_200 = len_interval(sorted_list,100, 200) # 1796
-list_500 = len_interval(sorted_list,200, 500) # 265
+# list_500 = len_interval(sorted_list,200, 500) # 265
+
+list_60 = len_interval(sorted_list,0, 60) #700
+list_90 = len_interval(sorted_list,60, 90) #724
+list_120 = len_interval(sorted_list,90, 120) #806
+list_150 = len_interval(sorted_list,120, 150) #634
+list_500 = len_interval(sorted_list,150, 500) #
 give_bags_words(list_500)
 
 # df = give_bags_words(sentence_list)
