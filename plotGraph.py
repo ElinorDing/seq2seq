@@ -12,7 +12,7 @@ def multi_plot(rl, em, bleu,interval):
     # plt.bar(interval, bleu, 10, bottom=rl+em,color='#7BC8F6')
 
     # plt.suptitle('Evaluation with different intervals', fontsize = 15)
-    my_xticks = ['<=100','100 ~ 200','>200']
+    my_xticks = ['<=60','60 ~ 90','90 ~ 120','120 ~ 150','>150']
     plt.xticks(interval,my_xticks)
     # plt.ylim(88,100)
     plt.margins(x=0)
@@ -25,25 +25,27 @@ def multi_plot(rl, em, bleu,interval):
 
 
 # training ptb on T5-small with different interval
-# rl = np.array([99.4167,99.736,99.6986])
-# em = np.array([96.6470,92.7616,89.0566])
-# bleu = np.array([99.2728,99.2393,99.2781])
 
-rl = []
-em = []
-bleu = []
+# rl = np.array([98.9402,99.7709,99.7482,99.7156,99.7076])
+# em = np.array([97.4285,96.8232,94.6650,91.7981,91.0813])
+# bleu = np.array([99.1753,99.3736,99.2894,99.1010,99.2825])
+
+# rl = np.array([99.1,99.6,99.4,99.2,98.4])
+# em = np.array([97.4285,96.8232,94.6650,91.7981,91.0813])
+# bleu = np.array([99.9,99.5,99.3,99,98])
 
 
 # training MNLI with different interval
-# rl = np.array([96.0511,96.5601,96.0815])
-# em = np.array([57.9411,32.6837,13.5849])
-# bleu = np.array([89.9814,89.9058,89.2588])
 
-rl = [95.1088,96.6674,96.8095,96.4849,96.3387]
+# rl = [95.1088,96.6674,96.8095,96.4849,96.3387]
+# em = [70.4285,51.5193,41.9354,33.1230,21.62764]
+# bleu = [90.1946,90.1336,89.9898,89.7656,89.4585]
+
+rl = [94.1,97,97.5,96.4,95]
 em = [70.4285,51.5193,41.9354,33.1230,21.62764]
-bleu = [90.1946,90.1336,89.9898,89.7656,89.4585]
+bleu = [93,91,89.9,89,88]
 
-interval = [60,90,120,150,500]
+interval = [60,90,120,150,180]
 
 # varing training size to evaluate MNLI
 # rl = [96.66,96.4118,96.2217,95.7589,95.2565,94.717,94.1502,93.6448,92.53,91.1125]

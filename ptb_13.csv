@@ -2,7 +2,6 @@ source_text,target_text
 "[' ', 'no', 'it', 'was', ""n't"", 'black', 'monday']", no it was n't black monday 
 "[' ', 'the', ' ', 'has', 'already', 'begun']", the  has already begun 
 "[' ', 'the', 'equity', 'market', 'was', ' ']", the equity market was  
-"[' ', 'when', 'the', 'dollar', 'is', 'in', 'a', ' ', 'even', 'central', 'banks', 'ca', ""n't"", 'stop', 'it']", when the dollar is in a  even central banks ca n't stop it 
 "[' ', 'at', 'the', 'end', 'of', 'the', 'day', 'N', 'million', 'shares', 'were', 'traded']", at the end of the day N million shares were traded 
 "[' ', 'the', 'dow', 'jones', 'industrials', 'closed', 'at', 'N']", the dow jones industrials closed at N 
 "[' ', 'the', 'dow', 'fell', 'N', 'N', 'on', 'black', 'monday']", the dow fell N N on black monday 
@@ -13,19 +12,12 @@ source_text,target_text
 "[' ', 'it', ' ', 'things', 'up', 'said', 'one', 'major', 'specialist']", it  things up said one major specialist 
 "[' ', 'but', 'stocks', 'kept', 'falling']", but stocks kept falling 
 "[' ', 'buyers', 'stepped', 'in', 'to', 'the', 'futures', 'pit']", buyers stepped in to the futures pit 
-"[' ', 'and', 'i', 'think', 'a', 'lot', 'of', 'people', 'will', ' ', 'on', 'program', 'trading']", and i think a lot of people will  on program trading 
-"[' ', 'it', ""'s"", 'going', 'to', 'bring', 'the', 'debate', 'right', 'back', 'to', 'the', ' ']", it 's going to bring the debate right back to the  
 "[' ', 'but', 'there', 'were', 'no', 'buyers']", but there were no buyers 
-"[' ', 'the', 'big', 'board', ""'s"", 'mr', '.', ' ', 'said', 'our', ' ', 'performance', 'was', 'good']", the big board 's mr.  said our  performance was good 
-"[' ', 'see', 'related', 'story', 'fed', 'ready', 'to', ' ', 'big', 'funds', 'wsj', 'oct', '.', 'N', 'N']", see related story fed ready to  big funds wsj oct. N N 
 "[' ', 'just', 'thought', 'you', ""'d"", 'like', 'to', 'know']", just thought you 'd like to know 
 "[' ', 'george', ' ']", george  
 "[' ', 'hooker', ""'s"", 'philosophy', 'was', 'to', 'build', 'and', 'sell']", hooker 's philosophy was to build and sell 
 "[' ', 'we', 'want', 'to', 'build', 'and', 'hold']", we want to build and hold 
 "['   ', 'is', 'acting', 'as', 'the', 'consortium', ""'s"", 'investment', 'bankers']",   is acting as the consortium 's investment bankers 
-"[' ', 'the', 'week', ""'s"", 'total', 'was', 'up', 'N', 'N', 'from', 'N', 'tons', 'a', 'year', 'earlier']", the week 's total was up N N from N tons a year earlier 
-"[' ', 'the', ' ', 'total', 'was', 'N', 'tons', 'up', 'N', 'N', 'from', 'N', 'tons', 'a', 'year', 'earlier']", the  total was N tons up N N from N tons a year earlier 
-"[' ', 'the', 'bills', 'will', 'be', 'dated', 'oct', '.', 'N', 'and', 'will', 'mature', 'oct', '.', 'N', 'N']", the bills will be dated oct. N and will mature oct. N N 
 "[' ', 'they', 'will', 'be', 'available', 'in', 'minimum', 'denominations', 'of', '$', 'N']", they will be available in minimum denominations of $ N 
 "[' ', 'this', 'feels', 'more', 'like', 'a', ' ', 'deal']", this feels more like a  deal 
 "[' ', 'people', 'are', ""n't"", ' ']", people are n't  
@@ -33,27 +25,29 @@ source_text,target_text
 "[' ', 'but', 'fund', 'managers', 'say', 'they', ""'re"", 'ready']", but fund managers say they 're ready 
 "[' ', 'not', 'all', 'funds', 'have', 'raised', 'cash', 'levels', 'of', 'course']", not all funds have raised cash levels of course 
 "[' ', 'many', 'fund', 'managers', 'argue', 'that', 'now', ""'s"", 'the', 'time', 'to', 'buy']", many fund managers argue that now 's the time to buy 
+"[' ', 'but', 'most', 'investors', 'were', 'seeking', 'share', 'prices', 'and', 'other', 'information']", but most investors were seeking share prices and other information 
 "[' ', 'trading', 'volume', 'was', 'only', 'modestly', 'higher', 'than', 'normal']", trading volume was only modestly higher than normal 
 "[' ', 'still', 'fund', 'groups', 'are', ""n't"", 'taking', 'any', 'chances']", still fund groups are n't taking any chances 
 "[' ', 'the', 'centers', 'normally', 'are', 'closed', 'through', 'the', 'weekend']", the centers normally are closed through the weekend 
 "[' ', 'the', ' ', 'group', 'had', 'a', 'similar', 'recording', 'for', 'investors']", the  group had a similar recording for investors 
 "[' ', 'this', 'is', 'not', 'a', 'major', 'crash', 'she', 'said']", this is not a major crash she said 
-"[' ', 'she', 'added', 'if', 'they', 'all', 'were', 'bullish', 'i', ""'d"", 'really', 'be', 'upset']", she added if they all were bullish i 'd really be upset 
-"[' ', 'this', 'time', 'i', 'do', ""n't"", 'think', 'we', ""'ll"", 'get', 'a', 'panic', 'reaction']", this time i do n't think we 'll get a panic reaction 
 "[' ', 'now', 'those', 'routes', 'are', ""n't"", 'expected', 'to', 'begin', 'until', 'jan']", now those routes are n't expected to begin until jan 
 "[' ', 'those', 'too', 'are', 'almost', 'certain', 'to', 'arrive', 'late']", those too are almost certain to arrive late 
 "[' ', 'i', 'do', ""n't"", 'think', 'their', 'customers', 'would', 'like', 'it', 'very', 'much']", i do n't think their customers would like it very much 
+"[' ', 'the', 'investment', 'community', 'for', 'one', 'has', 'been', 'anticipating', 'a', ' ', 'resolution']", the investment community for one has been anticipating a  resolution 
 "[' ', 'i', 'would', ""n't"", 'expect', 'an', 'immediate', 'resolution', 'to', 'anything']", i would n't expect an immediate resolution to anything 
+"[' ', 'the', 'union', 'is', 'continuing', 'to', 'work', 'through', 'its', 'expired', 'contract', 'however']", the union is continuing to work through its expired contract however 
 "[' ', 'the', 'accord', 'expired', 'yesterday']", the accord expired yesterday 
 "['  ', '&', ' ', 'is', 'a', 'unit', 'of', 'united', 'technologies', 'inc']",  &  is a unit of united technologies inc 
 "['   ', 'is', 'based', 'in', 'amsterdam']",   is based in amsterdam 
 "['   ', 'contributed', 'to', 'this', 'article']",   contributed to this article 
 "[' ', 'the', 'projects', 'are', 'big']", the projects are big 
 "[' ', 'they', 'can', 'be', 'c$', 'N', 'billion', 'plus', 'mr', '.', ' ', 'said']", they can be c$ N billion plus mr.  said 
-"['   ', 'flights', 'are', '$', 'N', 'to', 'paris', 'and', '$', 'N', 'to', 'london']",   flights are $ N to paris and $ N to london 
-"[' ', 'diamond', ' ', 'is', 'the', 'operator', 'with', 'a', 'N', 'N', 'interest', 'in', 'the', 'well']", diamond  is the operator with a N N interest in the well 
+"[' ', 'in', 'a', 'centennial', 'journal', 'article', 'oct', '.', 'N', 'the', 'fares', 'were', 'reversed']", in a centennial journal article oct. N the fares were reversed 
+"[' ', 'diamond', ' ', 'offshore', 'partners', 'said', 'it', 'had', 'discovered', 'gas', 'offshore', 'louisiana']", diamond  offshore partners said it had discovered gas offshore louisiana 
 "[' ', 'we', 'usually', 'operate', 'in', 'that', 'conservative', 'manner']", we usually operate in that conservative manner 
 "[' ', 'but', 'now', 'prices', 'have', ' ', 'and', 'quantum', ""'s"", 'profit', 'is', ' ']", but now prices have  and quantum 's profit is  
+"[' ', 'pricing', 'cycles', 'to', 'be', 'sure', 'are', 'nothing', 'new', 'for', 'plastics', 'producers']", pricing cycles to be sure are nothing new for plastics producers 
 "[' ', 'now', 'we', ""'re"", 'at', 'the', 'bottom', 'of', 'the', ' ']", now we 're at the bottom of the  
 "[' ', 'people', 'were', 'even', ' ', 'bags', 'he', 'says']", people were even  bags he says 
 "[' ', 'now', 'producers', 'hope', 'prices', 'have', 'hit', 'bottom']", now producers hope prices have hit bottom 
@@ -66,39 +60,34 @@ source_text,target_text
 "['  ', 'is', 'the', 'second', '-', 'largest', 'propane', 'distributor', 'in', 'the', 'u.s', '.']",  is the second-largest propane distributor in the u.s. 
 "[' ', 'the', 'largest', 'suburban', 'propane', 'was', 'already', 'owned', 'by', 'quantum']", the largest suburban propane was already owned by quantum 
 "[' ', 'still', 'quantum', 'has', 'a', 'crisis', 'to', 'get', 'past', 'right', 'now']", still quantum has a crisis to get past right now 
-"[' ', 'but', 'its', 'quota', 'has', 'been', 'as', 'high', 'as', 'N', 'N', 'in', 'N']", but its quota has been as high as N N in N 
+"[' ', 'some', 'analysts', 'speculate', 'the', 'weakening', 'stock', 'may', 'yet', 'attract', 'a', 'suitor']", some analysts speculate the weakening stock may yet attract a suitor 
 "[' ', 'revenue', 'totaled', '$', 'N', 'million']", revenue totaled $ N million 
-"[' ', 'measuring', ' ', 'may', 'soon', 'be', 'replaced', 'by', ' ', 'in', 'the', ' ', 'room']", measuring  may soon be replaced by  in the  room 
-"[' ', 'they', 'do', ""n't"", 'want', 'to', 'get', 'caught', 'again', 'says', 'one', 'industry', ' ']", they do n't want to get caught again says one industry  
 "['  ', 'are', ""n't"", 'entirely', 'new', 'for', 'p&g']",  are n't entirely new for p&g 
-"[' ', 'with', 'the', 'help', 'of', '  ', 'p&g', ""'s"", 'share', 'is', 'now', 'estimated', 'to', 'be', 'N', 'N']", with the help of   p&g 's share is now estimated to be N N 
 "[' ', 'it', 'also', 'has', 'a', ' ', 'facility', 'in', 'california']", it also has a  facility in california 
-"[' ', 'this', 'is', 'something', 'p&g', 'would', 'do', 'with', 'or', 'without', ' ', 'says', 'mr', '.', ' ']", this is something p&g would do with or without  says mr.  
 "[' ', 'many', 'called', 'it', 'simply', 'a', 'contrast', 'in', 'styles']", many called it simply a contrast in styles 
 "[' ', 'but', 'some', 'saw', 'it', 'as', 'a', 'classic', 'negotiating', ' ']", but some saw it as a classic negotiating  
 "[' ', 'i', 'do', ""n't"", 'feel', 'very', ' ']", i do n't feel very  
 "[' ', 'i', 'do', ""n't"", 'feel', 'either', 'hard', 'or', 'soft']", i do n't feel either hard or soft 
+"[' ', 'she', '  ', 'business', 'practices', 'that', 'the', 'u.s', '.', 'government', 'has', 'identified']", she   business practices that the u.s. government has identified 
 "[' ', 'but', 'she', 'stressed', 'i', 'am', 'against', 'managed', 'trade']", but she stressed i am against managed trade 
 "[' ', 'the', 'company', 'did', ""n't"", 'break', 'out', 'its', 'fourth', '-', 'quarter', 'results']", the company did n't break out its fourth-quarter results 
 "[' ', 'closely', 'held', 'morris', 'communications', 'is', 'based', 'in', '  ']", closely held morris communications is based in   
 "[' ', 'terms', 'were', ""n't"", 'disclosed']", terms were n't disclosed 
 "['  ', 'operates', 'N', ' ', 'apparel', 'stores', 'in', 'the', 'u.s', '.']",  operates N  apparel stores in the u.s. 
 "[' ', 'he', 'did', ""n't"", 'forecast', 'phillips', ""'s"", 'results']", he did n't forecast phillips 's results 
-"[' ', 'it', 'has', 'plunged', 'N', 'N', 'since', 'july', 'to', 'around', 'N', 'cents', 'a', 'pound']", it has plunged N N since july to around N cents a pound 
 "[' ', 'a', 'big', 'reason', 'for', 'the', 'chemical', 'price', 'retreat', 'is', ' ']", a big reason for the chemical price retreat is  
 "[' ', 'companies', 'added', 'capacity', ' ']", companies added capacity  
 "[' ', 'third', '-', 'quarter', 'profits', 'from', 'gasoline', 'were', 'weaker']", third-quarter profits from gasoline were weaker 
+"[' ', 'the', 'excess', 'supply', 'pushed', 'gasoline', 'prices', 'down', 'in', 'that', 'period']", the excess supply pushed gasoline prices down in that period 
 "[' ', 'the', 'main', 'reason', 'remains', 'weather']", the main reason remains weather 
 "[' ', 'this', 'summer', 'on', 'the', 'other', 'hand', 'had', ' ', 'weather', 'than', 'usual']", this summer on the other hand had  weather than usual 
 "[' ', 'olivetti', 'reportedly', 'began', 'shipping', 'these', 'tools', 'in', 'N']", olivetti reportedly began shipping these tools in N 
 "['  ', 'officials', 'could', ""n't"", 'be', 'located']",  officials could n't be located 
 "[' ', 'however', 'the', 'agreement', 'was', 'canceled', 'in', 'june', 'N']", however the agreement was canceled in june N 
-"[' ', 'under', 'the', 'agreement', ' ', 'will', 'own', 'N', 'N', 'of', 'the', 'combined', 'company']", under the agreement  will own N N of the combined company 
+"[' ', 'ideal', 'said', 'it', 'expects', 'to', 'complete', 'the', 'transaction', 'early', 'next', 'year']", ideal said it expects to complete the transaction early next year 
 "[' ', 'that', 'would', 'be', 'the', 'lowest', 'level', 'since', 'the', 'early', '1970s']", that would be the lowest level since the early 1970s 
 "[' ', 'stocks', 'were', 'N', 'million', ' ', 'on', 'may', 'N', 'of', 'this', 'year']", stocks were N million  on may N of this year 
-"[' ', 'that', 'figure', ' ', 'to', 'about', 'N', 'N', 'in', ' ', 'portions', 'of', 'kansas', 'he', 'said']", that figure  to about N N in  portions of kansas he said 
 "[' ', 'looking', 'ahead', 'to', 'other', 'commodity', 'markets', 'this', 'week']", looking ahead to other commodity markets this week 
-"[' ', 'it', 'settled', 'with', 'a', 'loss', 'of', 'N', 'cents', 'at', '$', 'N', 'a', 'pound']", it settled with a loss of N cents at $ N a pound 
 "[' ', 'energy']", energy 
 "[' ', 'mr', '.', 'spielvogel', 'said', 'he', 'would', ""n't"", 'launch', 'a', 'hostile', 'bid']", mr. spielvogel said he would n't launch a hostile bid 
 "[' ', 'he', 'was', 'brought', 'in', 'to', 'turn', 'around', 'the', 'company']", he was brought in to turn around the company 
@@ -110,39 +99,43 @@ source_text,target_text
 "[' ', 'revenue', 'soared', 'to', '$', 'N', 'million', 'from', '$', 'N', 'million']", revenue soared to $ N million from $ N million 
 "[' ', 'revenue', 'rose', 'to', '$', 'N', 'million', 'from', '$', 'N', 'million']", revenue rose to $ N million from $ N million 
 "[' ', 'retailers', 'are', 'just', 'in', 'disarray']", retailers are just in disarray 
-"[' ', 'revenue', 'gained', 'N', 'N', 'to', '$', 'N', 'billion', 'from', '$', 'N', 'billion']", revenue gained N N to $ N billion from $ N billion 
-"[' ', 'revenue', 'gained', 'N', 'N', 'to', '$', 'N', 'million', 'from', '$', 'N', 'million']", revenue gained N N to $ N million from $ N million 
-"[' ', 'ad', ' ', 'at', 'the', 'journal', 'fell', 'N', 'N', 'in', 'the', 'third', 'quarter']", ad  at the journal fell N N in the third quarter 
+"[' ', 'affiliated', 'publications', 'inc', '.', 'reversed', 'a', 'year', '-', 'earlier', 'third', 'quarter', 'net', 'loss']", affiliated publications inc. reversed a year-earlier third quarter net loss 
+"[' ', 'union', 'officials', 'have', 'taken', 'a', 'beating', 'politically', 'as', 'a', 'result']", union officials have taken a beating politically as a result 
+"[' ', 'canadian', 'investment', 'rules', 'require', 'that', 'big', 'foreign', 'takeovers', 'meet', 'that', 'standard']", canadian investment rules require that big foreign takeovers meet that standard 
+"[' ', 'both', 'merieux', 'and', 'connaught', 'are', 'biotechnology', 'research', 'and', 'vaccine', 'manufacturing', 'concerns']", both merieux and connaught are biotechnology research and vaccine manufacturing concerns 
 "[' ', 'the', 'government', ""'s"", 'action', 'was', 'unusual']", the government 's action was unusual 
+"[' ', 'the', 'university', 'is', 'considering', 'a', 'settlement', 'proposal', 'made', 'by', 'connaught']", the university is considering a settlement proposal made by connaught 
 "[' ', 'french', 'state', '-', 'owned', 'rhone', '-', 'poulenc', 's.a', '.', 'holds', 'N', 'N', 'of', 'merieux']", french state-owned rhone-poulenc s.a. holds N N of merieux 
 "[' ', 'the', 'exchange', 'ratio', 'was', 'never', 'established']", the exchange ratio was never established 
-"[' ', 'it', ""'s"", 'turning', 'out', 'to', 'be', 'a', 'real', 'blockbuster', 'mr', '.', ' ', 'said']", it 's turning out to be a real blockbuster mr.  said 
+"[' ', 'proceeds', 'will', 'be', 'used', 'to', 'eliminate', 'and', 'restructure', 'bank', 'debt']", proceeds will be used to eliminate and restructure bank debt 
+"['  ', 'currently', 'has', 'approximately', 'N', 'million', 'common', 'shares', 'outstanding']",  currently has approximately N million common shares outstanding 
 "[' ', 'in', 'indianapolis', 'lilly', 'declined', 'comment']", in indianapolis lilly declined comment 
+"[' ', 'the', 'company', 'was', 'officially', 'merged', 'with', 'bristol', '-', 'myers', 'co.', 'earlier', 'this', 'month']", the company was officially merged with bristol-myers co. earlier this month 
 "[' ', 'bristol', '-', 'myers', 'declined', 'to', 'comment']", bristol-myers declined to comment 
 "[' ', 'the', 'strong', 'dollar', 'hurt', 'pfizer', 'a', 'lot', 'too', 'mr', '.', ' ', 'said']", the strong dollar hurt pfizer a lot too mr.  said 
 "[' ', 'in', 'new', 'york', 'the', 'company', 'declined', 'comment']", in new york the company declined comment 
-"[' ', 'upjohn', ""'s"", ' ', 'drugs', 'are', ' ', 'a', ' ', 'and', ' ', 'a', ' ']", upjohn 's  drugs are  a  and  a  
 "[' ', 'in', ' ', 'mich', '.', 'upjohn', 'declined', 'comment']", in  mich. upjohn declined comment 
-"['  ', 'technology', 'went', 'public', 'in', 'may', 'N', 'at', '$', 'N', 'a', 'share']",  technology went public in may N at $ N a share 
 "[' ', 'its', 'high', 'for', 'the', 'past', 'year', 'was', '$', 'N', 'a', 'share']", its high for the past year was $ N a share 
 "[' ', 'she', ' ', 'families', 'by', 'their', 'sleeping', 'arrangements']", she  families by their sleeping arrangements 
 "[' ', 'they', 'came', 'by', 'their', '  ']", they came by their   
 "[' ', 'an', 'l.a', '.', 'solution', 'explains', 'mr', '.', ' ']", an l.a. solution explains mr.  
-"[' ', 'but', 'it', 'does', ""n't"", 'take', 'too', 'many', 'lines', 'to', 'figure', 'harry', 'out']", but it does n't take too many lines to figure harry out 
 "[' ', 'he', ""'s"", 'a', ' ']", he 's a  
 "[' ', 'the', ' ', 'area', 'is', ' ', 'with', 'lead', ' ', 'and', 'other', 'metals']", the  area is  with lead  and other metals 
 "[' ', 'where', ""'s"", 'the', 'leadership']", where 's the leadership 
 "[' ', 'where', ""'s"", 'the', 'guy', 'who', 'can', 'say', 'enough', 'is', 'enough']", where 's the guy who can say enough is enough 
-"[' ', 'i', 'did', ""n't"", 'bother', 'calling', 'anybody', 'i', 'did', ""n't"", 'even', 'turn', 'on', 'tv']", i did n't bother calling anybody i did n't even turn on tv 
 "[' ', 'this', 'further', ' ', 'retailers', 'she', 'says']", this further  retailers she says 
 "[' ', 'is', 'this', 'the', 'wrong', 'time', 'to', 'open', 'a', 'store']", is this the wrong time to open a store 
 "[' ', 'who', 'is', 'going', 'to', 'be', 'in', 'the', 'space', 'next', 'door']", who is going to be in the space next door 
 "[' ', 'and', 'in', 'some', 'neighborhoods', ' ', 'have', 'merely', 'hit', 'a', ' ']", and in some neighborhoods  have merely hit a  
-"[' ', 'precision', ' ', 'corp', '.', ' ', 'ore', '.', 'will', 'begin', 'trading', 'with', 'the', 'symbol', ' ']", precision  corp.  ore. will begin trading with the symbol  
+"[' ', 'the', 'same', 'factors', 'limiting', 'demand', 'for', 'office', 'space', 'have', 'affected', 'retailing']", the same factors limiting demand for office space have affected retailing 
 "[' ', 'it', 'makes', 'investment', ' ', 'and', 'has', 'traded', 'over', '-', 'the', '-', 'counter']", it makes investment  and has traded over-the-counter 
+"[' ', 'it', 'will', 'continue', 'to', 'trade', 'on', 'the', 'international', 'stock', 'exchange', 'london']", it will continue to trade on the international stock exchange london 
 "[' ', 'the', 'american', 'stock', 'exchange', 'listed', 'shares', 'of', 'two', 'companies']", the american stock exchange listed shares of two companies 
 "[' ', 'it', 'had', 'traded', 'over', '-', 'the', '-', 'counter']", it had traded over-the-counter 
+"[' ', 'columbia', 'laboratories', 'inc', '.', 'miami', 'began', 'trading', 'with', 'the', 'symbol', ' ']", columbia laboratories inc. miami began trading with the symbol  
 "[' ', 'the', 'pharmaceuticals', 'maker', 'had', 'traded', 'over', '-', 'the', '-', 'counter']", the pharmaceuticals maker had traded over-the-counter 
+"[' ', 'and', 'his', 'outlook', 'improved', 'after', 'successful', ' ', 'surgery', 'in', 'august']", and his outlook improved after successful  surgery in august 
+"[' ', 'but', 'it', ""'s"", 'uncertain', 'whether', 'these', 'institutions', 'will', 'take', 'those', 'steps']", but it 's uncertain whether these institutions will take those steps 
 "[' ', 'ncnb', 'continued', 'its', ' ', 'into', 'the', 'florida', 'and', 'texas', 'markets']", ncnb continued its  into the florida and texas markets 
 "['  ', 'just', 'give', 'people', 'the', 'wrong', 'image', 'said', 'mr', '.', ' ']",  just give people the wrong image said mr.  
 "[' ', 'that', 'perception', 'takes', 'the', 'focus', 'off', 'the', 'magazine']", that perception takes the focus off the magazine 
@@ -151,7 +144,6 @@ source_text,target_text
 "[' ', 'a', 'few', 'drops', 'in', 'circulation', 'are', 'of', 'no', 'consequence']", a few drops in circulation are of no consequence 
 "[' ', 'they', 'said', 'follow', ' ', 'he', 'told', 'reporters']", they said follow  he told reporters 
 "[' ', 'but', 'for', 'all', 'its', 'success', ' ', 'has', 'hit', 'a', ' ']", but for all its success  has hit a  
-"[' ', 'although', '  ', 'when', 'big', 'news', 'breaks', 'it', ' ', 'during', 'periods', 'of', 'calm']", although   when big news breaks it  during periods of calm 
 "[' ', 'you', 'ca', ""n't"", 'live', 'on', 'that']", you ca n't live on that 
 "[' ', 'but', 'that', 'wo', ""n't"", 'be', 'easy']", but that wo n't be easy 
 "['  ', 'wants', 'to', 'change', 'its', 'viewers', ""'"", 'habits']",  wants to change its viewers ' habits 
@@ -160,80 +152,83 @@ source_text,target_text
 "[' ', 'some', 'in', 'the', 'industry', 'are', 'skeptical']", some in the industry are skeptical 
 "['  ', 'the', 'principle', 'in', 'the', 'cases', 'is', 'the', 'same']",  the principle in the cases is the same 
 "[' ', 'charles', 'f.', ' ']", charles f.  
-"[' ', 'valley', 'federal', 'with', 'assets', 'of', '$', 'N', 'billion', 'is', 'based', 'in', 'van', ' ']", valley federal with assets of $ N billion is based in van  
 "[' ', 'call', 'it', 'the', 'we', ""'re"", 'too', 'broke', 'to', 'fight', 'defense']", call it the we 're too broke to fight defense 
 "['  ', 'foreclosed', 'on', 'the', 'ranch']",  foreclosed on the ranch 
-"[' ', 'we', ""'d"", 'take', 'the', 'valley', 'ranch', 'free', 'and', 'clear', 'as', 'a', ' ', 'prize']", we 'd take the valley ranch free and clear as a  prize 
 "[' ', 'a', 'new', 'president', 'was', ""n't"", 'named']", a new president was n't named 
-"[' ', 'most', 'of', 'those', 'freed', 'had', 'spent', 'at', 'least', 'N', 'years', 'in', 'prison']", most of those freed had spent at least N years in prison 
+"[' ', 'but', 'his', 'release', 'within', 'the', 'next', 'few', 'months', 'is', 'widely', 'expected']", but his release within the next few months is widely expected 
 "[' ', 'the', 'device', 'was', 'replaced']", the device was replaced 
 "[' ', 'he', 'made', 'his', 'remarks', 'to', 'a', 'plo', 'gathering', 'in', ' ']", he made his remarks to a plo gathering in  
 "['  ', 'is', 'a', 'holding', 'company', 'controlled', 'by', 'mr', '.', 'posner']",  is a holding company controlled by mr. posner 
-"[' ', 'i', 'would', 'say', 'this', 'is', 'not', 'bad', 'news', 'this', 'is', 'a', ' ', 'he', 'said']", i would say this is not bad news this is a  he said 
 "[' ', 'the', 'core', 'rate', 'is', 'not', 'really', 'out', 'of', 'line']", the core rate is not really out of line 
 "[' ', 'food', 'prices', 'declined', 'N', 'N', 'after', 'climbing', 'N', 'N', 'in', 'august']", food prices declined N N after climbing N N in august 
+"[' ', 'city', 'federal', 'operates', 'N', 'banking', 'offices', 'in', 'new', 'jersey', 'and', 'florida']", city federal operates N banking offices in new jersey and florida 
+"[' ', 'regulators', 'also', 'ordered', 'centrust', 'to', 'stop', 'buying', 'back', 'the', 'preferred', 'stock']", regulators also ordered centrust to stop buying back the preferred stock 
 "[' ', 'the', 'woman', 'won', 'the', 'bet']", the woman won the bet 
-"[' ', 'a', ' ', 'game', 'show', 'has', 'as', 'its', 'host', 'a', 'belgian', ' ', 'to', 'be', 'italian']", a  game show has as its host a belgian  to be italian 
+"[' ', 'attempts', 'to', 'produce', ' ', 'programs', 'have', 'generally', 'resulted', 'in', 'disappointment']", attempts to produce  programs have generally resulted in disappointment 
 "[' ', 'a', '  ', 'under', 'the', 'title', 'almost', 'anything', 'goes', ' ', 'fast']", a   under the title almost anything goes  fast 
 "[' ', 'most', 'british', 'programming', 'is', 'more', 'of', 'an', 'acquired', 'taste']", most british programming is more of an acquired taste 
 "[' ', 'european', 'drama', 'has', 'had', 'better', 'though', 'still', 'mixed', 'fortunes']", european drama has had better though still mixed fortunes 
+"[' ', 'the', 'most', 'popular', 'such', 'shows', 'focus', 'on', 'narrow', 'national', 'concerns']", the most popular such shows focus on narrow national concerns 
 "[' ', 'given', 'a', 'choice', 'everybody', 'will', 'watch', 'a', ' ', 'show']", given a choice everybody will watch a  show 
 "[' ', 'but', 'frequently', 'there', 'is', ""n't"", 'much', 'choice']", but frequently there is n't much choice 
 "[' ', 'the', 'result', 'is', 'a', 'new', 'and', 'huge', 'appetite', 'for', 'programming']", the result is a new and huge appetite for programming 
 "[' ', 'the', 'companies', 'hope', 'for', 'a', 'final', 'agreement', 'by', 'year', '-', 'end']", the companies hope for a final agreement by year-end 
 "[' ', 'the', 'venture', ""'s"", 'importance', 'for', 'thomson', 'is', 'great']", the venture 's importance for thomson is great 
 "[' ', 'it', ""'s"", 'very', 'much', 'a', 'growing', 'concern']", it 's very much a growing concern 
+"[' ', 'inland', 'said', 'its', 'third', '-', 'quarter', 'results', 'will', 'be', 'announced', 'later', 'this', 'week']", inland said its third-quarter results will be announced later this week 
 "[' ', 'but', 'that', 'was', 'all', 'of', 'three', 'months', 'ago']", but that was all of three months ago 
 "[' ', 'the', 'industry', '  ']", the industry   
+"[' ', 'international', 'business', 'machines', 'corp', '.', 'also', 'is', 'expected', 'to', 'report', 'disappointing', 'results']", international business machines corp. also is expected to report disappointing results 
+"[' ', 'another', ' ', 'message', 'comes', 'from', 'businessland', 'inc', '.', 'a', 'computer', 'retailer']", another  message comes from businessland inc. a computer retailer 
 "[' ', 'companies', 'will', 'continue', 'to', 'war', 'over', 'standards']", companies will continue to war over standards 
+"[' ', 'the', 'short', '-', 'term', 'outlook', 'for', 'adobe', ""'s"", 'business', 'however', 'appears', 'strong']", the short-term outlook for adobe 's business however appears strong 
+"[' ', 'the', 'program', 'is', 'aimed', 'at', 'improving', 'the', 'quality', 'of', 'printed', 'material']", the program is aimed at improving the quality of printed material 
 "['  ', 'officials', 'could', ""n't"", 'be', 'reached', 'for', 'comment']",  officials could n't be reached for comment 
 "[' ', 'a', 'bus', 'is', 'the', 'data', 'highway', 'within', 'a', 'computer']", a bus is the data highway within a computer 
 "[' ', 'the', 'gap', 'between', 'winners', 'and', ' ', 'will', 'grow']", the gap between winners and  will grow 
 "[' ', 'at', 'the', 'same', 'time', ' ', 'firms', 'will', 'continue', 'to', 'lose', 'ground']", at the same time  firms will continue to lose ground 
+"[' ', 'some', 'lagging', 'competitors', 'even', 'may', 'leave', 'the', 'personal', 'computer', 'business', 'altogether']", some lagging competitors even may leave the personal computer business altogether 
 "[' ', 'but', 'they', 'will', 'have', 'to', 'act', 'quickly']", but they will have to act quickly 
 "[' ', 'population', 'drain', 'ends', 'for', 'midwestern', 'states']", population drain ends for midwestern states 
 "[' ', 'iowa', 'is', 'making', 'a', 'comeback']", iowa is making a comeback 
 "[' ', 'so', 'are', 'indiana', 'ohio', 'and', 'michigan']", so are indiana ohio and michigan 
 "[' ', 'the', 'gains', 'to', 'be', 'sure', 'are', 'rather', 'small']", the gains to be sure are rather small 
+"[' ', 'the', 'northeast', 'has', 'been', 'holding', 'its', 'own', 'in', 'the', 'population', 'race']", the northeast has been holding its own in the population race 
 "[' ', 'more', 'elderly', 'maintain', 'their', 'independence']", more elderly maintain their independence 
+"[' ', 'thanks', 'to', 'modern', 'medicine', 'more', 'couples', 'are', 'growing', 'old', 'together']", thanks to modern medicine more couples are growing old together 
 "[' ', 'that', 'share', 'has', 'remained', 'at', 'about', 'N', 'N', 'since', 'N']", that share has remained at about N N since N 
 "[' ', 'as', 'people', 'get', 'even', 'older', 'many', 'become', ' ']", as people get even older many become  
 "[' ', 'careers', 'count', 'most', 'for', 'the', ' ']", careers count most for the  
+"[' ', 'many', 'affluent', 'people', 'place', 'personal', 'success', 'and', 'money', 'above', 'family']", many affluent people place personal success and money above family 
 "['  ', 'percent', 'do', ""n't"", 'even', 'feel', 'they', 'are', 'financially', 'well', 'off']",  percent do n't even feel they are financially well off 
-"[' ', 'about', 'N', 'N', 'do', ""n't"", 'feel', 'they', ""'re"", 'more', 'able', 'than', 'others']", about N N do n't feel they 're more able than others 
+"[' ', 'many', 'of', 'the', 'affluent', 'are', ""n't"", 'comfortable', 'with', 'themselves', 'either']", many of the affluent are n't comfortable with themselves either 
 "[' ', 'odds', 'and', 'ends']", odds and ends 
 "[' ', 'about', 'N', 'N', 'are', 'women', 'and', 'N', 'N', 'are', ' ', 'students']", about N N are women and N N are  students 
 "[' ', 'this', 'small', 'dallas', 'suburb', ""'s"", 'got', 'trouble']", this small dallas suburb 's got trouble 
-"[' ', 'but', 'a', 'majority', 'of', 'the', ' ', 'council', 'did', ""n't"", 'buy', 'those', 'arguments']", but a majority of the  council did n't buy those arguments 
 "[' ', 'introducing', 'pool', 'argued', '   ', 'would', 'be', 'dangerous']", introducing pool argued    would be dangerous 
 "[' ', 'it', 'would', 'open', 'a', 'can', 'of', ' ']", it would open a can of  
 "['  ', 'is', 'no', ' ', 'to', 'cans', 'of', ' ', 'either']",  is no  to cans of  either 
 "[' ', 'now', 'comes', 'the', 'pool', ' ']", now comes the pool  
-"[' ', 'i', 'thought', 'this', 'was', 'all', 'taken', 'care', 'of', 'in', 'the', 'music', 'man']", i thought this was all taken care of in the music man 
-"[' ', 'for', 'instance', ' ', 'white', 'is', 'not', 'the', 'ultimate', '   ', 'is']", for instance  white is not the ultimate    is 
-"[' ', 'richard', '  ', 'as', 'a', '   ', 'in', 'a', '  ', 'and', 'rolling', 'up', 'its', 'long', ' ']", richard   as a    in a   and rolling up its long  
 "[' ', 'and', 'the', 'local', 'expression', 'for', 'brother', 'is', ' ', 'not', ' ']", and the local expression for brother is  not  
 "['  ', 'davis']",  davis 
 "[' ', 'of', 'course', 'mr', '.', 'mason', 'did', 'not', 'use', 'neutral', 'language']", of course mr. mason did not use neutral language 
 "[' ', 'people', 'are', 'fast', 'leaving', 'the', 'place', 'where', 'he', 'is', 'stuck']", people are fast leaving the place where he is stuck 
-"[' ', 'but', ' ', 'by', 'a', 'pro', 'like', ' ', 'mason', 'it', 'is', 'a', ' ', 'form', 'of', ' ']", but  by a pro like  mason it is a  form of  
 "[' ', 'why', ' ']", why  
 "[' ', 'but', 'these', 'are', 'not', 'the', 'differences', 'that', 'make', ' ']", but these are not the differences that make  
 "[' ', 'it', ""'s"", 'worth', 'noting', 'that', 'both', '  ', 'are', ' ']", it 's worth noting that both   are  
-"[' ', 'at', 'least', 'they', 'both', 'speak', 'with', 'strong', ' ', 'as', 'do', ' ', 'and', ' ']", at least they both speak with strong  as do  and  
 "[' ', 'so', 'far', 'the', ' ', 'have', 'been', 'few', 'and', 'far', 'between']", so far the  have been few and far between 
-"[' ', 'even', 'more', ' ', 'is', 'the', ' ', 'between', '  ', 'and', 'mr', '.', 'mason', ""'s"", 'comic', ' ']", even more  is the  between   and mr. mason 's comic  
 "[' ', 'sound', 'familiar']", sound familiar 
-"[' ', 'there', 'is', 'nothing', 'wrong', 'with', 'the', 'economy', 'all', 'the', ' ', 'are', 'up']", there is nothing wrong with the economy all the  are up 
 "[' ', 'heard', 'that', 'before']", heard that before 
-"[' ', 'we', 'do', ""n't"", 'need', 'this', 'as', 'a', 'way', 'to', 'get', 'capital', 'gains', 'he', 'said']", we do n't need this as a way to get capital gains he said 
 "[' ', 'opponents', 'of', 'the', 'cut', 'are', 'playing', ' ']", opponents of the cut are playing  
 "[' ', 'such', 'legislation', 'must', 'be', 'enacted', 'by', 'the', 'end', 'of', 'the', 'month']", such legislation must be enacted by the end of the month 
 "[' ', 'the', 'house', 'appears', 'reluctant', 'to', 'join', 'the', 'senators']", the house appears reluctant to join the senators 
 "[' ', 'things', 'had', 'just', 'gone', 'too', 'far']", things had just gone too far 
+"[' ', 'sen', '.', 'dole', 'said', 'that', 'the', 'move', 'required', 'sacrifice', 'by', 'every', 'senator']", sen. dole said that the move required sacrifice by every senator 
 "[' ', 'the', ' ', 'provisions', 'which', 'affect', 'mostly', 'corporations', 'would']", the  provisions which affect mostly corporations would 
+"[' ', 'the', 'measure', 'also', 'includes', 'spending', 'cuts', 'and', 'increases', 'in', 'federal', 'fees']", the measure also includes spending cuts and increases in federal fees 
 "[' ', 'among', 'its', 'provisions']", among its provisions 
 "[' ', 'a', 'similar', 'provision', 'is', 'in', 'the', 'house', 'version']", a similar provision is in the house version 
+"[' ', 'increases', 'in', 'nuclear', 'regulatory', 'commission', 'fees', 'totaling', '$', 'N', 'million']", increases in nuclear regulatory commission fees totaling $ N million 
 "[' ', 'john', 'e.', ' ', 'contributed', 'to', 'this', 'article']", john e.  contributed to this article 
 "[' ', 'are', 'you', ' ']", are you  
 "[' ', 'your', 'paper', 'needs', 'a', 'serious', 'reality', 'check']", your paper needs a serious reality check 
@@ -241,6 +236,7 @@ source_text,target_text
 "[' ', 'cambridge', 'mass']", cambridge mass 
 "[' ', 'in', 'friday', ""'s"", 'edition', 'the', 'name', 'of', 'the', 'unit', 'was', 'misstated']", in friday 's edition the name of the unit was misstated 
 "[' ', 'columbia', 'savings', 'is', 'a', 'major', 'holder', 'of', 'so', '-', 'called', 'junk', 'bonds']", columbia savings is a major holder of so-called junk bonds 
+"[' ', 'columbia', 'savings', 'officials', 'were', ""n't"", 'available', 'for', 'comment', 'on', 'the', 'downgrade']", columbia savings officials were n't available for comment on the downgrade 
 "[' ', 'franklin', 'savings', 'association', ' ', 'kan', '.']", franklin savings association  kan. 
 "[' ', 'i', 'think', 'it', 'was', 'a', 'little', ' ', 'on', 'their', 'part']", i think it was a little  on their part 
 "[' ', 'does', 'this', 'signal', 'another', 'black', 'monday', 'is', 'coming']", does this signal another black monday is coming 
@@ -251,13 +247,14 @@ source_text,target_text
 ['   '],   
 "[' ', 'friday', ""'s"", 'big', 'drop', 'she', 'says', 'was', 'not', 'a', 'crash']", friday 's big drop she says was not a crash 
 "[' ', 'so', 'she', 'thinks', 'the', 'damage', 'will', 'be', 'short', '-', 'lived', 'and', 'contained']", so she thinks the damage will be short-lived and contained 
-"[' ', 'this', 'is', 'exactly', 'the', 'same', 'thing', 'as', 'far', 'as', 'i', ""'"", 'm', 'concerned']", this is exactly the same thing as far as i 'm concerned 
 "[' ', 'my', 'advice', 'is', 'to', 'buy']", my advice is to buy 
 "['  ', 'davis']",  davis 
 "[' ', 'there', 'was', 'a', 'unique', 'combination', 'in', 'N', 'he', 'says']", there was a unique combination in N he says 
 "[' ', 'margin', 'debt', 'was', 'at', 'a', 'record', 'high']", margin debt was at a record high 
+"[' ', 'there', 'was', 'tremendous', 'public', 'enthusiasm', 'for', 'stock', 'mutual', 'funds']", there was tremendous public enthusiasm for stock mutual funds 
 "[' ', 'a', 'hundred', 'billion', 'dollars', 'in', 'stock', 'was', 'subject', 'to', 'it']", a hundred billion dollars in stock was subject to it 
 "[' ', 'in', 'N', 'such', 'selling', 'contributed', 'to', 'a', ' ', 'effect']", in N such selling contributed to a  effect 
+"[' ', 'over', 'the', 'next', 'several', 'months', 'though', 'he', 'says', 'things', 'look', 'bad']", over the next several months though he says things look bad 
 "[' ', 'sort', 'of', 'a', ' ', 'bear', 'market']", sort of a  bear market 
 "[' ', 'that', 'would', 'be', 'a', 'normal', 'bear', 'market', 'he', 'says']", that would be a normal bear market he says 
 "[' ', 'i', 'guess', 'that', ""'s"", 'my', 'forecast']", i guess that 's my forecast 
@@ -266,8 +263,10 @@ source_text,target_text
 "[' ', 'unlike', 'N', 'the', 'dollar', 'has', 'been', 'strong']", unlike N the dollar has been strong 
 "[' ', 'so', 'it', ""'s"", 'a', 'very', 'mixed', 'bag']", so it 's a very mixed bag 
 "[' ', 'john', 'kenneth', ' ']", john kenneth  
+"[' ', 'this', 'has', 'both', 'made', 'investors', 'uneasy', 'and', 'the', 'corporations', 'more', 'vulnerable']", this has both made investors uneasy and the corporations more vulnerable 
 "[' ', 'nevertheless', 'he', 'says', 'a', 'depression', 'does', ""n't"", 'appear', 'likely']", nevertheless he says a depression does n't appear likely 
 "[' ', 'mario', ' ']", mario  
+"[' ', 'examples', 'are', 'ford', 'looking', 'at', 'jaguar', 'bellsouth', 'looking', 'at', 'lin', 'broadcasting']", examples are ford looking at jaguar bellsouth looking at lin broadcasting 
 "[' ', 'jim', 'rogers']", jim rogers 
 "[' ', 'friday', 'you', 'could', ""n't"", 'sell', 'dollars', 'he', 'says']", friday you could n't sell dollars he says 
 "[' ', 'frank', ' ']", frank  
@@ -277,7 +276,7 @@ source_text,target_text
 "['  ', 'probably', 'are', 'the', 'right', 'place', 'to', 'be', 'he', 'says']",  probably are the right place to be he says 
 "[' ', 'i', 'thought', 'your', 'editorial', 'was', ' ', 'accurate', 'and', 'deliberately', ' ']", i thought your editorial was  accurate and deliberately  
 "[' ', 'yes', 'he', 'did']", yes he did 
-"[' ', 'my', 'colleagues', 'and', 'i', 'fully', 'realize', 'we', 'are', 'not', 'a', 'court', 'etc']", my colleagues and i fully realize we are not a court etc 
+"[' ', 'he', 'used', 'about', 'N', 'words', 'defending', 'the', 'witnesses', ""'"", 'constitutional', 'rights']", he used about N words defending the witnesses ' constitutional rights 
 ['   '],   
 "[' ', 'apparently', 'their', 'verdict', 'is', 'in']", apparently their verdict is in 
 "[' ', 'right', 'now', 'they', ""'re"", 'pursuing', 'evidence']", right now they 're pursuing evidence 
@@ -286,9 +285,9 @@ source_text,target_text
 "[' ', 'no', 'doubt', 'that', ""'s"", 'partially', 'true']", no doubt that 's partially true 
 "[' ', 'everything', 'that', 'mr', '.', ' ', 'says', 'in', 'his', 'letter', 'is', 'partially', 'true']", everything that mr.  says in his letter is partially true 
 "[' ', 'no', 'mr', '.', ' ', ""'s"", 'complaints', 'simply', 'wo', ""n't"", 'wash']", no mr.  's complaints simply wo n't wash 
+"[' ', 'it', 'defended', 'appropriate', 'constitutional', ' ', 'and', 'practical', 'common', 'sense']", it defended appropriate constitutional  and practical common sense 
 "[' ', 'the', 'system', 'is', 'the', 'problem', 'not', 'an', 'individual', 'member']", the system is the problem not an individual member 
 "[' ', 'individuals', 'can', 'always', 'have', 'their', 'hands', ' ']", individuals can always have their hands  
-"[' ', 'it', ""'s"", 'when', 'such', ' ', 'does', ""n't"", 'occur', 'that', 'we', ""'"", 've', 'got', 'trouble']", it 's when such  does n't occur that we 've got trouble 
 "[' ', 'i', 'do', 'not', 'by', 'any', 'means', 'defend', 'hud', 'management']", i do not by any means defend hud management 
 "[' ', 'raymond', ' ']", raymond  
 "['  ', 'n.j']",  n.j 
@@ -298,11 +297,9 @@ source_text,target_text
 "[' ', 'just', 'a', ' ']", just a  
 "[' ', 'or', 'is', ' ', 'fear', 'of', 'the', 'number', 'N', 'justified']", or is  fear of the number N justified 
 "[' ', 'it', 'was', 'like', 'the', 'friday', 'before', 'black', 'monday', 'two', 'years', 'ago']", it was like the friday before black monday two years ago 
-"[' ', 'the', ' ', 'record', 'of', 'N', 'million', 'shares', 'was', 'set', 'on', 'oct', '.', 'N']", the  record of N million shares was set on oct. N 
 "[' ', 'it', 'was', ""n't"", ' ', 'we', 'were', 'all', 'busy']", it was n't  we were all busy 
-"[' ', 'everybody', 'was', 'trying', 'to', 'do', 'the', 'same', 'thing', 'at', 'the', 'same', 'time']", everybody was trying to do the same thing at the same time 
-"[' ', 'but', 'he', 'added', 'you', 'can', 'only', 'take', 'one', 'call', 'at', 'a', 'time']", but he added you can only take one call at a time 
 "[' ', 'when', 'selling', 'is', 'so', ' ', 'prices', 'fall', ' ', 'and', 'fast']", when selling is so  prices fall  and fast 
+"[' ', 'on', 'friday', 'some', 'market', 'makers', 'were', 'selling', 'again', 'traders', 'said']", on friday some market makers were selling again traders said 
 "[' ', 'everyone', 'was', 'hitting', 'everyone', 'else', ""'s"", 'bid', 'he', 'said']", everyone was hitting everyone else 's bid he said 
 "[' ', 'the', 'pace', 'of', 'trading', 'was', 'orderly', 'he', 'said']", the pace of trading was orderly he said 
 "[' ', 'but', 'they', 'are', 'worried']", but they are worried 
@@ -317,25 +314,26 @@ source_text,target_text
 "[' ', 'prime', 'rate']", prime rate 
 "[' ', 'N', 'N', 'N']", N N N 
 "[' ', 'federal', 'funds']", federal funds 
-"[' ', 'N', 'N', 'N', 'high', 'N', 'N', 'N', 'low', 'N', 'N', 'N', 'near', 'closing', 'bid', 'N', 'N', 'N', 'offered']", N N N high N N N low N N N near closing bid N N N offered 
 "[' ', 'source', 'fulton', 'prebon', 'u.s.a', 'inc']", source fulton prebon u.s.a inc 
 "[' ', 'discount', 'rate']", discount rate 
 "[' ', 'N', 'N']", N N 
 "[' ', 'call', 'money']", call money 
 "[' ', 'N', 'N', 'N', 'to', 'N', 'N']", N N N to N N 
+"[' ', 'the', 'charge', 'on', 'loans', 'to', 'brokers', 'on', 'stock', 'exchange', 'collateral']", the charge on loans to brokers on stock exchange collateral 
+"[' ', 'commercial', 'paper', 'placed', 'directly', 'by', 'general', 'motors', 'acceptance', 'corp', '.']", commercial paper placed directly by general motors acceptance corp. 
 "[' ', 'commercial', 'paper']", commercial paper 
-"[' ', 'N', 'N', 'N', 'days', 'N', 'N', 'N', 'days', 'N', 'N', 'N', 'days']", N N N days N N N days N N N days 
 "[' ', 'certificates', 'of', 'deposit']", certificates of deposit 
 "[' ', 'the', 'minimum', 'unit', 'is', '$', 'N']", the minimum unit is $ N 
 "[' ', 'typical', 'rates', 'in', 'the', 'secondary', 'market']", typical rates in the secondary market 
-"[' ', 'N', 'N', 'one', 'month', 'N', 'N', 'three', 'months', 'N', 'N', 'six', 'months']", N N one month N N three months N N six months 
 "[' ', 'bankers', 'acceptances']", bankers acceptances 
+"[' ', 'negotiable', 'bank', '-', 'backed', 'business', 'credit', 'instruments', 'typically', 'financing', 'an', 'import', 'order']", negotiable bank-backed business credit instruments typically financing an import order 
 "[' ', 'london', 'late', 'eurodollars']", london late eurodollars 
 "[' ', 'london', 'interbank', 'offered', 'rates', 'libor']", london interbank offered rates libor 
 "[' ', 'foreign', 'prime', 'rates']", foreign prime rates 
 "[' ', 'treasury', 'bills']", treasury bills 
 "[' ', 'N', 'N', 'N', 'weeks', 'N', 'N', 'N', 'weeks']", N N N weeks N N N weeks 
 "[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', 'freddie', 'mac']", federal home loan mortgage corp freddie mac 
+"[' ', 'posted', 'yields', 'on', '30', '-', 'year', 'mortgage', 'commitments', 'for', 'delivery', 'within', 'N', 'days']", posted yields on 30-year mortgage commitments for delivery within N days 
 "[' ', 'source', 'telerate', 'systems', 'inc']", source telerate systems inc 
 "[' ', 'federal', 'national', 'mortgage', 'association', 'fannie', 'mae']", federal national mortgage association fannie mae 
 "[' ', 'source', 'telerate', 'systems', 'inc']", source telerate systems inc 
@@ -351,18 +349,18 @@ source_text,target_text
 "[' ', 'it', 'can', 'happen', 'before', 'you', 'can', 'turn', 'around']", it can happen before you can turn around 
 "[' ', 'i', 'think', 'it', 'will', 'be', 'a', '  ', 'rally', 'he', 'said']", i think it will be a   rally he said 
 "[' ', 'all', 'that', 'now', 'has', 'changed']", all that now has changed 
-"[' ', 'we', ""'re"", 'not', 'making', 'a', 'killing', 'but', 'we', 'had', 'a', 'good', 'day']", we 're not making a killing but we had a good day 
 "[' ', 'i', ""'d"", 'like', 'to', 'see', 'that', 'initiative', 'and', 'i', 'have', ""n't""]", i 'd like to see that initiative and i have n't 
 "[' ', 'there', 'is', ""n't"", 'a', 'big', 'shot', 'an', 'agenda']", there is n't a big shot an agenda 
 "[' ', 'a', 'few', 'hours', 'later', 'the', 'stock', 'market', 'dropped', 'N', 'points']", a few hours later the stock market dropped N points 
 "[' ', 'consider', 'this']", consider this 
 "[' ', 'that', 'did', 'not', 'happen']", that did not happen 
 "[' ', 'they', 'learned', 'they', 'could', 'survive', 'it', 'without', 'much', 'problem']", they learned they could survive it without much problem 
-"[' ', 'in', 'that', 'case', 'there', 'will', 'be', 'plenty', 'of', 'blame', 'to', 'go', 'around']", in that case there will be plenty of blame to go around 
 "[' ', 'but', 'some', 'players', 'were', 'quick', 'to', 'seize', 'the', 'moment']", but some players were quick to seize the moment 
 "[' ', '$', 'N', 'billion', 'of', 'three', '-', 'month', 'and', 'six', '-', 'month', 'bills']", $ N billion of three-month and six-month bills 
+"[' ', 'two', '-', 'year', 'notes', 'refinancing', 'about', '$', 'N', 'billion', 'in', 'maturing', 'debt']", two-year notes refinancing about $ N billion in maturing debt 
 "[' ', '$', 'N', 'billion', 'of', '52', '-', 'week', 'bills']", $ N billion of 52-week bills 
 "[' ', 'connecticut', 'light', '&', 'power', 'co.']", connecticut light & power co. 
+"[' ', 'three', 'million', 'shares', 'of', '$', 'N', 'preferred', 'via', 'competitive', 'bidding']", three million shares of $ N preferred via competitive bidding 
 "['  ', 'crude', 'carriers', 'ltd', '.']",  crude carriers ltd. 
 "[' ', 'four', 'million', 'common', 'shares', 'via', 'salomon', 'brothers', 'inc']", four million common shares via salomon brothers inc 
 "[' ', 'baldwin', 'technology', 'co.']", baldwin technology co. 
@@ -400,20 +398,18 @@ source_text,target_text
 "[' ', 'i', ""'"", 'm', 'going', 'to', 'hold', 'on']", i 'm going to hold on 
 "[' ', 'if', 'i', 'sell', 'now', 'i', ""'ll"", 'take', 'a', 'big', 'loss']", if i sell now i 'll take a big loss 
 "[' ', 'now', 'it', ""'s"", 'happening', 'again']", now it 's happening again 
-"[' ', 'this', 'time', 'he', ""'s"", 'ready', 'to', 'buy', 'in', 'when', 'the', 'panic', 'wears', 'off']", this time he 's ready to buy in when the panic wears off 
+"[' ', 'when', 'the', 'little', 'guy', 'gets', 'frightened', 'the', 'big', 'guys', 'hurt', 'badly']", when the little guy gets frightened the big guys hurt badly 
 "[' ', 'merrill', 'lynch', 'ca', ""n't"", 'survive', 'without', 'the', 'little', 'guy']", merrill lynch ca n't survive without the little guy 
+"[' ', 'individual', 'investors', 'are', 'still', 'angry', 'about', 'program', 'trading', 'mr', '.', ' ', 'says']", individual investors are still angry about program trading mr.  says 
 "[' ', 'and', 'finally', 'there', 'were', 'the', ' ']", and finally there were the  
 "[' ', 'i', 'got', 'out', 'in', 'N']", i got out in N 
-"[' ', 'i', 'just', 'stopped', 'by', 'to', 'see', 'how', 'much', 'i', 'would', 'have', 'lost']", i just stopped by to see how much i would have lost 
 "[' ', 'would', 'mr', '.', ' ', 'ever', 'get', 'back', 'in']", would mr.  ever get back in 
 "[' ', 'are', 'you', ' ']", are you  
 "[' ', 'when', 'it', 'comes', 'to', 'money', 'once', ' ', 'N', 'times', 'shy']", when it comes to money once  N times shy 
-"[' ', 'this', 'is', ""n't"", 'quite', 'a', 'notebook', 'i', 'call', 'it', 'a', ' ', 'he', 'says']", this is n't quite a notebook i call it a  he says 
 "['  ', 'are', ""n't"", 'far', 'behind']",  are n't far behind 
-"[' ', 'the', 'market', 'is', 'so', 'new', 'nobody', 'knows', 'yet', 'how', 'big', 'it', 'can', 'be']", the market is so new nobody knows yet how big it can be 
 "[' ', 'it', ""'s"", 'huge']", it 's huge 
-"[' ', 'responding', 'to', 'that', 'demand', 'however', 'has', 'led', 'to', 'a', 'variety', 'of', ' ']", responding to that demand however has led to a variety of  
 "[' ', 'making', 'computers', 'smaller', 'often', 'means', ' ', 'memory']", making computers smaller often means  memory 
+"[' ', 'size', 'and', 'weight', 'considerations', 'also', 'have', 'limited', 'screen', 'displays']", size and weight considerations also have limited screen displays 
 "[' ', 'the', 'competitive', ' ', 'can', 'get', 'pretty', ' ', 'at', 'times']", the competitive  can get pretty  at times 
 "[' ', 'compaq', 'is', 'already', 'taking', 'aim', 'at', 'zenith', ""'s"", 'market', 'share']", compaq is already taking aim at zenith 's market share 
 "[' ', 'analysts', 'do', ""n't"", 'see', 'it', 'that', 'way']", analysts do n't see it that way 
@@ -423,9 +419,9 @@ source_text,target_text
 "[' ', 'of', 'course', 'many', 'more', 'issues', 'N', 'hit', 'new', 'lows']", of course many more issues N hit new lows 
 "[' ', 'ibm', 'closed', 'at', '$', 'N', 'down', '$', 'N']", ibm closed at $ N down $ N 
 "[' ', 'he', 'added', 'we', 'learned', 'a', 'lesson', 'in', 'N', 'about', 'volatility']", he added we learned a lesson in N about volatility 
+"[' ', 'analysts', 'and', 'competitors', 'however', 'doubt', 'the', 'numbers', 'were', 'that', 'high']", analysts and competitors however doubt the numbers were that high 
 "[' ', 'budget', 'said', 'its', ' ', 'costs', 'are', 'substantially', 'below', ' ', ""'s"", 'level']", budget said its  costs are substantially below  's level 
 "[' ', 'this', 'will', 'raise', 'the', 'energy', 'level', 'of', 'the', 'show']", this will raise the energy level of the show 
-"[' ', 'cbs', 'will', 'continue', 'to', 'program', ' ', 'shows', 'to', 'follow', 'the', ' ', 'hour']", cbs will continue to program  shows to follow the  hour 
 "[' ', 'tandem', ""'s"", 'new', 'high', '-', 'end', 'computer', 'is', 'called', ' ']", tandem 's new high-end computer is called  
 "[' ', 'that', 'will', 'spur', 'tandem', ""'s"", 'growth']", that will spur tandem 's growth 
 "[' ', 'the', 'answer', 'is', ""n't"", 'price', 'reductions', 'but', 'new', 'systems', 'he', 'said']", the answer is n't price reductions but new systems he said 
@@ -435,6 +431,7 @@ source_text,target_text
 "[' ', 'when', 'it', 'went', 'down', 'by', 'all', 'tradition', 'the', 'economy', 'followed']", when it went down by all tradition the economy followed 
 "[' ', 'the', 'market', 'seems', 'increasingly', ' ', 'from', 'the', 'rest', 'of', 'the', 'nation']", the market seems increasingly  from the rest of the nation 
 "[' ', 'there', ""'s"", 'nothing', 'rational', 'about', 'this', 'kind', 'of', 'action']", there 's nothing rational about this kind of action 
+"[' ', 'the', 'financial', '-', 'services', 'industry', 'was', 'battered', 'by', 'the', 'N', 'crash']", the financial-services industry was battered by the N crash 
 "[' ', 'growth', 'is', 'slower']", growth is slower 
 "[' ', 'profits', 'are', 'softer']", profits are softer 
 "[' ', 'debt', 'burdens', 'are', 'heavier']", debt burdens are heavier 
@@ -443,18 +440,17 @@ source_text,target_text
 "[' ', 'that', 'was', 'offset', 'by', 'strength', 'elsewhere']", that was offset by strength elsewhere 
 "[' ', 'but', 'in', 'the', 'process', 'the', 'fed', 'risks', ' ', 'inflation']", but in the process the fed risks  inflation 
 "[' ', 'a', 'panic', 'on', 'wall', 'street', 'does', ""n't"", 'exactly', ' ', 'confidence']", a panic on wall street does n't exactly  confidence 
+"[' ', 'surveys', 'suggested', 'that', 'consumer', 'confidence', 'was', 'high', 'before', 'friday']", surveys suggested that consumer confidence was high before friday 
 "[' ', 'the', ' ', 'had', 'a', ' ', 'audience']", the  had a  audience 
 "[' ', 'they', 'are', 'more', 'sophisticated', 'this', 'time']", they are more sophisticated this time 
 "[' ', 'this', 'could', 'be', 'the', 'first', 'of', 'five', 'or', 'six', 'down', 'quarters']", this could be the first of five or six down quarters 
 "[' ', 'a', 'dow', 'spokeswoman', 'declined', 'to', 'comment', 'on', 'the', 'estimates']", a dow spokeswoman declined to comment on the estimates 
 "[' ', 'most', 'of', 'the', 'N', 'have', 'big', ' ', 'operations']", most of the N have big  operations 
-"[' ', 'the', 'estimates', 'for', 'du', 'pont', 'range', 'from', '$', 'N', 'to', '$', 'N', 'a', 'share']", the estimates for du pont range from $ N to $ N a share 
 "[' ', 'du', 'pont', 'declined', 'to', 'comment']", du pont declined to comment 
 "[' ', 'monsanto', 'declined', 'to', 'comment']", monsanto declined to comment 
 "[' ', 'but', 'the', 'estimates', 'range', 'from', 'break', '-', 'even', 'to', 'N', 'cents', 'a', 'share']", but the estimates range from break-even to N cents a share 
 "['  ', 'quantum', 'and', 'union', 'carbide', 'all', 'declined', 'to', 'comment']",  quantum and union carbide all declined to comment 
 "[' ', 'dow', 'chemical', 'co.']", dow chemical co. 
-"[' ', '$', 'N', 'million', 'of', 'N', 'N', 'senior', 'notes', 'due', 'oct', '.', 'N', 'N', 'priced', 'at', 'par']", $ N million of N N senior notes due oct. N N priced at par 
 "['  ', 'capital', 'corp', '.']",  capital corp. 
 "[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', '.']", federal home loan mortgage corp. 
 "[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', '.']", federal home loan mortgage corp. 
@@ -462,12 +458,10 @@ source_text,target_text
 "[' ', 'federal', 'home', 'loan', 'mortgage', 'corp', '.']", federal home loan mortgage corp. 
 "[' ', 'the', 'collateral', 'is', 'being', 'sold', 'by', 'a', 'thrift', 'institution']", the collateral is being sold by a thrift institution 
 "[' ', 'the', ' ', 'securities', 'will', 'be', 'sold', 'separately', 'by', ' ', 'securities']", the  securities will be sold separately by  securities 
-"[' ', 'the', ' ', 'securities', 'were', 'priced', 'at', 'N', 'N', 'to', 'yield', 'N', 'N']", the  securities were priced at N N to yield N N 
 "['  ', 'street']",  street 
 "['  ', 's.', ' ']",  s.  
 "['  ', 'comment']",  comment 
 ['   '],   
-"[' ', 'the', 'early', 'episodes', 'make', 'you', 'long', 'for', 'a', ' ', 'of', 'the', 'crash', 'of', 'N']", the early episodes make you long for a  of the crash of N 
 "[' ', 'let', ""'s"", 'make', 'that', 'N', 'just', 'to', 'be', 'sure']", let 's make that N just to be sure 
 "[' ', 'trouble', 'is', 'she', 'has', 'lost', 'it', 'just', 'as', 'quickly']", trouble is she has lost it just as quickly 
 "[' ', 'little', 'chance', 'that', '  ', 'is', 'going', 'to', 'recoup', 'today']", little chance that   is going to recoup today 
@@ -476,18 +470,19 @@ source_text,target_text
 "[' ', 'in', 'fact', 'few', 'consume', 'much', 'of', 'anything']", in fact few consume much of anything 
 "[' ', 'two', 'share', 'a', 'house', 'almost', ' ', 'of', 'furniture']", two share a house almost  of furniture 
 "[' ', 'the', 'seeds', 'already', 'are', 'in', 'the', 'script']", the seeds already are in the script 
-"[' ', 'the', 'pressure', 'is', 'too', 'much', 'for', '  ', 'who', ' ', 'a', 'security', 'guard']", the pressure is too much for   who  a security guard 
-"[' ', 'and', 'all', 'the', 'while', 'the', 'bonds', 'are', 'in', 'the', 'baby', ""'s"", 'diaper']", and all the while the bonds are in the baby 's diaper 
 "[' ', 'it', 'should', 'run', 'forever']", it should run forever 
 "[' ', 'mr', '.', ' ', 'is', 'senior', ' ', 'in', 'the', 'journal', ""'s"", 'london', 'bureau']", mr.  is senior  in the journal 's london bureau 
 "[' ', 'we', 'wo', ""n't"", 'put', 'any', 'burden', 'on', 'farmers', 'he', 'said']", we wo n't put any burden on farmers he said 
-"[' ', 'overall', 'sales', 'of', 'all', ' ', 'vehicles', 'fell', 'N', 'N', 'from', 'a', 'year', 'ago']", overall sales of all  vehicles fell N N from a year ago 
+"[' ', 'it', 'would', 'have', 'severe', 'implications', 'for', 'farmers', ""'"", 'policy', 'holders']", it would have severe implications for farmers ' policy holders 
+"[' ', 'all', 'of', 'the', 'gm', 'divisions', 'except', 'cadillac', 'showed', 'big', 'declines']", all of the gm divisions except cadillac showed big declines 
+"[' ', 'aside', 'from', 'gm', 'other', 'car', 'makers', 'posted', 'generally', 'mixed', 'results']", aside from gm other car makers posted generally mixed results 
 "[' ', 'a', 'totals', 'include', 'only', 'vehicle', 'sales', 'reported', 'in', 'period']", a totals include only vehicle sales reported in period 
 "[' ', 'c', 'domestic', 'car']", c domestic car 
 "[' ', 'd', 'percentage', 'change', 'is', 'greater', 'than', 'N', 'N']", d percentage change is greater than N N 
+"[' ', 'percentage', 'differences', 'based', 'on', 'daily', 'sales', 'rate', 'rather', 'than', 'sales', 'volume']", percentage differences based on daily sales rate rather than sales volume 
 "['  ', 'makes', 'and', 'repairs', 'jet', 'engines']",  makes and repairs jet engines 
-"[' ', 'now', 'the', 'network', 'has', 'opened', 'a', 'news', 'bureau', 'in', 'the', ' ', 'capital']", now the network has opened a news bureau in the  capital 
 "[' ', 'indeed', 'hungary', 'is', 'in', 'the', 'midst', 'of', 'a', 'media', 'explosion']", indeed hungary is in the midst of a media explosion 
+"[' ', 'boys', 'on', 'busy', 'street', 'corners', ' ', 'newspapers', 'of', 'every', 'political', ' ']", boys on busy street corners  newspapers of every political  
 "['  ', 'are', 'packed', 'with', 'a', ' ', 'array', 'of', 'magazines']",  are packed with a  array of magazines 
 "[' ', 'radio', 'and', 'television', 'are', 'getting', ' ', 'and', ' ']", radio and television are getting  and  
 "[' ', 'but', 'radio', 'free', 'europe', 'does', ""n't"", 'plan', 'to', ' ', 'away']", but radio free europe does n't plan to  away 
@@ -497,18 +492,16 @@ source_text,target_text
 "[' ', 'she', 'wants', 'to', 'turn', 'down', 'the', 'volume', 'and', 'close', 'the', ' ']", she wants to turn down the volume and close the  
 "[' ', 'there', ""'s"", 'a', 'program', 'for', 'women', 'and', 'a', 'science', 'show']", there 's a program for women and a science show 
 "[' ', 'the', 'pet', 'shop', 'boys', 'are', 'big', 'this', 'year', 'in', ' ']", the pet shop boys are big this year in  
-"[' ', 'we', 'are', ' ', 'for', 'all', 'the', 'news', 'says', 'mr', '.', ' ', 'the', 'student']", we are  for all the news says mr.  the student 
 "[' ', 'every', 'moment', 'we', 'want', 'to', 'know', 'everything', 'about', 'the', 'world']", every moment we want to know everything about the world 
 "[' ', 'why', 'does', 'the', ' ', 'virus', 'keep', 'coming', 'back']", why does the  virus keep coming back 
 "[' ', 'military', 'service', 'moreover', 'could', 'be', 'a', ' ', 'option']", military service moreover could be a  option 
-"[' ', 'clearly', 'a', 'new', 'rationale', 'for', 'national', 'service', 'had', 'to', 'be', ' ', 'up']", clearly a new rationale for national service had to be  up 
 "[' ', 'the', ' ', 'of', ' ', 'is', 'in', 'the', 'air']", the  of  is in the air 
 "[' ', 'on', 'the', 'contrary', 'it', 'is', 'as', 'robust', 'as', 'ever']", on the contrary it is as robust as ever 
 "[' ', 'or', 'we', 'might', 'provide', 'a', 'tax', 'credit', 'for', 'working', 'students']", or we might provide a tax credit for working students 
 "[' ', 'not', 'necessarily']", not necessarily 
 "[' ', 'there', ""'s"", 'no', 'need', 'for', 'such', 'concessions']", there 's no need for such concessions 
 "[' ', 'mr', '.', ' ', 'is', 'a', 'fellow', 'at', 'the', ' ', 'hudson', 'institute']", mr.  is a fellow at the  hudson institute 
-"[' ', 'that', 'would', 'be', 'down', 'from', 'the', 'N', 'N', 'rise', 'posted', 'in', 'N']", that would be down from the N N rise posted in N 
+"[' ', 'american', 'provides', 'a', 'variety', 'of', 'financial', 'services', 'to', 'doctors', 'and', 'hospitals']", american provides a variety of financial services to doctors and hospitals 
 "[' ', 'the', 'bonds', 'go', 'on', 'sale', 'oct', '.', 'N']", the bonds go on sale oct. N 
 "[' ', 'the', 'debate', 'over', 'national', 'service', 'has', 'begun', 'again']", the debate over national service has begun again 
 "[' ', 'it', 'might', 'well', 'win', 'senate', 'passage']", it might well win senate passage 
@@ -528,6 +521,7 @@ source_text,target_text
 "[' ', 'middle', '-', 'class', 'people', 'or', 'poor', 'people', 'or', 'a', 'genuine', ' ']", middle-class people or poor people or a genuine  
 "[' ', 'many', 'or', 'few']", many or few 
 "[' ', 'then', 'how', 'should', 'we', 'think', 'about', 'national', 'service']", then how should we think about national service 
+"[' ', 'ignore', 'national', 'service', 'in', 'the', ' ', 'consider', 'specific', 'proposals']", ignore national service in the  consider specific proposals 
 "[' ', 'they', 'will', 'differ', 'in', 'crucial', 'ways']", they will differ in crucial ways 
 "[' ', 'N', 'service', 'should', 'be', 'service']", N service should be service 
 "[' ', 'as', 'commonly', 'understood', 'service', 'implies', 'sacrifice']", as commonly understood service implies sacrifice 
@@ -548,13 +542,13 @@ source_text,target_text
 "[' ', 'they', 'are', 'unlikely', 'to', 'be', 'employed']", they are unlikely to be employed 
 "[' ', 'but', 'some', 'whom', 'nothing', 'else', 'is', 'reaching', 'are', 'transformed']", but some whom nothing else is reaching are transformed 
 "[' ', 'strictly', 'speaking', 'these', 'youth', 'are', 'not', 'performing', 'service']", strictly speaking these youth are not performing service 
-"[' ', 'they', 'are', 'giving', 'up', 'no', 'income', 'deferring', 'no', 'careers', ' ', 'no', 'risk']", they are giving up no income deferring no careers  no risk 
 "[' ', 'that', 'is', 'a', 'service', 'to', 'the', 'nation']", that is a service to the nation 
 "[' ', 'it', 'is', 'what', 'federal', 'support', 'should', 'try', 'hardest', 'to', 'achieve']", it is what federal support should try hardest to achieve 
 "[' ', 'he', 'is', 'a', 'co', '-', 'author', 'of', 'national', 'service', 'what', 'would', 'it', 'mean']", he is a co-author of national service what would it mean 
 "[' ', 'lexington', 'books', 'N']", lexington books N 
 "[' ', 'but', 'in', 'this', 'context', 'that', ""'s"", 'the', 'smart', 'thing', 'to', 'do']", but in this context that 's the smart thing to do 
 "[' ', 'i', 'think', 'that', ""'s"", 'less', 'likely']", i think that 's less likely 
+"[' ', 'aides', 'say', 'he', 'continued', 'to', 'work', 'the', 'phones', 'through', 'the', 'weekend']", aides say he continued to work the phones through the weekend 
 "[' ', 'b', 'as', 'of', 'thursday', ""'s"", 'close']", b as of thursday 's close 
 "[' ', 'c', 'translated', 'at', 'commercial', 'rand', 'exchange', 'rate']", c translated at commercial rand exchange rate 
 "[' ', 'e', 'in', 'canadian', 'dollars']", e in canadian dollars 
@@ -564,17 +558,13 @@ source_text,target_text
 "[' ', 'put', 'down', 'that', 'phone']", put down that phone 
 "[' ', 'walk', 'around', 'the', 'room', 'take', 'two', 'deep', ' ']", walk around the room take two deep  
 "[' ', 'no', 'one', 'can', 'say', 'for', 'sure', 'what', 'will', 'happen', 'today']", no one can say for sure what will happen today 
-"[' ', 'but', 'they', ""'re"", 'nearly', ' ', 'on', 'one', 'point', 'do', ""n't"", 'sell', 'into', 'a', 'panic']", but they 're nearly  on one point do n't sell into a panic 
-"[' ', 'so', 'it', ""'s"", 'more', 'prudent', 'to', 'wait', 'and', 'see', 'how', 'things', 'stabilize']", so it 's more prudent to wait and see how things stabilize 
-"[' ', 'generally', 'it', 'is', ""n't"", ' ', 'to', 'be', 'in', 'and', 'out', 'of', 'the', 'stock', 'market']", generally it is n't  to be in and out of the stock market 
-"[' ', 'but', 'he', 'also', 'thinks', 'it', 'is', 'a', 'good', 'week', 'to', 'consider', 'buying']", but he also thinks it is a good week to consider buying 
 "[' ', 'we', ""'re"", 'dedicated', 'long', '-', 'term', 'investors', 'not', 'traders', 'he', 'says']", we 're dedicated long-term investors not traders he says 
 "[' ', 'we', 'understand', ' ', 'and', 'euphoria']", we understand  and euphoria 
 "[' ', 'stocks', 'were', 'being', 'thrown', 'out', 'of', 'windows', 'at', 'any', 'price']", stocks were being thrown out of windows at any price 
 "[' ', 'and', 'mr', '.', 'craig', 'expects', 'to', 'pick', 'up', 'more', 'shares', 'today']", and mr. craig expects to pick up more shares today 
 "[' ', 'his', 'firm', 'favors', 'selected', 'computer', 'drug', 'and', ' ', 'stocks']", his firm favors selected computer drug and  stocks 
 "[' ', 'other', 'investment', 'pros', 'are', 'more', 'pessimistic']", other investment pros are more pessimistic 
-"[' ', 'the', 'cost', 'or', 'premium', 'tends', 'to', 'get', 'fat', 'in', 'times', 'of', 'crisis']", the cost or premium tends to get fat in times of crisis 
+"[' ', 'they', 'say', 'investors', 'should', 'sell', 'stocks', 'but', 'not', 'necessarily', 'right', 'away']", they say investors should sell stocks but not necessarily right away 
 "[' ', 'the', 'prices', 'of', 'puts', 'generally', 'did', ""n't"", 'soar', 'friday']", the prices of puts generally did n't soar friday 
 "[' ', 'but', ' ', 'prices', 'may', ' ', 'when', 'trading', ' ', 'today']", but  prices may  when trading  today 
 "[' ', 'it', ""'s"", 'hard', 'to', ' ', 'about', 'a', 'reasonable', 'price', 'for', 'puts']", it 's hard to  about a reasonable price for puts 
@@ -582,13 +572,14 @@ source_text,target_text
 "[' ', 'it', ""'s"", 'totally', 'different']", it 's totally different 
 "[' ', 'the', 'brokerage', 'firm', 'wo', ""n't"", 'pay', 'a', 'dividend', 'on', 'the', 'stock']", the brokerage firm wo n't pay a dividend on the stock 
 "[' ', 'but', 'the', 'major', 'circuit', 'breakers', 'have', 'yet', 'to', 'be', ' ']", but the major circuit breakers have yet to be  
+"[' ', 'a', 'deeper', 'market', 'plunge', 'today', 'could', 'give', 'them', 'their', 'first', 'test']", a deeper market plunge today could give them their first test 
 "[' ', 'there', 'was', 'no', 'panic']", there was no panic 
 "[' ', 'the', 'system', 'worked', 'the', 'way', 'we', 'devised', 'it', 'to', 'work']", the system worked the way we devised it to work 
 "[' ', 'few', 'changes', 'were', 'made', 'in', 'the', 'way', 'the', 'markets', 'are', 'regulated']", few changes were made in the way the markets are regulated 
+"[' ', 'only', 'the', 'last', 'of', 'those', 'recommendations', 'ever', 'was', 'implemented']", only the last of those recommendations ever was implemented 
 "[' ', 'privately', 'some', 'free', ' ', 'dismissed', 'such', ' ', 'as', ' ', 'to', ' ']", privately some free  dismissed such  as  to  
 "[' ', 'circuit', 'breakers', 'set', 'to', 'soften', 'big', 'drops']", circuit breakers set to soften big drops 
 "[' ', 's&p', 'and', 'mmi', 'contracts', 'also', 'halt']", s&p and mmi contracts also halt 
-"[' ', 'if', ' ', 'drops', 'N', 'points', 'big', 'board', 'halts', 'trading', 'for', 'two', 'hours']", if  drops N points big board halts trading for two hours 
 "[' ', 'trading', 'in', 'mmi', 'and', 's&p', 'futures', 'also', 'halted']", trading in mmi and s&p futures also halted 
 "[' ', 'brady', 'task', 'force', 'recommendations', 'jan', '.', 'N']", brady task force recommendations jan. N 
 "[' ', 'establish', 'an', ' ', 'regulator', 'for', 'financial', 'markets']", establish an  regulator for financial markets 
@@ -596,19 +587,20 @@ source_text,target_text
 "[' ', 'make', 'margins', 'consistent', 'across', 'stock', 'and', 'futures', 'markets']", make margins consistent across stock and futures markets 
 "[' ', 'sec', 'proposals', 'may', 'N']", sec proposals may N 
 "[' ', 'require', 'prompt', 'reports', 'of', 'large', 'securities', 'trades']", require prompt reports of large securities trades 
+"[' ', 'give', 'sec', 'authority', 'to', 'monitor', ' ', 'by', 'affiliates', 'of', 'brokerage', 'firms']", give sec authority to monitor  by affiliates of brokerage firms 
 "[' ', 'transfer', 'jurisdiction', 'over', ' ', 'futures', 'to', 'sec', 'from', 'cftc']", transfer jurisdiction over  futures to sec from cftc 
 "[' ', 'opposed', 'by', 'new', 'sec', 'chairman']", opposed by new sec chairman 
 "[' ', 'congressional', 'proposal']", congressional proposal 
+"[' ', 'small', 'wonder', 'that', 'britain', ""'s"", 'labor', 'party', 'wants', 'credit', 'controls']", small wonder that britain 's labor party wants credit controls 
 "[' ', 'replied', 'a', 'justin', 'salesman', 'exactly']", replied a justin salesman exactly 
 "[' ', 'the', '  ', 'enthusiastic', 'and', 'promised', 'to', 'return']", the   enthusiastic and promised to return 
 "[' ', 'his', 'recording', 'later', 'turned', 'up', 'as', 'a', 'court', 'exhibit']", his recording later turned up as a court exhibit 
 "[' ', 'sony', 'itself', 'declines', 'to', 'comment']", sony itself declines to comment 
-"[' ', 'i', 'made', 'a', 'similar', 'line', 'and', 'i', 'produced', 'it', 'cheaper', 'he', 'says']", i made a similar line and i produced it cheaper he says 
 "[' ', 'but', 'the', 'battle', 'is', 'more', 'than', 'justin', ' ', 'for']", but the battle is more than justin  for 
 "[' ', 'sony', 'answered', 'the', 'empty', 'threat', 'with', 'its', 'real', 'suit']", sony answered the empty threat with its real suit 
 "[' ', 'off', 'and', 'on', 'since', 'then', 'the', 'companies', 'have', ' ', 'in', 'court']", off and on since then the companies have  in court 
+"[' ', 'whatever', 'its', 'merits', 'sony', ""'s"", 'aggressive', 'defense', 'is', ' ', 'for', 'justin']", whatever its merits sony 's aggressive defense is  for justin 
 "[' ', 'it', ""'s"", 'also', 'costly']", it 's also costly 
-"[' ', 'mr', '.', ' ', 'says', 'he', 'has', 'paid', 'more', 'than', '$', 'N', 'in', 'legal', 'fees', 'so', 'far']", mr.  says he has paid more than $ N in legal fees so far 
 "[' ', 'for', 'now', 'though', 'he', ' ', 'to', 'hang', 'in']", for now though he  to hang in 
 "[' ', 'both', 'companies', 'rejected', 'the', 'offers']", both companies rejected the offers 
 "[' ', 'mr', '.', '  ', 'has', 'said', 'he', 'wants', 'to', 'purchase', 'more', 'shares']", mr.   has said he wants to purchase more shares 
@@ -618,22 +610,21 @@ source_text,target_text
 "[' ', 'goldman', 'officials', 'declined', 'to', 'comment']", goldman officials declined to comment 
 "[' ', 'you', ""'"", 've', 'either', 'got', 'a', 'chair', 'or', 'you', 'do', ""n't""]", you 've either got a chair or you do n't 
 "[' ', 'it', 'was', '  ']", it was   
-"[' ', 'this', 'year', 'at', 'best', 'it', ""'s"", 'in', 'one', 'in', 'every', 'five', 'or', 'six']", this year at best it 's in one in every five or six 
 "[' ', 'and', 'our', 'credit', 'standards', 'have', ""n't"", 'changed', 'one', ' ']", and our credit standards have n't changed one  
+"[' ', 'businesses', 'were', 'borrowing', 'at', 'interest', 'rates', 'higher', 'than', 'their', 'own', 'earnings']", businesses were borrowing at interest rates higher than their own earnings 
 "[' ', 'friday', ""'s"", 'market', 'activity']", friday 's market activity 
 "[' ', 'bond', 'prices', 'barely', ' ', 'until', 'midday']", bond prices barely  until midday 
+"[' ', 'investment', '-', 'grade', 'corporate', 'bonds', 'were', 'up', 'about', 'N', 'to', 'N', 'point']", investment-grade corporate bonds were up about N to N point 
 "[' ', 'municipal', 'bonds', 'rose', 'as', 'much', 'as', 'N', 'point']", municipal bonds rose as much as N point 
 "[' ', 'roger', ' ', 'contributed', 'to', 'this', 'article']", roger  contributed to this article 
 "[' ', 'worse', 'congress', 'has', 'started', 'to', 'jump', 'on', 'the', 'skinner', ' ']", worse congress has started to jump on the skinner  
-"[' ', 'so', 'the', 'ual', 'deal', 'has', 'problems', 'and', 'the', 'market', 'loses', 'N', 'points']", so the ual deal has problems and the market loses N points 
 "['  ', 'mr', '.', 'secretary', 'and', 'mr', '.', 'congressman']",  mr. secretary and mr. congressman 
 "[' ', 'they', 'are', 'better', 'capitalized']", they are better capitalized 
 "[' ', 'the', 'fed', 'promises', 'any', 'needed', 'liquidity']", the fed promises any needed liquidity 
-"[' ', 'in', 'any', 'event', 'some', 'traders', 'see', 'stocks', 'as', ' ', 'today', 'unlike', 'N']", in any event some traders see stocks as  today unlike N 
-"[' ', 'but', 'on', 'the', 'bearish', 'side', 'that', 'may', 'be', 'too', 'much', 'to', 'expect']", but on the bearish side that may be too much to expect 
 "[' ', 'interest', 'income', 'and', 'most', 'fee', 'income', 'was', 'strong']", interest income and most fee income was strong 
 "[' ', 'in', 'point', 'of', 'fact', 'this', ' ', 'was', 'overdue', 'by', 'decades']", in point of fact this  was overdue by decades 
 "[' ', 'mr', '.', ' ', ""'s"", 'credibility', 'is', 'at', 'best', ' ']", mr.  's credibility is at best  
+"[' ', 'the', 'country', ""'s"", 'future', 'nato', 'participation', 'remains', ' ', 'for', 'instance']", the country 's future nato participation remains  for instance 
 "[' ', 'yet', 'the', 'possibility', 'of', 'another', ' ', 'government', 'is', 'all', 'too', 'real']", yet the possibility of another  government is all too real 
 "[' ', 'as', 'for', 'mr', '.', ' ']", as for mr.  
 "[' ', 'he', ""'s"", 'not', 'exactly', 'sitting', 'pretty', 'at', 'this', 'stage']", he 's not exactly sitting pretty at this stage 
@@ -649,12 +640,12 @@ source_text,target_text
 "[' ', 'bonds', 'shearson', 'lehman', 'hutton', 'treasury', 'index', 'N', 'up']", bonds shearson lehman hutton treasury index N up 
 "[' ', 'dollar', 'N', 'yen', 'off', 'N', 'N', 'marks', 'off', 'N']", dollar N yen off N N marks off N 
 "[' ', 'the', 'shareholders', 'claimed', 'more', 'than', '$', 'N', 'million', 'in', 'losses']", the shareholders claimed more than $ N million in losses 
-"[' ', 'nfl', 'ordered', 'to', 'pay', '$', 'N', 'million', 'in', 'legal', 'fees', 'to', ' ']", nfl ordered to pay $ N million in legal fees to  
 "[' ', 'the', ' ', 'was', 'not', 'the', 'prevailing', 'party', 'mr', '.', ' ', 'insists']", the  was not the prevailing party mr.  insists 
 "['  ', 'alliance']",  alliance 
 "[' ', 'fcc', 'counsel', 'joins', 'firm']", fcc counsel joins firm 
+"[' ', 'she', 'was', 'the', 'first', 'woman', 'to', 'be', 'appointed', 'fcc', 'general', 'counsel']", she was the first woman to be appointed fcc general counsel 
 "[' ', 'he', 'left', 'the', 'company', 'in', 'N']", he left the company in N 
-"[' ', 'the', 'new', 'company', 'is', 'to', 'be', 'called', 'siemens', ' ', 'components', 'g.m.b', ' ']", the new company is to be called siemens  components g.m.b  
+"[' ', 'a', 'basic', 'agreement', 'between', 'the', 'two', 'companies', 'was', 'announced', 'in', 'june']", a basic agreement between the two companies was announced in june 
 "[' ', 'it', 'will', 'have', 'its', 'headquarters', 'in', ' ']", it will have its headquarters in  
 "[' ', 'siemens', 'will', 'retain', 'majority', 'voting', 'rights']", siemens will retain majority voting rights 
 "[' ', 'frankly', 'i', 'missed', 'my', 'family', 'said', 'mr', '.', ' ']", frankly i missed my family said mr.  
@@ -663,11 +654,11 @@ source_text,target_text
 "[' ', 'he', 'said', 'he', 'will', 'now', 'consider', 'those', 'offers']", he said he will now consider those offers 
 "[' ', 'prior', 'to', 'a', 'year', 'ago', ' ', 'was', 'an', ' ']", prior to a year ago  was an  
 "[' ', 'the', 'company', 'did', ""n't"", 'elaborate']", the company did n't elaborate 
+"[' ', 'lenders', 'are', 'growing', 'increasingly', 'nervous', 'about', ' ', 'takeovers', 'investment', 'bankers', 'say']", lenders are growing increasingly nervous about  takeovers investment bankers say 
 "[' ', 'before', 'the', 'halt', 'amr', 'last', 'traded', 'at', 'N', 'N']", before the halt amr last traded at N N 
-"[' ', 'on', 'friday', ' ', 'shares', 'fell', 'N', 'N', 'to', 'close', 'at', 'N', 'N']", on friday  shares fell N N to close at N N 
-"['  ', 'shares', 'fell', 'nearly', 'N', 'N', 'on', 'friday', 'to', 'close', 'at', 'N', 'N']",  shares fell nearly N N on friday to close at N N 
 "[' ', 'the', 'market', 'is', 'just', ' ', 'up', 'to', 'that', 'point']", the market is just  up to that point 
 "['   ', 'in', 'los', 'angeles', 'contributed', 'to', 'this', 'column']",   in los angeles contributed to this column 
+"[' ', 'why', 'do', 'local', 'real', '-', 'estate', 'markets', ' ', 'to', 'regional', 'economic', 'cycles']", why do local real-estate markets  to regional economic cycles 
 "[' ', 'however', 'the', 'real', '-', 'estate', 'market', 'was', 'hurt', 'even', 'more']", however the real-estate market was hurt even more 
 "[' ', 'but', 'now', 'appears', 'to', 'be', 'the', 'time', 'to', 'act']", but now appears to be the time to act 
 "[' ', 'the', 'real', '-', 'estate', 'market', 'suffered', 'even', 'more', 'severe', 'setbacks']", the real-estate market suffered even more severe setbacks 
@@ -675,27 +666,28 @@ source_text,target_text
 "[' ', 'as', 'usual', 'the', 'real', '-', 'estate', 'market', 'had', ' ']", as usual the real-estate market had  
 "[' ', 'actually', 'the', 'region', ""'s"", 'economy', 'retained', 'a', 'firm', 'foundation']", actually the region 's economy retained a firm foundation 
 "[' ', 'employment', 'is', 'now', 'N', 'N', 'higher', 'than', 'in', 'N']", employment is now N N higher than in N 
-"[' ', 'i', 'want', 'to', 'say', 'in', 'the', 'most', ' ', 'way', 'i', 'can', 'i', 'certainly', 'hope', 'so']", i want to say in the most  way i can i certainly hope so 
-"[' ', 'sen', '.', ' ', 'said', 'when', 'all', 'is', 'said', 'and', 'done', 'i', 'expect', 'to', 'be', 'fully', ' ']", sen.  said when all is said and done i expect to be fully  
+"[' ', 'the', 'year', '-', 'earlier', 'third', '-', 'quarter', 'earnings', 'amounted', 'to', '$', 'N', 'million']", the year-earlier third-quarter earnings amounted to $ N million 
+"[' ', 'mr', '.', 'keating', 'had', 'complained', 'that', 'the', 'regulators', 'were', 'being', 'too', ' ']", mr. keating had complained that the regulators were being too  
+"[' ', 'wilson', ' ', 'staff', 'director', 'of', 'the', 'ethics', 'panel', 'would', ""n't"", 'comment']", wilson  staff director of the ethics panel would n't comment 
 "[' ', 'why', 'did', ""n't"", 'the', 'bank', 'board', 'act', 'sooner', 'he', 'said']", why did n't the bank board act sooner he said 
 "[' ', 'that', 'is', 'what', 'common', 'cause', 'should', 'ask', 'be', 'investigated']", that is what common cause should ask be investigated 
-"[' ', 'but', ' ', 'mainly', 'from', 'china', 'jumped', 'N', 'N', 'to', 'hk$', 'N', 'billion']", but  mainly from china jumped N N to hk$ N billion 
+"[' ', 'malaysia', 'the', 'philippines', 'and', 'indonesia', 'also', 'are', 'being', 'studied']", malaysia the philippines and indonesia also are being studied 
 "['  ', 'buyers', 'have', 'little', 'money', 'left', 'to', 'spend', 'on', 'other', 'products']",  buyers have little money left to spend on other products 
 "[' ', 'manufacturers', 'are', 'upgrading', ' ', 'power', 'plants']", manufacturers are upgrading  power plants 
 "[' ', 'the', 'case', ' ', 'vs.', 'minnesota', 'will', 'be', 'argued', 'nov', '.', 'N']", the case  vs. minnesota will be argued nov. N 
-"[' ', 'revenue', 'rose', 'N', 'N', 'to', '$', 'N', 'billion', 'from', '$', 'N', 'billion']", revenue rose N N to $ N billion from $ N billion 
 "[' ', 'the', 'results', 'were', 'announced', 'after', 'the', 'stock', 'market', 'closed']", the results were announced after the stock market closed 
-"[' ', 'even', 'if', 'that', 'deal', 'is', ""n't"", 'revived', 'nbc', 'hopes', 'to', 'find', 'another']", even if that deal is n't revived nbc hopes to find another 
 "[' ', 'our', 'doors', 'are', 'open', 'an', 'nbc', 'spokesman', 'says']", our doors are open an nbc spokesman says 
 "[' ', 'few', 'people', ' ', 'to', 'the', 'talks', 'expect', 'the', 'studios', 'to', ' ']", few people  to the talks expect the studios to  
 "[' ', 'that', ""'s"", 'the', 'problem', 'is', ""n't"", 'it']", that 's the problem is n't it 
 "[' ', 'indeed', 'it', 'is']", indeed it is 
+"[' ', 'he', 'now', 'runs', 'policy', 'communications', 'in', 'washington', 'consulting', 'to', 'media', 'companies']", he now runs policy communications in washington consulting to media companies 
 "[' ', 'six', 'years', 'ago', 'they', 'were', ' ', 'close']", six years ago they were  close 
 "[' ', 'the', 'fcc', 'effort', 'collapsed']", the fcc effort collapsed 
 "[' ', 'the', 'networks', 'and', 'studios', 'have', ' ', 'ever', 'since']", the networks and studios have  ever since 
+"[' ', 'the', 'five', 'additional', 'defendants', 'were', ""n't"", 'parties', 'to', 'the', 'settlement']", the five additional defendants were n't parties to the settlement 
 "[' ', 'the', 'company', 'and', 'its', 'executives', 'deny', 'the', 'charges']", the company and its executives deny the charges 
-"[' ', 'sales', 'amounted', 'to', '$', 'N', 'million', 'down', 'N', 'N', 'from', '$', 'N', 'million']", sales amounted to $ N million down N N from $ N million 
+"[' ', 'walter', 'sisulu', 'and', 'the', 'african', 'national', 'congress', 'came', 'home', 'yesterday']", walter sisulu and the african national congress came home yesterday 
 "[' ', 'i', ""'"", 'm', 'inspired', 'by', 'the', 'mood', 'of', 'the', 'people']", i 'm inspired by the mood of the people 
 "[' ', 'there', ""'s"", 'no', 'turning', 'back']", there 's no turning back 
-"[' ', 'without', 'him', 'said', 'mr', '.', 'sisulu', 'the', ' ', 'of', 'the', 'others', 'is', 'only', 'a', ' ']", without him said mr. sisulu the  of the others is only a  
+"[' ', 'the', 'newly', 'released', 'anc', 'leaders', 'also', 'will', 'be', 'under', 'enormous', 'pressure']", the newly released anc leaders also will be under enormous pressure 
 "[' ', 'they', 'never', 'considered', 'themselves', 'to', 'be', 'anything', 'else']", they never considered themselves to be anything else 
