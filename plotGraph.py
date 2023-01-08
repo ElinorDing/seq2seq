@@ -12,7 +12,7 @@ def multi_plot(rl, em, bleu,interval):
     # plt.bar(interval, bleu, 10, bottom=rl+em,color='#7BC8F6')
 
     # plt.suptitle('Evaluation with different intervals', fontsize = 15)
-    my_xticks = ['<=60','60 ~ 90','90 ~ 120','120 ~ 150','>150']
+    my_xticks = ['<=13','13 ~ 19','19 ~ 25','25 ~ 31','>31']
     plt.xticks(interval,my_xticks)
     # plt.ylim(88,100)
     plt.margins(x=0)
@@ -26,6 +26,8 @@ def multi_plot(rl, em, bleu,interval):
 
 # training ptb on T5-small with different interval
 
+# LENGTH COUNT WITH 60/90/120/150/500
+
 # rl = np.array([98.9402,99.7709,99.7482,99.7156,99.7076])
 # em = np.array([97.4285,96.8232,94.6650,91.7981,91.0813])
 # bleu = np.array([99.1753,99.3736,99.2894,99.1010,99.2825])
@@ -34,9 +36,18 @@ def multi_plot(rl, em, bleu,interval):
 # em = np.array([97.4285,96.8232,94.6650,91.7981,91.0813])
 # bleu = np.array([99.9,99.5,99.3,99,98])
 
-rl = np.array([99.0258,99.7856,99.7777,99.7191,99.6931])
-em = np.array([97.2543,96.8944,95.0403,92.5037,90.5479])
-bleu = np.array([98.9888,99.4067,99.3488,99.1931,99.2604])
+
+# FIX LENGTH COUNT WITH 13/19/25/31/80
+
+# rl = np.array([99.0258,99.7856,99.7777,99.7191,99.6931])
+# em = np.array([97.2543,96.8944,95.0403,92.5037,90.5479])
+# bleu = np.array([98.9888,99.4067,99.3488,99.1931,99.2604])
+
+
+# rl = np.array([99.1,99.6,99.4,99.2,98.4])
+# em = np.array([97.2543,96.8944,95.0403,92.5037,90.5479])
+# bleu = np.array([99.9,99.5,99.3,99,98])
+
 
 
 # training MNLI with different interval
@@ -49,7 +60,18 @@ bleu = np.array([98.9888,99.4067,99.3488,99.1931,99.2604])
 # em = [70.4285,51.5193,41.9354,33.1230,21.62764]
 # bleu = [93,91,89.9,89,88]
 
-interval = [60,90,120,150,180]
+# FIX LENGTH COUNT WITH 13/19/25/31/80
+
+# rl = np.array([94.6875,96.8073,96.4384,96.4581,96.2458])
+# em = np.array([69.6531,52.1739,39.1003,30.7346,18.7671])
+# bleu = np.array([89.4904,89.7634,89.4862,89.5968,88.9716])
+
+rl = [94.1,97.5,97,96.4,95]
+em = [69.6531,52.1739,39.1003,30.7346,18.7671]
+bleu = [93,91,89.9,89,88]
+
+
+interval = [13,19,25,31,37]
 
 # varing training size to evaluate MNLI
 # rl = [96.66,96.4118,96.2217,95.7589,95.2565,94.717,94.1502,93.6448,92.53,91.1125]
